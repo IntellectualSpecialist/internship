@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internship</title>
-    <meta name="description" content="«Стажировка» — совместный проект правительств и волонтёрских бригад, направленный на повышение квалификации молодых специалистов на ранних и средних стадиях карьеры">
+    <meta name="description" content="«Стажировка» — совместный проект правительств и волонтёрских бригад, направленный на повышение квалификации молодых специалистов на ранних и средних стадиях карьеры.">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon.png">
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
@@ -14,10 +19,9 @@
       <h1 class="visually-hidden">Стажировка</h1>
       <section class="hero" data-test="hero">
         <div class="hero__wrapper container">
-          <h2 class="visually-hidden">Основные программы</h2>
           <header class="hero__header main-header">
             <div class="main-header__logo logo">
-              <img src="/__spritemap#sprite-logo-view" width="52" height="52" alt="Логотип «Стажировка».">
+              <img src="/__spritemap#sprite-logo-view" width="30" height="30" alt="Логотип «Стажировка».">
             </div>
             <button class="main-header__burger burger" type="button">
               <span class="burger__text">Меню</span>
@@ -79,12 +83,20 @@
               </ul>
             </nav>
           </header>
+          <h2 class="visually-hidden">Основные программы</h2>
           <div class="hero__slider slider-promo swiper">
             <div class="slider-promo__wrapper swiper-wrapper">
               <div class="slider-promo__slide swiper-slide">
                 <article class="internship-card">
                   <div class="internship-card__image">
-                    <img src="#" width="320" height="568" alt="Студентка, проходящая обучение за рубежом.">
+                    <picture>
+                      <source width="1440" height="800" type="image/webp" media="(min-width: 1440px)" srcset="img/promo-1-desktop@1x.webp, img/promo-1-desktop@2x.webp 2x">
+                      <source width="768" height="1024" type="image/webp" media="(min-width: 768px)" srcset="img/promo-1-tablet@1x.webp, img/promo-1-tablet@2x.webp 2x">
+                      <source width="320" height="568" type="image/webp" srcset="img/promo-1-mobile@1x.webp, img/promo-1-mobile@2x.webp 2x">
+                      <source width="1440" height="800" type="image/jpeg" media="(min-width: 1440px)" srcset="img/promo-1-desktop@1x.jpg, img/promo-1-desktop@2x.jpg 2x">
+                      <source width="768" height="1024" type="image/jpeg" media="(min-width: 768px)" srcset="img/promo-1-tablet@1x.jpg, img/promo-1-tablet@2x.jpg 2x">
+                      <img src="img/promo-1-mobile@1x.jpg" srcset="img/promo-1-mobile@2x.jpg 2x" width="320" height="568" alt="Студентка, проходящая обучение за рубежом.">
+                    </picture>
                   </div>
                   <div class="internship-card__content">
                     <div class="internship-card__pagination slider-promo__pagination swiper-pagination">
@@ -114,7 +126,14 @@
               <div class="slider-promo__slide swiper-slide">
                 <article class="internship-card">
                   <div class="internship-card__image">
-                    <img src="#" width="320" height="568" alt="Волонтёры.">
+                    <picture>
+                      <source width="1440" height="800" type="image/webp" media="(min-width: 1440px)" srcset="img/promo-2-desktop@1x.webp, img/promo-2-desktop@2x.webp 2x">
+                      <source width="768" height="1024" type="image/webp" media="(min-width: 768px)" srcset="img/promo-2-tablet@1x.webp, img/promo-2-tablet@2x.webp 2x">
+                      <source width="320" height="568" type="image/webp" srcset="img/promo-2-mobile@1x.webp, img/promo-2-mobile@2x.webp 2x">
+                      <source width="1440" height="800" type="image/jpeg" media="(min-width: 1440px)" srcset="img/promo-2-desktop@1x.jpg, img/promo-2-desktop@2x.jpg 2x">
+                      <source width="768" height="1024" type="image/jpeg" media="(min-width: 768px)" srcset="img/promo-2-tablet@1x.jpg, img/promo-2-tablet@2x.jpg 2x">
+                      <img src="img/promo-2-mobile@1x.jpg" srcset="img/promo-2-mobile@2x.jpg 2x" width="320" height="568" alt="Волонтёры.">
+                    </picture>
                   </div>
                   <div class="internship-card__content">
                     <div class="internship-card__pagination slider-promo__pagination swiper-pagination">
@@ -144,7 +163,14 @@
               <div class="slider-promo__slide swiper-slide">
                 <article class="internship-card">
                   <div class="internship-card__image">
-                    <img src="#" width="320" height="568" alt="Стажёры за рубежом.">
+                    <picture>
+                      <source width="1440" height="800" type="image/webp" media="(min-width: 1440px)" srcset="img/promo-3-desktop@1x.webp, img/promo-3-desktop@2x.webp 2x">
+                      <source width="768" height="1024" type="image/webp" media="(min-width: 768px)" srcset="img/promo-3-tablet@1x.webp, img/promo-3-tablet@2x.webp 2x">
+                      <source width="320" height="568" type="image/webp" srcset="img/promo-3-mobile@1x.webp, img/promo-3-mobile@2x.webp 2x">
+                      <source width="1440" height="800" type="image/jpeg" media="(min-width: 1440px)" srcset="img/promo-3-desktop@1x.jpg, img/promo-3-desktop@2x.jpg 2x">
+                      <source width="768" height="1024" type="image/jpeg" media="(min-width: 768px)" srcset="img/promo-3-tablet@1x.jpg, img/promo-3-tablet@2x.jpg 2x">
+                      <img src="img/promo-3-mobile@1x.jpg" srcset="img/promo-3-mobile@2x.jpg 2x" width="320" height="568" alt="Стажёры за рубежом.">
+                    </picture>
                   </div>
                   <div class="internship-card__content">
                     <div class="internship-card__pagination slider-promo__pagination swiper-pagination">
@@ -244,7 +270,12 @@
                   <article class="program-card">
                     <div class="program-card__image">
                       <picture>
-                        <img src="#" srcset="#" width="290" height="400" alt="Стажёрки.">
+                        <source width="392" height="420" type="image/webp" media="(min-width: 1440px)" srcset="img/program-1-desktop@1x.webp, img/program-1-desktop@2x.webp 2x">
+                        <source width="324" height="420" type="image/webp" media="(min-width: 768px)" srcset="img/program-1-tablet@1x.webp, img/program-1-tablet@2x.webp 2x">
+                        <source width="290" height="400" type="image/webp" srcset="img/program-1-mobile@1x.webp, img/program-1-mobile@2x.webp 2x">
+                        <source width="392" height="420" type="image/jpeg" media="(min-width: 1440px)" srcset="img/program-1-desktop@1x.jpg, img/program-1-desktop@2x.jpg 2x">
+                        <source width="324" height="420" type="image/jpeg" media="(min-width: 768px)" srcset="img/program-1-tablet@1x.jpg, img/program-1-tablet@2x.jpg 2x">
+                        <img src="img/program-1-mobile@1x.jpg" srcset="img/program-1-mobile@2x.jpg 2x" width="290" height="400" alt="Стажёрки.">
                       </picture>
                     </div>
                     <div class="program-card__text">
@@ -264,7 +295,12 @@
                   <article class="program-card">
                     <div class="program-card__image">
                       <picture>
-                        <img src="#" srcset="#" width="290" height="400" alt="Волонтёр.">
+                        <source width="392" height="420" type="image/webp" media="(min-width: 1440px)" srcset="img/program-2-desktop@1x.webp, img/program-2-desktop@2x.webp 2x">
+                        <source width="324" height="420" type="image/webp" media="(min-width: 768px)" srcset="img/program-2-tablet@1x.webp, img/program-2-tablet@2x.webp 2x">
+                        <source width="290" height="400" type="image/webp" srcset="img/program-2-mobile@1x.webp, img/program-2-mobile@2x.webp 2x">
+                        <source width="392" height="420" type="image/jpeg" media="(min-width: 1440px)" srcset="img/program-2-desktop@1x.jpg, img/program-2-desktop@2x.jpg 2x">
+                        <source width="324" height="420" type="image/jpeg" media="(min-width: 768px)" srcset="img/program-2-tablet@1x.jpg, img/program-2-tablet@2x.jpg 2x">
+                        <img src="img/program-2-mobile@1x.jpg" srcset="img/program-2-mobile@2x.jpg 2x" width="290" height="400" alt="Волонтёр.">
                       </picture>
                     </div>
                     <div class="program-card__text">
@@ -284,7 +320,12 @@
                   <article class="program-card">
                     <div class="program-card__image">
                       <picture>
-                        <img src="#" srcset="#" width="290" height="400" alt="Студент за учёбой.">
+                        <source width="392" height="420" type="image/webp" media="(min-width: 1440px)" srcset="img/program-3-desktop@1x.webp, img/program-3-desktop@2x.webp 2x">
+                        <source width="324" height="420" type="image/webp" media="(min-width: 768px)" srcset="img/program-3-tablet@1x.webp, img/program-3-tablet@2x.webp 2x">
+                        <source width="290" height="400" type="image/webp" srcset="img/program-3-mobile@1x.webp, img/program-3-mobile@2x.webp 2x">
+                        <source width="392" height="420" type="image/jpeg" media="(min-width: 1440px)" srcset="img/program-3-desktop@1x.jpg, img/program-3-desktop@2x.jpg 2x">
+                        <source width="324" height="420" type="image/jpeg" media="(min-width: 768px)" srcset="img/program-3-tablet@1x.jpg, img/program-3-tablet@2x.jpg 2x">
+                        <img src="img/program-3-mobile@1x.jpg" srcset="img/program-3-mobile@2x.jpg 2x" width="290" height="400" alt="Студент за учёбой.">
                       </picture>
                     </div>
                     <div class="program-card__text">
@@ -318,7 +359,14 @@
               <p>Свяжитесь с координатором, чтобы узнать полную информацию. Вы получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.</p>
             </div>
             <div class="grant__image">
-              <img src="#" width="290" height="200" alt="Указатели стран.">
+              <picture>
+                <source width="498" height="363" type="image/webp" media="(min-width: 1440px)" srcset="img/signs-desktop@1x.webp, img/signs-desktop@2x.webp 2x">
+                <source width="678" height="375" type="image/webp" media="(min-width: 768px)" srcset="img/signs-tablet@1x.webp, img/signs-tablet@2x.webp 2x">
+                <source width="290" height="200" type="image/webp" srcset="img/signs-mobile@1x.webp, img/signs-mobile@2x.webp 2x">
+                <source width="498" height="363" type="image/jpeg" media="(min-width: 1440px)" srcset="img/signs-desktop@1x.jpg, img/signs-desktop@2x.jpg 2x">
+                <source width="678" height="375" type="image/jpeg" media="(min-width: 768px)" srcset="img/signs-tablet@1x.jpg, img/signs-tablet@2x.jpg 2x">
+                <img src="img/signs-mobile@1x.jpg" srcset="img/signs-mobile@2x.jpg 2x" width="290" height="200" alt="Указатели стран.">
+              </picture>
             </div>
           </div>
           <div class="right-column">
@@ -357,10 +405,15 @@
               <div class="slider-news__swiper swiper">
                 <div class="slider-news__wrapper swiper-wrapper">
                   <div class="slider-news__slide swiper-slide">
-                    <article class="news-card">
+                    <article class="news-card news-card--wide">
                       <div class="news-card__image">
                         <picture>
-                          <img src="#" srcset="#" width="290" height="330" alt="Участница стажировки и интервьюер.">
+                          <source width="604" height="400" type="image/webp" media="(min-width: 1440px)" srcset="img/news-1-desktop@1x.webp, img/news-1-desktop@2x.webp 2x">
+                          <source width="324" height="350" type="image/webp" media="(min-width: 768px)" srcset="img/news-1-tablet@1x.webp, img/news-1-tablet@2x.webp 2x">
+                          <source width="290" height="330" type="image/webp" srcset="img/news-1-mobile@1x.webp, img/news-1-mobile@2x.webp 2x">
+                          <source width="604" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="img/news-1-desktop@1x.jpg, img/news-1-desktop@2x.jpg 2x">
+                          <source width="324" height="350" type="image/jpeg" media="(min-width: 768px)" srcset="img/news-1-tablet@1x.jpg, img/news-1-tablet@2x.jpg 2x">
+                          <img src="img/news-1-mobile@1x.jpg" srcset="img/news-1-mobile@2x.jpg 2x" width="290" height="330" alt="Участница стажировки и интервьюер.">
                         </picture>
                       </div>
                       <div class="news__text">
@@ -381,7 +434,12 @@
                     <article class="news-card">
                       <div class="news-card__image">
                         <picture>
-                          <img src="#" srcset="#" width="290" height="330" alt="Город.">
+                          <source width="286" height="400" type="image/webp" media="(min-width: 1440px)" srcset="img/news-2-desktop@1x.webp, img/news-2-desktop@2x.webp 2x">
+                          <source width="324" height="350" type="image/webp" media="(min-width: 768px)" srcset="img/news-2-tablet@1x.webp, img/news-2-tablet@2x.webp 2x">
+                          <source width="290" height="330" type="image/webp" srcset="img/news-2-mobile@1x.webp, img/news-2-mobile@2x.webp 2x">
+                          <source width="286" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="img/news-2-desktop@1x.jpg, img/news-2-desktop@2x.jpg 2x">
+                          <source width="324" height="350" type="image/jpeg" media="(min-width: 768px)" srcset="img/news-2-tablet@1x.jpg, img/news-2-tablet@2x.jpg 2x">
+                          <img src="img/news-2-mobile@1x.jpg" srcset="img/news-2-mobile@2x.jpg 2x" width="290" height="330" alt="Город.">
                         </picture>
                       </div>
                       <div class="news__text">
@@ -402,7 +460,10 @@
                     <article class="news-card">
                       <div class="news-card__image">
                         <picture>
-                          <img src="#" srcset="#" width="290" height="330" alt="Девушка со значком «VOLUNTEER».">
+                          <source width="286" height="400" type="image/webp" media="(min-width: 1440px)" srcset="img/news-3-desktop@1x.webp, img/news-3-desktop@2x.webp 2x">
+                          <source width="290" height="330" type="image/webp" srcset="img/news-3-tablet@1x.webp, img/news-3-tablet@2x.webp 2x">
+                          <source width="286" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="img/news-3-desktop@1x.jpg, img/news-3-desktop@2x.jpg 2x">
+                          <img src="img/news-3-tablet@1x.jpg" srcset="img/news-3-tablet@2x.jpg 2x" width="290" height="330" alt="Девушка со значком «VOLUNTEER».">
                         </picture>
                       </div>
                       <div class="news__text">
@@ -423,7 +484,10 @@
                     <article class="news-card">
                       <div class="news-card__image">
                         <picture>
-                          <img src="#" srcset="#" width="290" height="330" alt="Стол студентов на стажировке.">
+                          <source width="286" height="400" type="image/webp" media="(min-width: 1440px)" srcset="img/news-4-desktop@1x.webp, img/news-4-desktop@2x.webp 2x">
+                          <source width="290" height="330" type="image/webp" srcset="img/news-4-tablet@1x.webp, img/news-4-tablet@2x.webp 2x">
+                          <source width="286" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="img/news-4-desktop@1x.jpg, img/news-4-desktop@2x.jpg 2x">
+                          <img src="img/news-4-tablet@1x.jpg" srcset="img/news-4-tablet@2x.jpg 2x" width="290" height="330" alt="Рабочий стол студентов на стажировке.">
                         </picture>
                       </div>
                       <div class="news__text">
@@ -549,7 +613,12 @@
                     <header class="review-card__header">
                       <div class="review-card__autor">
                         <div class="review-card__avatar">
-                          <img src="#" width="60" height="60" alt="Фотография автора.">
+                          <picture>
+                            <source width="90" height="90" type="image/webp" media="(min-width: 768px)" srcset="img/client-1-tablet@1x.webp, img/client-1-tablet@2x.webp 2x">
+                            <source width="60" height="60" type="image/webp" srcset="img/client-1-mobile@1x.webp, img/client-1-mobile@2x.webp 2x">
+                            <source width="90" height="90" type="image/jpeg" media="(min-width: 768px)" srcset="img/client-1-tablet@1x.jpg, img/client-1-tablet@2x.jpg 2x">
+                            <img src="img/client-1-mobile@1x.jpg" srcset="img/client-1-mobile@2x.jpg 2x" width="60" height="60" alt="Фотография автора.">
+                          </picture>
                         </div>
                         <h3 class="review-card__name">Лола Алекс</h3>
                       </div>
@@ -579,7 +648,10 @@
                     <header class="review-card__header">
                       <div class="review-card__autor">
                         <div class="review-card__avatar">
-                          <img src="#" width="60" height="60" alt="Фотография автора.">
+                          <picture>
+                            <source width="60" height="60" type="image/webp" srcset="img/client-2-tablet@1x.webp, img/client-2-tablet@2x.webp 2x">
+                            <img src="img/client-2-tablet@1x.jpg" srcset="img/client-2-tablet@2x.jpg 2x" width="60" height="60" alt="Фотография автора.">
+                          </picture>
                         </div>
                         <h3 class="review-card__name">Давид Иванов</h3>
                       </div>
@@ -630,7 +702,14 @@
             </ul>
           </div>
           <div class="contacts__map">
-            <img src="#" width="290" height="240" alt="Карта.">
+            <picture>
+              <source width="1240" height="486" type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop@1x.webp, img/map-desktop@2x.webp 2x">
+              <source width="678" height="500" type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp, img/map-tablet@2x.webp 2x">
+              <source width="290" height="240" type="image/webp" srcset="img/map-mobile@1x.webp, img/map-mobile@2x.webp 2x">
+              <source width="1240" height="486" type="image/png" media="(min-width: 1440px)" srcset="img/map-desktop@1x.png, img/map-desktop@2x.png 2x">
+              <source width="678" height="500" type="image/png" media="(min-width: 768px)" srcset="img/map-tablet@1x.png, img/map-tablet@2x.png 2x">
+              <img src="img/map-mobile@1x.png" srcset="img/map-mobile@2x.png 2x" width="290" height="240" alt="Карта с отметкой на адресе: г. Новосибирск, ул. Щетинкина 68, культурный центр">
+            </picture>
           </div>
         </div>
       </section>
@@ -657,7 +736,7 @@
                   <div class="field field--select">
                     <label class="field__label" for="city-1">Выберите город</label>
                     <select name="city" id="city-1" required>
-                      <option value="" label="empty" disabled selected></option>
+                      <option value="" label=" " hidden disabled selected></option>
                       <option value="saint-petersburg">Санкт-Петербург</option>
                       <option value="saint-petersburg">Санкт-Петербург</option>
                       <option value="saint-petersburg">Санкт-Петербург</option>
@@ -692,7 +771,7 @@
       <div class="main-footer__wrapper container">
         <div class="main-footer__top-container">
           <div class="main-footer__logo logo">
-            <img src="/__spritemap#sprite-logo-view" width="52" height="52" alt="Логотип «Стажировка».">
+            <img src="/__spritemap#sprite-logo-view" width="30" height="30" alt="Логотип «Стажировка».">
           </div>
           <ul class="main-footer__list site-list site-list--dark">
             <li class="site-list__item">
@@ -725,7 +804,7 @@
               <a class="social__link" href="#">
                 <span class="visually-hidden">Вконтакте</span>
                 <svg width="16" height="9" viewBox="0 0 16 9" role="img" aria-hidden="true" focusable="false">
-                  <use href="/__spritemap#sprite-vk"></use>
+                  <use href="/__spritemap#sprite-vk-icon"></use>
                 </svg>
               </a>
             </li>
@@ -733,7 +812,7 @@
               <a class="social__link" href="#">
                 <span class="visually-hidden">Одноклассники</span>
                 <svg width="9" height="16" viewBox="0 0 9 16" role="img" aria-hidden="true" focusable="false">
-                  <use href="/__spritemap#sprite-ok"></use>
+                  <use href="/__spritemap#sprite-ok-icon"></use>
                 </svg>
               </a>
             </li>
@@ -741,7 +820,7 @@
               <a class="social__link" href="#">
                 <span class="visually-hidden">Реддит</span>
                 <svg width="15" height="15" viewBox="0 0 15 15" role="img" aria-hidden="true" focusable="false">
-                  <use href="/__spritemap#sprite-reddit"></use>
+                  <use href="/__spritemap#sprite-reddit-icon"></use>
                 </svg>
               </a>
             </li>
@@ -749,7 +828,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal">
+    <div class="modal modal--hidden">
       <div class="modal__feedback">
         <button class="modal__close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
@@ -771,7 +850,7 @@
                 <div class="field field--light field--select">
                   <label class="field__label" for="city-2">Выберите город</label>
                   <select name="city" id="city-2" required>
-                    <option value="" label="empty" disabled selected></option>
+                    <option value="" label=" " hidden disabled selected></option>
                     <option value="saint-petersburg">Санкт-Петербург</option>
                     <option value="saint-petersburg">Санкт-Петербург</option>
                     <option value="saint-petersburg">Санкт-Петербург</option>
@@ -779,7 +858,7 @@
                   </select>
                 </div>
                 <div class="select-custom js-select-custom" aria-hidden="true">
-                  <div class="select-custom__trigger"></div>
+                  <div class="select-custom__trigger"> </div>
                   <ul class="select-custom__options">
                     <li class="select-custom__option" data-value="saint-petersburg">Санкт-Петербург</li>
                     <li class="select-custom__option" data-value="saint-petersburg">Санкт-Петербург</li>
