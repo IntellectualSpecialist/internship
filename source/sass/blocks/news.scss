@@ -1,0 +1,78 @@
+.news__wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.news__title {
+  margin-bottom: 24px;
+}
+
+.news__tabs-list {
+  @include list-reset;
+
+  display: flex;
+  gap: 8px;
+  width: 305px;
+  margin-bottom: 24px;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.news__tabs-button {
+  padding: 10px 14px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $secondary-color;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  opacity: 0.6;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus-visible {
+    opacity: 1;
+    background-color: $base-white;
+    border-color: $base-white;
+  }
+
+  &:active {
+    opacity: 0.6;
+    background-color: $base-white;
+    border-color: $base-white;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.3;
+  }
+
+  &--active {
+    border-color: $secondary-color;
+    opacity: 1;
+
+    &:focus-visible {
+      opacity: 1;
+      background-color: transparent;
+      border-color: $secondary-color;
+    }
+
+    &:active {
+      opacity: 1;
+      background-color: transparent;
+      border-color: $secondary-color;
+    }
+  }
+
+  &--disabled {
+    pointer-events: none;
+    opacity: 0.3;
+  }
+}

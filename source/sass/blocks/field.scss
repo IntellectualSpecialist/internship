@@ -1,0 +1,224 @@
+.field {
+  display: block;
+
+  &:has(input:hover),
+  &:has(input:focus-visible),
+  &:has(input:active),
+  &:has(textarea:hover),
+  &:has(textarea:focus-visible),
+  &:has(textarea:active),
+  &:has(select:hover),
+  &:has(select:focus-visible),
+  &:has(select:active) {
+    .field__label {
+      opacity: 1;
+    }
+  }
+
+  &:has(input:disabled),
+  &:has(textarea:disabled),
+  &:has(select:disabled) {
+    .field__label {
+      opacity: 0.6;
+    }
+  }
+
+  &:has(input:user-invalid),
+  &:has(textarea:user-invalid),
+  &:has(select:user-invalid) {
+    .field__label {
+      opacity: 0.8;
+    }
+  }
+
+  input,
+  textarea,
+  select,
+  .field__select-custom {
+    padding: 17px 20px;
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    line-height: 14px;
+    color: $beige;
+    border: 1px solid rgba($base-white, 0.3);
+    border-radius: 8px;
+    background-color: transparent;
+    appearance: none;
+
+    &:hover {
+      border-color: $base-white;
+    }
+
+    &:focus-visible,
+    &:active {
+      border-color: $base-white;
+      outline: none;
+    }
+
+    &:disabled {
+      pointer-events: none;
+      background: $white-opacity;
+      border-color: $base-white;
+      opacity: 0.4;
+    }
+
+    &:user-invalid {
+      background-color: $error-color-opacity;
+      border-color: $error-color;
+    }
+  }
+}
+
+.field--textarea {
+  textarea {
+    width: 100%;
+    height: 94px;
+    resize: none;
+  }
+}
+
+.field--select {
+  position: relative;
+
+  select,
+  .field__select-custom {
+    padding-right: 45px;
+    cursor: pointer;
+  }
+
+  option {
+    color: $primary-color;
+    background-color: $base-white;
+
+    &:checked {
+      color: $base-white;
+      background-color: $secondary-color;
+    }
+  }
+
+  .field__wrapper {
+    position: relative;
+
+    &:has(select:focus-visible)::before,
+    &:has(select:active)::before {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+
+  .field__wrapper::before,
+  .field__select-custom::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    right: 20px;
+    mask-image: url("../../__spritemap#sprite-select-arrow-view");
+    background-color: $base-white;
+    transform: translateY(-50%);
+    transition: 0.2s ease;
+  }
+
+  .field__select-custom::before {
+    right: 19px;
+  }
+}
+
+.field--light {
+  .field__label {
+    margin-bottom: 8px;
+    color: $primary-color;
+  }
+
+  input,
+  textarea,
+  select,
+  .field__select-custom {
+    color: $primary-color;
+    border-color: rgba($primary-color, 0.3);
+
+    &:hover {
+      border-color: $primary-color;
+    }
+
+    &:focus-visible,
+    &:active {
+      border-color: $primary-color;
+    }
+
+    &:disabled {
+      background-color: $disabled-opacity;
+      border-color: $disabled-opacity-alt;
+    }
+
+    &:user-invalid {
+      border-color: $error-color;
+    }
+  }
+
+  .field__wrapper::before {
+    background-color: $primary-color;
+  }
+}
+
+.field--error {
+  input,
+  textarea,
+  select,
+  .field__select-custom {
+    background-color: $error-color-opacity;
+    border-color: $error-color;
+  }
+}
+
+.field__label {
+  margin-bottom: 12px;
+  display: block;
+  color: $beige;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.field__select-custom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+.field__select-custom-options {
+  @include list-reset;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  width: 100%;
+  padding: 1px;
+  background-color: $base-white;
+  border-radius: 8px;
+  transform: translateY(4px);
+}
+
+.field__select-custom-option {
+  padding: 17px 20px;
+  font-size: 14px;
+  line-height: 14px;
+  color: $primary-color;
+  background-color: $base-white;
+
+  &:hover {
+    color: $base-white;
+    background-color: $secondary-color;
+  }
+
+  &:first-child {
+    border-radius: 8px 8px 0 0;
+  }
+
+  &:last-child {
+    border-radius: 0 0 8px 8px;
+  }
+}

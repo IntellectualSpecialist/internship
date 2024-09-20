@@ -1,0 +1,43 @@
+.grant {
+  color: $base-white;
+  background-color: $secondary-color;
+}
+
+.grant__wrapper {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.grant__title {
+  margin-bottom: 15px;
+}
+
+.grant__text-content {
+  margin-bottom: 30px;
+
+  p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.grant__image {
+  margin-bottom: 40px;
+  border-radius: 16px;
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 290px;
+    height: 200px;
+    border-radius: 16px;
+  }
+}
+
+.grant__subtitle {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}

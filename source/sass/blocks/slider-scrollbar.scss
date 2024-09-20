@@ -1,0 +1,25 @@
+.slider-scrollbar {
+  position: relative;
+}
+
+.slider-scrollbar--no-js {
+  .slider-scrollbar__wrapper {
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+
+  .slider-scrollbar__slide {
+    flex-shrink: 0;
+  }
+}
+
+.slider-scrollbar__navigation {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  display: flex;
+  gap: 8px;
+  width: 52px;
+  transform: translateY(-34px);
+}

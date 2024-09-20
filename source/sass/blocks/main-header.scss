@@ -1,0 +1,23 @@
+.main-header {
+  position: relative;
+  padding: 21px 0;
+  z-index: 1;
+}
+
+.main-header__wrapper {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
+.main-header__logo {
+  margin-top: 1px;
+  margin-right: auto;
+}
+
+.main-header__burger {
+  &--active {
+    position: absolute;
+    right: 15px;
+  }
+}

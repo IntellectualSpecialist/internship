@@ -1,0 +1,131 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: $base-white;
+    border-radius: 2px;
+    border: 1px solid $base-white;
+    appearance: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible {
+      background-color: transparent;
+    }
+
+    &:active:not(:disabled) {
+      opacity: 0.6;
+    }
+
+    &:disabled {
+      pointer-events: none;
+      background-color: $white-opacity-alt;
+    }
+
+    &:user-invalid {
+      background-color: $error-color-opacity;
+      opacity: 0.7;
+      border-color: $error-color;
+    }
+
+    &:checked {
+      &:hover,
+      &:focus-visible {
+        background-color: $secondary-color;
+      }
+
+      &:hover::before,
+      &:focus-visible::before {
+        background-color: $base-white;
+      }
+
+      &:disabled {
+        background-color: $disabled-color;
+        border-color: $disabled-color;
+        pointer-events: none;
+      }
+
+      &:disabled::before {
+        background-color: $base-white;
+        opacity: 0.7;
+      }
+    }
+
+    &:checked::before {
+      display: block;
+    }
+  }
+
+  input::before {
+    content: "";
+    display: none;
+    width: 10px;
+    height: 10px;
+    mask-image: url("../../__spritemap#sprite-check-icon-view");
+    background-color: $secondary-color;
+  }
+}
+
+.checkbox--error {
+  input {
+    background-color: $error-color-opacity;
+    opacity: 0.7;
+    border-color: $error-color;
+  }
+}
+
+.checkbox--light {
+  input {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+
+    &:disabled {
+      background-color: $disabled-opacity;
+      border-color: $disabled-opacity-alt;
+    }
+
+    &:checked {
+      &:hover,
+      &:focus-visible {
+        background-color: $base-white;
+      }
+
+      &:hover::before,
+      &:focus-visible::before {
+        background-color: $secondary-color;
+      }
+
+      &:disabled {
+        background-color: $disabled-color;
+        border-color: $disabled-color;
+      }
+
+      &:disabled::before {
+        background-color: $base-white;
+      }
+    }
+  }
+
+  input::before {
+    background-color: $base-white;
+  }
+
+  .checkbox__label {
+    color: $primary-color;
+  }
+}
+
+.checkbox__label {
+  width: 240px;
+  font-size: 12px;
+  line-height: 14px;
+  color: $base-white;
+  cursor: pointer;
+}

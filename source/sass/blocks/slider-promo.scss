@@ -1,0 +1,107 @@
+.slider-promo--no-js {
+  .slider-promo__wrapper {
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+
+  .slider-promo__slide {
+    flex-shrink: 0;
+  }
+}
+
+.slider-promo__slide {
+  background-color: $card-bg;
+}
+
+.slider-promo__pagination {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.slider-promo__pagination-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border: 2px solid $secondary-color;
+    border-radius: 50%;
+  }
+
+  &:hover {
+    opacity: 0.6;
+
+    &::before {
+      background-color: $secondary-color;
+      border-color: $base-white;
+    }
+  }
+
+  &:focus-visible {
+    &::before {
+      background-color: $secondary-color;
+    }
+  }
+
+  &:active {
+    opacity: 1;
+
+    &::before {
+      background-color: $bg-dark-blue;
+      border-color: $bg-dark-blue;
+    }
+  }
+
+  &:disabled {
+    pointer-events: none;
+
+    &::before {
+      background-color: $disabled-color;
+      border-color: $disabled-color;
+    }
+  }
+}
+
+.slider-promo__pagination-button--active {
+  &::before {
+    background-color: $bg-dark-blue;
+    border-color: $bg-dark-blue;
+  }
+
+  &:hover {
+    opacity: 1;
+
+    &::before {
+      background-color: $bg-dark-blue;
+      border-color: $bg-dark-blue;
+    }
+  }
+
+  &:focus-visible {
+    &::before {
+      background-color: $bg-dark-blue;
+      border-color: $bg-dark-blue;
+    }
+  }
+
+  &:active {
+    opacity: 1;
+
+    &::before {
+      background-color: $bg-dark-blue;
+      border-color: $bg-dark-blue;
+    }
+  }
+}

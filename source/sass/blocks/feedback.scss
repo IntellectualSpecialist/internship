@@ -1,0 +1,28 @@
+.feedback__wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.feedback__form-wrapper {
+  width: 100vw;
+  margin-left: calc(((100vw - 320px) / 2 + 15px) * -1);
+  padding-top: 43px;
+  padding-bottom: 40px;
+  color: $base-white;
+  background-color: $feedback-bg;
+  background-image:
+    image-set(
+      url("../img/city-background-mobile@1x.webp") type("image/webp") 1x,
+      url("../img/city-background-mobile@2x.webp") type("image/webp") 2x,
+      url("../img/city-background-mobile@1x.jpg") type("image/jpeg") 1x,
+      url("../img/city-background-mobile@2x.jpg") type("image/jpeg") 2x
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.feedback__form {
+  width: 300px;
+  margin: 0 auto;
+}

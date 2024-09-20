@@ -21,8 +21,8 @@
      <main>
       <h1 class="visually-hidden">Стажировка</h1>
       <section class="hero" data-test="hero">
-        <div class="hero__wrapper container">
-          <header class="hero__header main-header">
+        <header class="hero__header main-header">
+          <div class="main-header__wrapper container">
             <div class="main-header__logo logo">
               <img src="/__spritemap#sprite-logo-view" width="30" height="30" alt="Логотип «Стажировка».">
             </div>
@@ -32,65 +32,71 @@
                 <span class="burger__icon-inner"></span>
               </span>
             </button>
-            <nav class="main-header__nav main-nav main-nav--hidden">
+            <nav class="main-header__nav main-nav ">
               <ul class="main-nav__list site-list">
                 <li class="site-list__item">
-                  <a class="site-list__link" href="#">О проекте</a>
+                  <a class="site-list__link" href="#about">О проекте</a>
                 </li>
                 <li class="site-list__item site-list__item--has-children">
-                  <a class="site-list__link" href="#">Программы</a>
-                  <ul class="site-list__sub-menu">
-                    <li class="site-list__sub-menu-item">
-                      <a class="site-list__sub-menu-link" href="#">Стажировки</a>
-                    </li>
-                    <li class="site-list__sub-menu-item">
-                      <a class="site-list__sub-menu-link" href="#">Волонтёрство</a>
-                    </li>
-                    <li class="site-list__sub-menu-item">
-                      <a class="site-list__sub-menu-link" href="#">Учеба</a>
-                    </li>
-                    <li class="site-list__sub-menu-item">
-                      <a class="site-list__sub-menu-link" href="#">Религия</a>
-                    </li>
-                  </ul>
+                  <a class="site-list__link site-list__link--dropdown" href="#programs">Программы</a>
+                  <div class="site-lite__dropdown site-lite__dropdown--hidden">
+                    <ul class="site-list__sub-menu">
+                      <li class="site-list__sub-menu-item">
+                        <a class="site-list__sub-menu-link" href="#">Стажировки</a>
+                      </li>
+                      <li class="site-list__sub-menu-item">
+                        <a class="site-list__sub-menu-link" href="#">Волонтёрство</a>
+                      </li>
+                      <li class="site-list__sub-menu-item">
+                        <a class="site-list__sub-menu-link" href="#">Учеба</a>
+                      </li>
+                      <li class="site-list__sub-menu-item">
+                        <a class="site-list__sub-menu-link" href="#">Религия</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li class="site-list__item">
-                  <a class="site-list__link" href="#">Как поехать</a>
+                  <a class="site-list__link" href="#grant">Как поехать</a>
                 </li>
                 <li class="site-list__item">
-                  <a class="site-list__link" href="#">Отзывы</a>
+                  <a class="site-list__link" href="#reviews">Отзывы</a>
                 </li>
                 <li class="site-list__item site-list__item--has-children">
-                  <a class="site-list__link" href="#">Новости</a>
-                  <ul class="site-list__sub-menu">
-                    <li class="site-list__sub-menu-item">
-                      <a class="site-list__sub-menu-link" href="#">Общее</a>
-                    </li>
-                    <li class="site-list__sub-menu-item">
-                      <a class="site-list__sub-menu-link" href="#">Волонтёрство</a>
-                    </li>
-                    <li class="site-list__sub-menu-item">
-                      <a class="site-list__sub-menu-link" href="#">Стажировки</a>
-                    </li>
-                    <li class="site-list__sub-menu-item">
-                      <a class="site-list__sub-menu-link" href="#">Карьера</a>
-                    </li>
-                    <li class="site-list__sub-menu-item">
-                      <a class="site-list__sub-menu-link" href="#">Путешествия</a>
-                    </li>
-                  </ul>
+                  <a class="site-list__link site-list__link--dropdown" href="#news">Новости</a>
+                  <div class="site-lite__dropdown site-lite__dropdown--hidden">
+                    <ul class="site-list__sub-menu">
+                      <li class="site-list__sub-menu-item">
+                        <a class="site-list__sub-menu-link" href="#">Общее</a>
+                      </li>
+                      <li class="site-list__sub-menu-item">
+                        <a class="site-list__sub-menu-link" href="#">Волонтёрство</a>
+                      </li>
+                      <li class="site-list__sub-menu-item">
+                        <a class="site-list__sub-menu-link" href="#">Стажировки</a>
+                      </li>
+                      <li class="site-list__sub-menu-item">
+                        <a class="site-list__sub-menu-link" href="#">Карьера</a>
+                      </li>
+                      <li class="site-list__sub-menu-item">
+                        <a class="site-list__sub-menu-link" href="#">Путешествия</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li class="site-list__item">
-                  <a class="site-list__link" href="#">Контакты</a>
+                  <a class="site-list__link" href="#contacts">Контакты</a>
                 </li>
               </ul>
             </nav>
-          </header>
-          <h2 class="visually-hidden">Основные программы</h2>
-          <div class="hero__slider slider-promo swiper">
-            <div class="slider-promo__wrapper swiper-wrapper">
-              <div class="slider-promo__slide swiper-slide">
-                <article class="internship-card">
+          </div>
+        </header>
+        <h2 class="visually-hidden">Основные программы</h2>
+        <div class="hero__slider slider-promo slider-promo--no-js swiper">
+          <div class="slider-promo__wrapper swiper-wrapper">
+            <div class="slider-promo__slide swiper-slide">
+              <article class="internship-card">
+                <div class="internship-card__wrapper container">
                   <div class="internship-card__image">
                     <picture>
                       <source width="1440" height="800" type="image/webp" media="(min-width: 1440px)" srcset="img/promo-1-desktop@1x.webp, img/promo-1-desktop@2x.webp 2x">
@@ -114,20 +120,24 @@
                       </button>
                     </div>
                     <h3 class="internship-card__title">Глобальный профессиональный опыт обучения за рубежом</h3>
-                    <div class="internship-card__content">
+                    <div class="internship-card__description">
                       <div class="internship-card__text-content">
                         <p>Погрузитесь в академическую программу, проходя практику в разных городах, ощущая настоящий студенческий стиль жизни!</p>
                       </div>
-                      <a class="internship-card__button button" href="#">
-                        <span class="button__text">Подробнее</span>
-                        <span class="button__icon"></span>
-                      </a>
+                      <div class="internship-card__button">
+                        <a class="button button--primary button--alternative" href="#">
+                          <span class="button__text">Подробнее</span>
+                          <span class="button__icon"></span>
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </article>
-              </div>
-              <div class="slider-promo__slide swiper-slide">
-                <article class="internship-card">
+                </div>
+              </article>
+            </div>
+            <div class="slider-promo__slide swiper-slide">
+              <article class="internship-card">
+                <div class="internship-card__wrapper container">
                   <div class="internship-card__image">
                     <picture>
                       <source width="1440" height="800" type="image/webp" media="(min-width: 1440px)" srcset="img/promo-2-desktop@1x.webp, img/promo-2-desktop@2x.webp 2x">
@@ -151,20 +161,24 @@
                       </button>
                     </div>
                     <h3 class="internship-card__title">Волонтёрские программы — внесите свой вклад в общество</h3>
-                    <div class="internship-card__content">
+                    <div class="internship-card__description">
                       <div class="internship-card__text-content">
                         <p>Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и другое.</p>
                       </div>
-                      <a class="internship-card__button button" href="#">
-                        <span class="button__text">Подробнее</span>
-                        <span class="button__icon"></span>
-                      </a>
+                      <div class="internship-card__button">
+                        <a class="button button--primary button--alternative" href="#">
+                          <span class="button__text">Подробнее</span>
+                          <span class="button__icon"></span>
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </article>
-              </div>
-              <div class="slider-promo__slide swiper-slide">
-                <article class="internship-card">
+                </div>
+              </article>
+            </div>
+            <div class="slider-promo__slide swiper-slide">
+              <article class="internship-card">
+                <div class="internship-card__wrapper container">
                   <div class="internship-card__image">
                     <picture>
                       <source width="1440" height="800" type="image/webp" media="(min-width: 1440px)" srcset="img/promo-3-desktop@1x.webp, img/promo-3-desktop@2x.webp 2x">
@@ -188,18 +202,20 @@
                       </button>
                     </div>
                     <h3 class="internship-card__title">Программы стажировок в крупнейших компаниях мира</h3>
-                    <div class="internship-card__content">
+                    <div class="internship-card__description">
                       <div class="internship-card__text-content">
                         <p>Получите незаменимый опыт работы в ведущих мировых компаниях и государственных организациях.</p>
                       </div>
-                      <a class="internship-card__button button" href="#">
-                        <span class="button__text">Подробнее</span>
-                        <span class="button__icon"></span>
-                      </a>
+                      <div class="internship-card__button">
+                        <a class="button button--primary button--alternative" href="#">
+                          <span class="button__text">Подробнее</span>
+                          <span class="button__icon"></span>
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </article>
-              </div>
+                </div>
+              </article>
             </div>
           </div>
         </div>
@@ -218,35 +234,35 @@
                 <h3>Наша цель</h3>
                 <p>Наша деятельность направлена на повышение квалификации молодых специалистов на ранних и средних стадиях карьеры, предоставляя им инструменты для решения сложных проблем, с которыми сталкиваются в мире. Цель центра — наделить этих людей способностью инициировать значимые изменения.</p>
               </div>
-              <a class="about__button button" href="#">
-                <span class="button__text">Подробнее</span>
+              <a class="about__button button button--primary" href="#">
+                <span class="button__text">Подробнее о проекте</span>
                 <span class="button__icon"></span>
               </a>
             </div>
           </div>
           <section class="features">
             <h3 class="visually-hidden">Преимущества</h3>
-            <ul class="features__list">
-              <li class="features__item">
-                <div class="features__text-content">
+            <ul class="features__list list list--star">
+              <li class="list__item">
+                <div class="list__text-content">
                   <h4>Более 250 программ</h4>
                   <p>Учебных и рабочих, разной длительностью от 3 месяцев до 1 года</p>
                 </div>
               </li>
-              <li class="features__item">
-                <div class="features__text-content">
+              <li class="list__item">
+                <div class="list__text-content">
                   <h4>Более 3000 участников</h4>
                   <p>Уже успешно прошли программу от «Стажировка» и остались в разных странах</p>
                 </div>
               </li>
-              <li class="features__item">
-                <div class="features__text-content">
+              <li class="list__item">
+                <div class="list__text-content">
                   <h4>Участники из 60 стран</h4>
                   <p>Студенты со всего мира приезжают на программу «Стажировки» от 3 месяцев до 1 года</p>
                 </div>
               </li>
-              <li class="features__item">
-                <div class="features__text-content">
+              <li class="list__item">
+                <div class="list__text-content">
                   <h4>От 4 200 &#36; до 8 400 &#36;</h4>
                   <p>Грант всем участникам для комфортного прохождения программы</p>
                 </div>
@@ -258,7 +274,7 @@
       <section class="programs" data-test="programs">
         <div class="programs__wrapper container">
           <h2 class="programs__title title-middle">Программы</h2>
-          <div class="programs__slider slider-scrollbar slider-scrollbar--programs">
+          <div class="programs__slider slider-scrollbar slider-scrollbar--programs slider-scrollbar--no-js">
             <div class="slider-scrollbar__navigation">
               <button class="slider-button slider-button--prev swiper-button-prev" type="button" disabled>
                 <span class="visually-hidden">Предыдущий слайд</span>
@@ -282,7 +298,7 @@
                       </picture>
                     </div>
                     <div class="program-card__text">
-                      <h3 class="program-card__title">Стажировки</h3>
+                      <h3 class="program-card__title title-small">Стажировки</h3>
                       <div class="program-card__content">
                         <div class="program-card__text-content">
                           <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
@@ -307,7 +323,7 @@
                       </picture>
                     </div>
                     <div class="program-card__text">
-                      <h3 class="program-card__title">Волонтёрство</h3>
+                      <h3 class="program-card__title title-small">Волонтёрство</h3>
                       <div class="program-card__content">
                         <div class="program-card__text-content">
                           <p>Помогайте другим и развивайте свои лидерские качества</p>
@@ -332,7 +348,7 @@
                       </picture>
                     </div>
                     <div class="program-card__text">
-                      <h3 class="program-card__title">Учёба</h3>
+                      <h3 class="program-card__title title-small">Учёба</h3>
                       <div class="program-card__content">
                         <div class="program-card__text-content">
                           <p>Получите образование и измените своё будущее.</p>
@@ -348,7 +364,7 @@
             </div>
             <div class="slider-scrollbar__scrollbar swiper-scrollbar"></div>
           </div>
-          <a class="programs__more button" href="#">
+          <a class="programs__more button button--primary button--wide" href="#">
             <span class="button__text">Все программы</span>
             <span class="button__icon"></span>
           </a>
@@ -357,7 +373,7 @@
       <section class="grant" data-test="grant">
         <div class="grant__wrapper container">
           <div class="grant__left-column">
-            <h2 class="grant__title title-middle">Как поехать</h2>
+            <h2 class="grant__title title-middle title-middle--light">Как поехать</h2>
             <div class="grant__text-content">
               <p>Свяжитесь с координатором, чтобы узнать полную информацию. Вы получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.</p>
             </div>
@@ -374,21 +390,21 @@
           </div>
           <div class="right-column">
             <h3 class="grant__subtitle">Чтобы получить грант на обучение, вам нужно:</h3>
-            <ul class="grant__list">
-              <li class="grant__list-item">Быть в возрасте от 16 до 30 лет</li>
-              <li class="grant__list-item">Иметь оконченное среднее образование</li>
-              <li class="grant__list-item">Иметь документально подтверждённое отсутствие судимости и пройти консульскую проверку</li>
-              <li class="grant__list-item">За последние 2 года быть не больше 3х месяцев подряд непрерывно в одной стране</li>
+            <ul class="grant__list list list--counter">
+              <li class="list__item">Быть в возрасте от 16 до 30 лет</li>
+              <li class="list__item">Иметь оконченное среднее образование</li>
+              <li class="list__item">Иметь документально подтверждённое отсутствие судимости и пройти консульскую проверку</li>
+              <li class="list__item">За последние 2 года быть не больше 3х месяцев подряд непрерывно в одной стране</li>
             </ul>
           </div>
         </div>
       </section>
       <section class="news" data-test="news">
         <div class="news__wrapper container">
-          <h2 class="news__title title-middle">Новости и материалы</h2>
+          <h2 class="news__title title-middle title-middle--centered">Новости и материалы</h2>
           <ul class="news__tabs-list">
             <li class="news__tabs-item">
-              <button class="news__tabs-button" type="button">Общее</button>
+              <button class="news__tabs-button news__tabs-button--active" type="button">Общее</button>
             </li>
             <li class="news__tabs-item">
               <button class="news__tabs-button" type="button">Волонтёрство</button>
@@ -404,11 +420,11 @@
             </li>
           </ul>
           <div class="news__tabs-content">
-            <div class="news__slider slider-news">
+            <div class="news__slider slider-news slider-news--no-js">
               <div class="slider-news__swiper swiper">
                 <div class="slider-news__wrapper swiper-wrapper">
                   <div class="slider-news__slide swiper-slide">
-                    <article class="news-card news-card--wide">
+                    <article class="news-card news-card--big">
                       <div class="news-card__image">
                         <picture>
                           <source width="604" height="400" type="image/webp" media="(min-width: 1440px)" srcset="img/news-1-desktop@1x.webp, img/news-1-desktop@2x.webp 2x">
@@ -421,7 +437,7 @@
                       </div>
                       <div class="news__text">
                         <time class="news-card__date" datetime="2023-03-23">23/03/2023</time>
-                        <h3 class="news-card__title">Интервью с участницей программы стажировки</h3>
+                        <h3 class="news-card__title title-small">Интервью с участницей программы стажировки</h3>
                         <div class="news-card__content">
                           <div class="news-card__text-content">
                             <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
@@ -439,15 +455,15 @@
                         <picture>
                           <source width="286" height="400" type="image/webp" media="(min-width: 1440px)" srcset="img/news-2-desktop@1x.webp, img/news-2-desktop@2x.webp 2x">
                           <source width="324" height="350" type="image/webp" media="(min-width: 768px)" srcset="img/news-2-tablet@1x.webp, img/news-2-tablet@2x.webp 2x">
-                          <source width="290" height="330" type="image/webp" srcset="img/news-2-mobile@1x.webp, img/news-2-mobile@2x.webp 2x">
+                          <source width="290" height="240" type="image/webp" srcset="img/news-2-mobile@1x.webp, img/news-2-mobile@2x.webp 2x">
                           <source width="286" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="img/news-2-desktop@1x.jpg, img/news-2-desktop@2x.jpg 2x">
                           <source width="324" height="350" type="image/jpeg" media="(min-width: 768px)" srcset="img/news-2-tablet@1x.jpg, img/news-2-tablet@2x.jpg 2x">
-                          <img src="img/news-2-mobile@1x.jpg" srcset="img/news-2-mobile@2x.jpg 2x" width="290" height="330" alt="Город.">
+                          <img src="img/news-2-mobile@1x.jpg" srcset="img/news-2-mobile@2x.jpg 2x" width="290" height="240" alt="Город.">
                         </picture>
                       </div>
                       <div class="news__text">
                         <time class="news-card__date" datetime="2023-03-20">20/03/2023</time>
-                        <h3 class="news-card__title">Путешествуем по миру</h3>
+                        <h3 class="news-card__title title-small">Путешествуем по миру</h3>
                         <div class="news-card__content">
                           <div class="news-card__text-content">
                             <p>Какие места посещают наши студенты весной</p>
@@ -464,14 +480,14 @@
                       <div class="news-card__image">
                         <picture>
                           <source width="286" height="400" type="image/webp" media="(min-width: 1440px)" srcset="img/news-3-desktop@1x.webp, img/news-3-desktop@2x.webp 2x">
-                          <source width="290" height="330" type="image/webp" srcset="img/news-3-tablet@1x.webp, img/news-3-tablet@2x.webp 2x">
+                          <source width="290" height="240" type="image/webp" srcset="img/news-3-tablet@1x.webp, img/news-3-tablet@2x.webp 2x">
                           <source width="286" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="img/news-3-desktop@1x.jpg, img/news-3-desktop@2x.jpg 2x">
-                          <img src="img/news-3-tablet@1x.jpg" srcset="img/news-3-tablet@2x.jpg 2x" width="290" height="330" alt="Девушка со значком «VOLUNTEER».">
+                          <img src="img/news-3-tablet@1x.jpg" srcset="img/news-3-tablet@2x.jpg 2x" width="290" height="240" alt="Девушка со значком «VOLUNTEER».">
                         </picture>
                       </div>
                       <div class="news__text">
                         <time class="news-card__date" datetime="2023-03-17">17/03/2023</time>
-                        <h3 class="news-card__title">Новая программа волонтёрства</h3>
+                        <h3 class="news-card__title title-small">Новая программа волонтёрства</h3>
                         <div class="news-card__content">
                           <div class="news-card__text-content">
                             <p>Программа помощи детям длительностью 4 месяца</p>
@@ -488,14 +504,14 @@
                       <div class="news-card__image">
                         <picture>
                           <source width="286" height="400" type="image/webp" media="(min-width: 1440px)" srcset="img/news-4-desktop@1x.webp, img/news-4-desktop@2x.webp 2x">
-                          <source width="290" height="330" type="image/webp" srcset="img/news-4-tablet@1x.webp, img/news-4-tablet@2x.webp 2x">
+                          <source width="290" height="240" type="image/webp" srcset="img/news-4-tablet@1x.webp, img/news-4-tablet@2x.webp 2x">
                           <source width="286" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="img/news-4-desktop@1x.jpg, img/news-4-desktop@2x.jpg 2x">
-                          <img src="img/news-4-tablet@1x.jpg" srcset="img/news-4-tablet@2x.jpg 2x" width="290" height="330" alt="Рабочий стол студентов на стажировке.">
+                          <img src="img/news-4-tablet@1x.jpg" srcset="img/news-4-tablet@2x.jpg 2x" width="290" height="240" alt="Рабочий стол студентов на стажировке.">
                         </picture>
                       </div>
                       <div class="news__text">
                         <time class="news-card__date" datetime="2023-03-10">10/03/2023</time>
-                        <h3 class="news-card__title">Построй свою карьеру</h3>
+                        <h3 class="news-card__title title-small">Построй свою карьеру</h3>
                         <div class="news-card__content">
                           <div class="news-card__text-content">
                             <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
@@ -537,11 +553,11 @@
       </section>
       <section class="faq" data-test="FAQ">
         <div class="faq__wrapper container">
-          <h2 class="faq__title title-middle">Вопросы и ответы</h2>
+          <h2 class="faq__title title-middle title-middle--centered">Вопросы и ответы</h2>
           <ul class="faq__accordion accordion">
             <li class="accordion__item accordion-item">
               <button class="accordion-item__button" type="button">
-                <span class="accordion-item__title">Кто организатор? Какие сроки у программы?</span>
+                <span class="accordion-item__title title-small">Кто организатор? Какие сроки у программы?</span>
                 <span class="accordion-item__icon"></span>
               </button>
               <div class="accordion-item__content">
@@ -552,7 +568,7 @@
             </li>
             <li class="accordion__item accordion-item">
               <button class="accordion-item__button" type="button">
-                <span class="accordion-item__title">Что такое грант на обучение?</span>
+                <span class="accordion-item__title title-small">Что такое грант на обучение?</span>
                 <span class="accordion-item__icon"></span>
               </button>
               <div class="accordion-item__content">
@@ -561,10 +577,10 @@
                 </div>
               </div>
             </li>
-            <li class="accordion__item accordion-item">
+            <li class="accordion__item accordion-item accordion-item--active accordion-item--no-js">
               <button class="accordion-item__button" type="button">
-                <span class="accordion-item__title">Как определяется стоимость программы?</span>
-                <span class="accordion-item__icon"></span>
+                <span class="accordion-item__title title-small">Как определяется стоимость программы?</span>
+                <span class="accordion-item__icon accordion-item__icon--active"></span>
               </button>
               <div class="accordion-item__content">
                 <div class="accordion-item__text-content">
@@ -574,7 +590,7 @@
             </li>
             <li class="accordion__item accordion-item">
               <button class="accordion-item__button" type="button">
-                <span class="accordion-item__title">Признаётся ли учёба в рамках проекта для дальнейшего обучения?</span>
+                <span class="accordion-item__title title-small">Признаётся ли учёба в рамках проекта для дальнейшего обучения?</span>
                 <span class="accordion-item__icon"></span>
               </button>
               <div class="accordion-item__content">
@@ -585,7 +601,7 @@
             </li>
             <li class="accordion__item accordion-item">
               <button class="accordion-item__button" type="button">
-                <span class="accordion-item__title">Как выглядит полный процесс регистрации на программу «Стажировка»?</span>
+                <span class="accordion-item__title title-small">Как выглядит полный процесс регистрации на программу «Стажировка»?</span>
                 <span class="accordion-item__icon"></span>
               </button>
               <div class="accordion-item__content">
@@ -600,7 +616,7 @@
       <section class="reviews" data-test="reviews">
         <div class="reviews__wrapper container">
           <h2 class="reviews__title title-middle">Отзывы</h2>
-          <div class="reviews__slider slider-scrollbar slider-scrollbar--reviews">
+          <div class="reviews__slider slider-scrollbar slider-scrollbar--reviews slider-scrollbar--no-js">
             <div class="slider-scrollbar__navigation">
               <button class="slider-button slider-button--prev swiper-button-prev" type="button" disabled>
                 <span class="visually-hidden">Предыдущий слайд</span>
@@ -623,7 +639,10 @@
                             <img src="img/client-1-mobile@1x.jpg" srcset="img/client-1-mobile@2x.jpg 2x" width="60" height="60" alt="Фотография автора.">
                           </picture>
                         </div>
-                        <h3 class="review-card__name">Лола Алекс</h3>
+                        <h3 class="review-card__name">
+                          <span>Лола</span>
+                          <span>Алекс</span>
+                        </h3>
                       </div>
                       <dl class="review-card__info">
                         <div class="review-card__info-item">
@@ -656,7 +675,10 @@
                             <img src="img/client-2-tablet@1x.jpg" srcset="img/client-2-tablet@2x.jpg 2x" width="60" height="60" alt="Фотография автора.">
                           </picture>
                         </div>
-                        <h3 class="review-card__name">Давид Иванов</h3>
+                        <h3 class="review-card__name">
+                          <span>Давид</span>
+                          <span>Иванов</span>
+                        </h3>
                       </div>
                       <dl class="review-card__info">
                         <div class="review-card__info-item">
@@ -692,7 +714,7 @@
             <ul class="contacts__list contacts-list">
               <li class="contacts-list__item">
                 <h3 class="contacts-list__title">Центральный офис</h3>
-                <p class="contacts-list__value">г. Новосибирск, ул. Щетинкина 68, культурный центр</p>
+                <address class="contacts-list__value">г. Новосибирск, ул. Щетинкина 68, культурный центр</address>
               </li>
               <li class="contacts-list__item">
                 <h3 class="contacts-list__title">Телефон</h3>
@@ -723,44 +745,52 @@
               <h2 class="form__title">Напишите нам</h2>
               <p class="form__description">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
               <form action="https://echo.htmlacademy.ru/" method="post">
-                <label class="form__field field">
-                  <span class="field__label">Имя</span>
-                  <input type="text" name="name" required>
-                </label>
-                <label class="form__field field">
-                  <span class="field__label">Телефон</span>
-                  <input type="tel" name="tel" required>
-                </label>
-                <div class="form__field field">
+                <div class="form__field">
+                  <label class="field">
+                    <span class="field__label">Имя</span>
+                    <input type="text" name="name" required>
+                  </label>
+                </div>
+                <div class="form__field">
+                  <label class="field">
+                    <span class="field__label">Телефон</span>
+                    <input type="tel" name="tel" required>
+                  </label>
+                </div>
+                <div class="form__field field field--textarea">
                   <label class="field__label" for="message">Ваше сообщение</label>
                   <textarea name="message" id="message" required></textarea>
                 </div>
-                <div class="form__field">
+                <div class="form__field form__field--custom">
                   <div class="field field--select">
                     <label class="field__label" for="city-1">Выберите город</label>
-                    <select name="city" id="city-1" required>
-                      <option value="" label=" " hidden disabled selected></option>
-                      <option value="saint-petersburg">Санкт-Петербург</option>
-                      <option value="saint-petersburg">Санкт-Петербург</option>
-                      <option value="saint-petersburg">Санкт-Петербург</option>
-                      <option value="saint-petersburg">Санкт-Петербург</option>
-                    </select>
-                  </div>
-                  <div class="select-custom js-select-custom" aria-hidden="true">
-                    <div class="select-custom__trigger"></div>
-                    <ul class="select-custom__options">
-                      <li class="select-custom__option" data-value="saint-petersburg">Санкт-Петербург</li>
-                      <li class="select-custom__option" data-value="saint-petersburg">Санкт-Петербург</li>
-                      <li class="select-custom__option" data-value="saint-petersburg">Санкт-Петербург</li>
-                      <li class="select-custom__option" data-value="saint-petersburg">Санкт-Петербург</li>
-                    </ul>
+                    <div class="field__wrapper">
+                      <select name="city" id="city-1" required>
+                        <option value="" label=" " hidden disabled selected></option>
+                        <option value="saint-petersburg">Санкт-Петербург</option>
+                        <option value="saint-petersburg">Санкт-Петербург</option>
+                        <option value="saint-petersburg">Санкт-Петербург</option>
+                        <option value="saint-petersburg">Санкт-Петербург</option>
+                      </select>
+                    </div>
+                    <div class="field__select-custom js-select-custom" aria-hidden="true" tabindex="0">
+                      <div class="field__select-custom-trigger"></div>
+                      <ul class="field__select-custom-options">
+                        <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
+                        <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
+                        <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
+                        <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-                <label class="form__field checkbox">
-                  <input type="checkbox" name="personal-data" required>
-                  <span class="checkbox__label">Я согласен на обработку моих персональных данных</span>
-                </label>
-                <button class="form__button button button--secondary" type="submit">
+                <div class="form__field">
+                  <label class="checkbox">
+                    <input type="checkbox" name="personal-data" required>
+                    <span class="checkbox__label">Я согласен на обработку&nbsp;моих персональных <br>данных</span>
+                  </label>
+                </div>
+                <button class="form__button button button--secondary button--wide" type="submit">
                   <span class="button__text">Отправить</span>
                   <span class="button__icon"></span>
                 </button>
@@ -778,22 +808,22 @@
           </div>
           <ul class="main-footer__list site-list site-list--dark">
             <li class="site-list__item">
-              <a class="site-list__link" href="#">О проекте</a>
+              <a class="site-list__link" href="#about">О проекте</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Программы</a>
+              <a class="site-list__link" href="#programs">Программы</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Как поехать</a>
+              <a class="site-list__link" href="#grant">Как поехать</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Отзывы</a>
+              <a class="site-list__link" href="#reviews">Отзывы</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Новости</a>
+              <a class="site-list__link" href="#news">Новости</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Контакты</a>
+              <a class="site-list__link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </div>
@@ -806,7 +836,7 @@
             <li class="social__item">
               <a class="social__link" href="#">
                 <span class="visually-hidden">Вконтакте</span>
-                <svg width="16" height="9" viewBox="0 0 16 9" role="img" aria-hidden="true" focusable="false">
+                <svg width="12" height="8" viewBox="0 0 12 8" role="img" aria-hidden="true" focusable="false">
                   <use href="/__spritemap#sprite-vk-icon"></use>
                 </svg>
               </a>
@@ -814,7 +844,7 @@
             <li class="social__item">
               <a class="social__link" href="#">
                 <span class="visually-hidden">Одноклассники</span>
-                <svg width="9" height="16" viewBox="0 0 9 16" role="img" aria-hidden="true" focusable="false">
+                <svg width="8" height="12" viewBox="0 0 8 12" role="img" aria-hidden="true" focusable="false">
                   <use href="/__spritemap#sprite-ok-icon"></use>
                 </svg>
               </a>
@@ -822,7 +852,7 @@
             <li class="social__item">
               <a class="social__link" href="#">
                 <span class="visually-hidden">Реддит</span>
-                <svg width="15" height="15" viewBox="0 0 15 15" role="img" aria-hidden="true" focusable="false">
+                <svg width="12" height="12" viewBox="0 0 12 12" role="img" aria-hidden="true" focusable="false">
                   <use href="/__spritemap#sprite-reddit-icon"></use>
                 </svg>
               </a>
@@ -841,40 +871,49 @@
             <h2 class="form__title">Напишите нам</h2>
             <p class="form__description">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
             <form action="https://echo.htmlacademy.ru/" method="post">
-              <label class="form__field field field--light">
-                <span class="field__label">Имя</span>
-                <input type="text" name="name" required>
-              </label>
-              <label class="form__field field field--light">
-                <span class="field__label">Телефон</span>
-                <input type="tel" name="tel" required>
-              </label>
+              <div class="form__field">
+                <label class="field field--light">
+                  <span class="field__label">Имя</span>
+                  <input type="text" name="name" required>
+                </label>
+              </div>
+              <div class="form__field">
+                <label class="field field--light">
+                  <span class="field__label">Телефон</span>
+                  <input type="tel" name="tel" required>
+                </label>
+              </div>
               <div class="form__field">
                 <div class="field field--light field--select">
                   <label class="field__label" for="city-2">Выберите город</label>
-                  <select name="city" id="city-2" required>
-                    <option value="" label=" " hidden disabled selected></option>
-                    <option value="saint-petersburg">Санкт-Петербург</option>
-                    <option value="saint-petersburg">Санкт-Петербург</option>
-                    <option value="saint-petersburg">Санкт-Петербург</option>
-                    <option value="saint-petersburg">Санкт-Петербург</option>
-                  </select>
+                  <div class="field__wrapper">
+                    <select name="city" id="city-2" required>
+                      <option value="" label=" " hidden disabled selected></option>
+                      <option value="saint-petersburg">Санкт-Петербург</option>
+                      <option value="saint-petersburg">Санкт-Петербург</option>
+                      <option value="saint-petersburg">Санкт-Петербург</option>
+                      <option value="saint-petersburg">Санкт-Петербург</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="select-custom js-select-custom" aria-hidden="true">
-                  <div class="select-custom__trigger"> </div>
-                  <ul class="select-custom__options">
-                    <li class="select-custom__option" data-value="saint-petersburg">Санкт-Петербург</li>
-                    <li class="select-custom__option" data-value="saint-petersburg">Санкт-Петербург</li>
-                    <li class="select-custom__option" data-value="saint-petersburg">Санкт-Петербург</li>
-                    <li class="select-custom__option" data-value="saint-petersburg">Санкт-Петербург</li>
-                  </ul>
+                <div class="field__select-custom js-select-custom" aria-hidden="true" tabindex="0">
+                  <div class="field__select-custom-trigger">
+                    <ul class="field__select-custom-options">
+                      <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
+                      <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
+                      <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
+                      <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <label class="form__field checkbox checkbox--dark">
-                <input type="checkbox" name="personal-data" required>
-                <span class="checkbox__label">Я согласен на обработку моих персональных данных</span>
-              </label>
-              <button class="form__button button button--primary" type="submit">
+              <div class="form__field">
+                <label class="checkbox checkbox--light">
+                  <input type="checkbox" name="personal-data" required>
+                  <span class="checkbox__label">Я согласен на обработку моих персональных данных</span>
+                </label>
+              </div>
+              <button class="form__button button button--primary button--wide" type="submit">
                 <span class="button__text">Отправить</span>
                 <span class="button__icon"></span>
               </button>

@@ -3,7 +3,23 @@ $font: "Manrope", "Arial", sans-serif;
 
 // COLORS
 $primary-color: #484848;
-$bg-primary: #f0efe9;
+$secondary-color: #316dc2;
+$beige: #f0efe9;
+$bg-primary: $beige;
+$base-white: #ffffff;
+$white-opacity: rgba(255, 255, 255, 0.2);
+$white-opacity-alt: rgba(255, 255, 255, 0.6);
+$disabled-color: #a9afb7;
+$disabled-opacity: rgba(169, 175, 183, 0.2);
+$disabled-opacity-alt: rgba(169, 175, 183, 0.5);
+$bg-blue-opacity: linear-gradient(0deg, rgba(49, 109, 194, 0.2), rgba(49, 109, 194, 0.2));
+$dark-blue: #275699;
+$bg-dark-blue: $dark-blue;
+$overlay-color: rgba(13, 29, 51, 0.4);
+$card-bg: #d6e2f3;
+$feedback-bg: #4d98bd;
+$error-color: #ff5e66;
+$error-color-opacity: rgba(255, 94, 102, 0.2);
 
 // BREAKPOINTS
 $tablet-width: 768px;

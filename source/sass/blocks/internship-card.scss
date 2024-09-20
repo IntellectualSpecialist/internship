@@ -1,0 +1,112 @@
+.internship-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 320px;
+  min-height: 568px;
+  padding-top: 96px;
+  padding-bottom: 20px;
+}
+
+.internship-card__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $bg-blue-opacity;
+  }
+
+  img {
+    display: block;
+    width: 320px;
+    height: 568px;
+  }
+}
+
+.internship-card__content {
+  position: relative;
+}
+
+.internship-card__pagination {
+  position: relative;
+  width: fit-content;
+  max-width: 260px;
+  padding: 8px 14px;
+  background-color: $base-white;
+  border-radius: 12px 12px 0 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 10px;
+    height: 10px;
+    mask-image: url("../../__spritemap#sprite-angle-icon-1-view");
+    background-color: $base-white;
+    background-size: 10px 10px;
+  }
+}
+
+.internship-card__title {
+  margin: 0;
+  padding: 20px 15px 16px 14px;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $secondary-color;
+  background-color: $base-white;
+  border-radius: 0 16px 16px 0;
+}
+
+.internship-card__text-content {
+  position: relative;
+  width: 267px;
+  padding: 0 14px 15px;
+  border-radius: 0 0 14px;
+  background-color: $base-white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 8px;
+    height: 10px;
+    background-image: url("../../__spritemap#sprite-angle-icon-2-view");
+    background-size: 8px 10px;
+  }
+
+  p {
+    margin: 0;
+    font-size: 16px;
+  }
+}
+
+.internship-card__button {
+  position: relative;
+  max-width: 245px;
+  width: fit-content;
+  padding: 10px 15px;
+  border-radius: 0 0 14px 14px;
+  background-color: $base-white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 8px;
+    height: 10px;
+    background-image: url("../../__spritemap#sprite-angle-icon-2-view");
+    background-size: 8px 10px;
+  }
+}

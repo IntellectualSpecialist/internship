@@ -1,0 +1,70 @@
+.form {
+  padding: 15px;
+  padding-bottom: 27px;
+  color: $beige;
+  background-color: $secondary-color;
+  border-radius: 16px;
+}
+
+.form__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: $base-white;
+}
+
+.form__description {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.form__field {
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &--custom {
+    width: 260px;
+  }
+}
+
+.form--light {
+  padding: 40px 15px;
+  color: $primary-color;
+  background-color: $base-white;
+
+  .form__title {
+    width: 220px;
+    margin: 0 auto 15px;
+    line-height: 18px;
+    text-align: center;
+    color: $secondary-color;
+  }
+
+  .form__description {
+    width: 220px;
+    margin: 0 auto 25px;
+    text-align: center;
+  }
+
+  .form__field {
+    margin-bottom: 15px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .form__button {
+    margin-top: 25px;
+  }
+}
+
+.form__button {
+  margin-top: 20px;
+  width: 260px;
+}

@@ -1,0 +1,14 @@
+.title-middle {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  color: $secondary-color;
+
+  &--light {
+    color: $base-white;
+  }
+
+  &--centered {
+    text-align: center;
+  }
+}

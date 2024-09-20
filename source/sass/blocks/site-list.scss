@@ -1,0 +1,145 @@
+.site-list {
+  @include list-reset;
+
+  padding: 35px 25px;
+}
+
+.site-list--dark {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+  padding: 0;
+
+  .site-list__item {
+    margin-bottom: 0;
+  }
+
+  .site-list__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $primary-color;
+    text-transform: none;
+    letter-spacing: 0;
+    opacity: 1;
+
+    &:hover {
+      color: $secondary-color;
+      opacity: 0.7;
+    }
+
+    &:focus-visible {
+      color: $secondary-color;
+      opacity: 1;
+    }
+
+    &:active {
+      color: $dark-blue;
+      opacity: 1;
+    }
+  }
+}
+
+.site-list__item {
+  margin-bottom: 18px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.site-list__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: $base-white;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-decoration: none;
+  opacity: 0.7;
+
+  &:hover,
+  &:focus-visible,
+  &:hover::before,
+  &:focus-visible::before {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
+
+.site-list__link--dropdown {
+  position: relative;
+  padding-right: 22px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    mask-image: url("../../__spritemap#sprite-select-arrow-view");
+    background-color: $base-white;
+    opacity: 0.6;
+    transform: translateY(-50%);
+    transition: 0.2s ease;
+  }
+}
+
+.site-list__link--current {
+  opacity: 1;
+
+  &::before {
+    opacity: 1;
+    transform: translateY(-50%) rotate(180deg);
+  }
+}
+
+.site-lite__dropdown {
+  overflow: hidden;
+  transition: height 0.2s ease;
+
+  &--hidden {
+    height: 0;
+  }
+}
+
+.site-list__sub-menu {
+  @include list-reset;
+
+  margin-left: 16px;
+  margin-top: 10px;
+}
+
+.site-list__sub-menu-item {
+  margin-bottom: 6px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.site-list__sub-menu-link {
+  font-size: 16px;
+  line-height: 16px;
+  color: $base-white;
+  opacity: 0.6;
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
+  &--current {
+    opacity: 1;
+  }
+}
