@@ -92,3 +92,44 @@
     transform: translate(50%, 27px);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .list {
+    padding: 72px 50px 50px 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 54px 52px;
+  }
+
+  .list__item {
+    margin: 0;
+    align-self: stretch;
+  }
+
+  .list__text-content {
+    h4 {
+      max-width: 140px;
+      font-size: 20px;
+      line-height: 22px;
+      letter-spacing: 0.2px;
+    }
+  }
+
+  .list--counter {
+    padding: 15px 0 0 25px;
+    gap: 25px 48px;
+
+    .list__item {
+      margin: 0;
+      padding: 30px 25px;
+
+      &::before {
+        width: 40px;
+        height: 42px;
+        font-size: 22px;
+        line-height: 22px;
+        letter-spacing: 0.22px;
+      }
+    }
+  }
+}

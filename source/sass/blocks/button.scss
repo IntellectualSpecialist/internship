@@ -58,9 +58,11 @@
   letter-spacing: 0.24px;
   text-transform: uppercase;
   transition: 0.3s ease;
+  overflow-wrap: anywhere;
 }
 
 .button__icon {
+  flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,5 +177,29 @@
   .button__icon::before {
     background-color: $base-white;
     opacity: 0.6;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    padding-left: 30px;
+    gap: 30px;
+  }
+
+  .button--alternative {
+    .button__icon::before {
+      mask-image: url("../../__spritemap#sprite-button-arrow-view");
+    }
+  }
+
+  .button__text {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.28px;
+  }
+
+  .button__icon {
+    width: 46px;
+    height: 46px;
   }
 }

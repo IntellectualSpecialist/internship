@@ -141,6 +141,11 @@
 
 .accordion-item__title {
   max-width: 187px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $secondary-color;
   transition: 0.3s ease;
 }
 
@@ -186,5 +191,22 @@
 
   p {
     margin: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .accordion-item {
+    padding: 31px;
+    border-radius: 16px;
+  }
+
+  .accordion-item__button {
+    gap: 10px;
+  }
+
+  .accordion-item__title {
+    max-width: 564px;
+    font-size: 22px;
+    line-height: 26px;
   }
 }

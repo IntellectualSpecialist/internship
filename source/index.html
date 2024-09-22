@@ -32,7 +32,7 @@
                 <span class="burger__icon-inner"></span>
               </span>
             </button>
-            <nav class="main-header__nav main-nav ">
+            <nav class="main-header__nav main-header__nav--hidden main-nav">
               <ul class="main-nav__list site-list">
                 <li class="site-list__item">
                   <a class="site-list__link" href="#about">О проекте</a>
@@ -298,7 +298,7 @@
                       </picture>
                     </div>
                     <div class="program-card__text">
-                      <h3 class="program-card__title title-small">Стажировки</h3>
+                      <h3 class="program-card__title title-small title-small--alternative">Стажировки</h3>
                       <div class="program-card__content">
                         <div class="program-card__text-content">
                           <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
@@ -323,7 +323,7 @@
                       </picture>
                     </div>
                     <div class="program-card__text">
-                      <h3 class="program-card__title title-small">Волонтёрство</h3>
+                      <h3 class="program-card__title title-small title-small--alternative">Волонтёрство</h3>
                       <div class="program-card__content">
                         <div class="program-card__text-content">
                           <p>Помогайте другим и развивайте свои лидерские качества</p>
@@ -348,7 +348,7 @@
                       </picture>
                     </div>
                     <div class="program-card__text">
-                      <h3 class="program-card__title title-small">Учёба</h3>
+                      <h3 class="program-card__title title-small title-small--alternative">Учёба</h3>
                       <div class="program-card__content">
                         <div class="program-card__text-content">
                           <p>Получите образование и измените своё будущее.</p>
@@ -362,7 +362,9 @@
                 </div>
               </div>
             </div>
-            <div class="slider-scrollbar__scrollbar swiper-scrollbar"></div>
+            <div class="slider-scrollbar__scrollbar swiper-scrollbar">
+              <div class="slider-scrollbar__drag swiper-scrollbar-drag"></div>
+            </div>
           </div>
           <a class="programs__more button button--primary button--wide" href="#">
             <span class="button__text">Все программы</span>
@@ -449,7 +451,7 @@
                       </div>
                     </article>
                   </div>
-                  <div class="slider-news__slide swiper-slide">
+                  <div class="slider-news__slide slider-news__slide--second swiper-slide">
                     <article class="news-card">
                       <div class="news-card__image">
                         <picture>
@@ -514,7 +516,7 @@
                         <h3 class="news-card__title title-small">Построй свою карьеру</h3>
                         <div class="news-card__content">
                           <div class="news-card__text-content">
-                            <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                            <p>Ведущие компании готовы&nbsp;трудоустроить выпускников стажировки</p>
                           </div>
                           <a class="news-card__button button-small" href="#">
                             <span class="visually-hidden">Подробнее</span>
@@ -557,7 +559,7 @@
           <ul class="faq__accordion accordion">
             <li class="accordion__item accordion-item">
               <button class="accordion-item__button" type="button">
-                <span class="accordion-item__title title-small">Кто организатор? Какие сроки у программы?</span>
+                <span class="accordion-item__title">Кто организатор? Какие сроки у программы?</span>
                 <span class="accordion-item__icon"></span>
               </button>
               <div class="accordion-item__content">
@@ -568,7 +570,7 @@
             </li>
             <li class="accordion__item accordion-item">
               <button class="accordion-item__button" type="button">
-                <span class="accordion-item__title title-small">Что такое грант на обучение?</span>
+                <span class="accordion-item__title">Что такое грант на обучение?</span>
                 <span class="accordion-item__icon"></span>
               </button>
               <div class="accordion-item__content">
@@ -579,7 +581,7 @@
             </li>
             <li class="accordion__item accordion-item accordion-item--active accordion-item--no-js">
               <button class="accordion-item__button" type="button">
-                <span class="accordion-item__title title-small">Как определяется стоимость программы?</span>
+                <span class="accordion-item__title">Как определяется стоимость программы?</span>
                 <span class="accordion-item__icon accordion-item__icon--active"></span>
               </button>
               <div class="accordion-item__content">
@@ -590,7 +592,7 @@
             </li>
             <li class="accordion__item accordion-item">
               <button class="accordion-item__button" type="button">
-                <span class="accordion-item__title title-small">Признаётся ли учёба в рамках проекта для дальнейшего обучения?</span>
+                <span class="accordion-item__title">Признаётся ли учёба в рамках проекта для дальнейшего обучения?</span>
                 <span class="accordion-item__icon"></span>
               </button>
               <div class="accordion-item__content">
@@ -601,7 +603,7 @@
             </li>
             <li class="accordion__item accordion-item">
               <button class="accordion-item__button" type="button">
-                <span class="accordion-item__title title-small">Как выглядит полный процесс регистрации на программу «Стажировка»?</span>
+                <span class="accordion-item__title">Как выглядит полный процесс регистрации на программу «Стажировка»?</span>
                 <span class="accordion-item__icon"></span>
               </button>
               <div class="accordion-item__content">
@@ -703,14 +705,16 @@
                 </div>
               </div>
             </div>
-            <div class="slider-scrollbar__scrollbar swiper-scrollbar"></div>
+            <div class="slider-scrollbar__scrollbar swiper-scrollbar">
+              <div class="slider-scrollbar__drag swiper-scrollbar-drag"></div>
+            </div>
           </div>
         </div>
       </section>
       <section class="contacts" data-test="contacts">
         <div class="contacts__wrapper container">
           <div class="contacts__columns">
-            <h2 class="contacts__title">Контакты</h2>
+            <h2 class="contacts__title title-middle title-middle--light">Контакты</h2>
             <ul class="contacts__list contacts-list">
               <li class="contacts-list__item">
                 <h3 class="contacts-list__title">Центральный офис</h3>
@@ -745,51 +749,53 @@
               <h2 class="form__title">Напишите нам</h2>
               <p class="form__description">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
               <form action="https://echo.htmlacademy.ru/" method="post">
-                <div class="form__field">
-                  <label class="field">
-                    <span class="field__label">Имя</span>
-                    <input type="text" name="name" required>
-                  </label>
-                </div>
-                <div class="form__field">
-                  <label class="field">
-                    <span class="field__label">Телефон</span>
-                    <input type="tel" name="tel" required>
-                  </label>
-                </div>
-                <div class="form__field field field--textarea">
-                  <label class="field__label" for="message">Ваше сообщение</label>
-                  <textarea name="message" id="message" required></textarea>
-                </div>
-                <div class="form__field form__field--custom">
-                  <div class="field field--select">
-                    <label class="field__label" for="city-1">Выберите город</label>
-                    <div class="field__wrapper">
-                      <select name="city" id="city-1" required>
-                        <option value="" label=" " hidden disabled selected></option>
-                        <option value="saint-petersburg">Санкт-Петербург</option>
-                        <option value="saint-petersburg">Санкт-Петербург</option>
-                        <option value="saint-petersburg">Санкт-Петербург</option>
-                        <option value="saint-petersburg">Санкт-Петербург</option>
-                      </select>
+                <ul class="form__list">
+                  <li class="form__field">
+                    <label class="field">
+                      <span class="field__label">Имя</span>
+                      <input type="text" name="name" required>
+                    </label>
+                  </li>
+                  <li class="form__field">
+                    <label class="field">
+                      <span class="field__label">Телефон</span>
+                      <input type="tel" name="tel" required>
+                    </label>
+                  </li>
+                  <li class="form__field field field--textarea">
+                    <label class="field__label" for="message">Ваше сообщение</label>
+                    <textarea name="message" id="message" required></textarea>
+                  </li>
+                  <li class="form__field form__field--custom">
+                    <div class="field field--select">
+                      <label class="field__label" for="city-1">Выберите город</label>
+                      <div class="field__wrapper">
+                        <select name="city" id="city-1" required>
+                          <option value="" label=" " hidden disabled selected></option>
+                          <option value="saint-petersburg">Санкт-Петербург</option>
+                          <option value="saint-petersburg">Санкт-Петербург</option>
+                          <option value="saint-petersburg">Санкт-Петербург</option>
+                          <option value="saint-petersburg">Санкт-Петербург</option>
+                        </select>
+                      </div>
+                      <div class="field__select-custom js-select-custom" aria-hidden="true" tabindex="0">
+                        <div class="field__select-custom-trigger"></div>
+                        <ul class="field__select-custom-options">
+                          <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
+                          <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
+                          <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
+                          <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
+                        </ul>
+                      </div>
                     </div>
-                    <div class="field__select-custom js-select-custom" aria-hidden="true" tabindex="0">
-                      <div class="field__select-custom-trigger"></div>
-                      <ul class="field__select-custom-options">
-                        <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
-                        <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
-                        <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
-                        <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="form__field">
-                  <label class="checkbox">
-                    <input type="checkbox" name="personal-data" required>
-                    <span class="checkbox__label">Я согласен на обработку&nbsp;моих персональных <br>данных</span>
-                  </label>
-                </div>
+                  </li>
+                  <li class="form__field">
+                    <label class="checkbox">
+                      <input type="checkbox" name="personal-data" required>
+                      <span class="checkbox__label">Я согласен на обработку&nbsp;моих персональных <br>данных</span>
+                    </label>
+                  </li>
+                </ul>
                 <button class="form__button button button--secondary button--wide" type="submit">
                   <span class="button__text">Отправить</span>
                   <span class="button__icon"></span>
@@ -834,7 +840,7 @@
           </div>
           <ul class="main-footer__social social">
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link social__link--vk" href="#">
                 <span class="visually-hidden">Вконтакте</span>
                 <svg width="12" height="8" viewBox="0 0 12 8" role="img" aria-hidden="true" focusable="false">
                   <use href="/__spritemap#sprite-vk-icon"></use>
@@ -842,7 +848,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link social__link--ok" href="#">
                 <span class="visually-hidden">Одноклассники</span>
                 <svg width="8" height="12" viewBox="0 0 8 12" role="img" aria-hidden="true" focusable="false">
                   <use href="/__spritemap#sprite-ok-icon"></use>
@@ -850,7 +856,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link social__link--reddit" href="#">
                 <span class="visually-hidden">Реддит</span>
                 <svg width="12" height="12" viewBox="0 0 12 12" role="img" aria-hidden="true" focusable="false">
                   <use href="/__spritemap#sprite-reddit-icon"></use>
@@ -871,48 +877,50 @@
             <h2 class="form__title">Напишите нам</h2>
             <p class="form__description">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
             <form action="https://echo.htmlacademy.ru/" method="post">
-              <div class="form__field">
-                <label class="field field--light">
-                  <span class="field__label">Имя</span>
-                  <input type="text" name="name" required>
-                </label>
-              </div>
-              <div class="form__field">
-                <label class="field field--light">
-                  <span class="field__label">Телефон</span>
-                  <input type="tel" name="tel" required>
-                </label>
-              </div>
-              <div class="form__field">
-                <div class="field field--light field--select">
-                  <label class="field__label" for="city-2">Выберите город</label>
-                  <div class="field__wrapper">
-                    <select name="city" id="city-2" required>
-                      <option value="" label=" " hidden disabled selected></option>
-                      <option value="saint-petersburg">Санкт-Петербург</option>
-                      <option value="saint-petersburg">Санкт-Петербург</option>
-                      <option value="saint-petersburg">Санкт-Петербург</option>
-                      <option value="saint-petersburg">Санкт-Петербург</option>
-                    </select>
+              <ul class="form__list">
+                <li class="form__field">
+                  <label class="field field--light">
+                    <span class="field__label">Имя</span>
+                    <input type="text" name="name" required>
+                  </label>
+                </li>
+                <li class="form__field">
+                  <label class="field field--light">
+                    <span class="field__label">Телефон</span>
+                    <input type="tel" name="tel" required>
+                  </label>
+                </li>
+                <li class="form__field">
+                  <div class="field field--light field--select">
+                    <label class="field__label" for="city-2">Выберите город</label>
+                    <div class="field__wrapper">
+                      <select name="city" id="city-2" required>
+                        <option value="" label=" " hidden disabled selected></option>
+                        <option value="saint-petersburg">Санкт-Петербург</option>
+                        <option value="saint-petersburg">Санкт-Петербург</option>
+                        <option value="saint-petersburg">Санкт-Петербург</option>
+                        <option value="saint-petersburg">Санкт-Петербург</option>
+                      </select>
+                    </div>
                   </div>
-                </div>
-                <div class="field__select-custom js-select-custom" aria-hidden="true" tabindex="0">
-                  <div class="field__select-custom-trigger">
-                    <ul class="field__select-custom-options">
-                      <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
-                      <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
-                      <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
-                      <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
-                    </ul>
+                  <div class="field__select-custom js-select-custom" aria-hidden="true" tabindex="0">
+                    <div class="field__select-custom-trigger">
+                      <ul class="field__select-custom-options">
+                        <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
+                        <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
+                        <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
+                        <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="form__field">
-                <label class="checkbox checkbox--light">
-                  <input type="checkbox" name="personal-data" required>
-                  <span class="checkbox__label">Я согласен на обработку моих персональных данных</span>
-                </label>
-              </div>
+                </li>
+                <li class="form__field">
+                  <label class="checkbox checkbox--light">
+                    <input type="checkbox" name="personal-data" required>
+                    <span class="checkbox__label">Я согласен на обработку моих персональных данных</span>
+                  </label>
+                </li>
+              </ul>
               <button class="form__button button button--primary button--wide" type="submit">
                 <span class="button__text">Отправить</span>
                 <span class="button__icon"></span>

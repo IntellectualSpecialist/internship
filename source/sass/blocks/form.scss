@@ -20,6 +20,10 @@
   margin-bottom: 20px;
 }
 
+.form__list {
+  @include list-reset;
+}
+
 .form__field {
   margin-bottom: 20px;
 
@@ -38,7 +42,7 @@
   background-color: $base-white;
 
   .form__title {
-    width: 220px;
+    width: fit-content;
     margin: 0 auto 15px;
     line-height: 18px;
     text-align: center;
@@ -67,4 +71,50 @@
 .form__button {
   margin-top: 20px;
   width: 260px;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding: 41px 40px 36px;
+  }
+
+  .form__title {
+    margin-bottom: 31px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .form__description {
+    margin-bottom: 40px;
+  }
+
+  .form__field {
+    &--custom {
+      width: 100%;
+    }
+  }
+
+  .form__button {
+    margin-top: 40px;
+    width: 352px;
+  }
+
+  .form--light {
+    padding: 60px 80px;
+
+    .form__title {
+      margin-bottom: 20px;
+      line-height: 28px;
+    }
+
+    .form__description {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .form__button {
+      margin: 30px auto 0;
+      width: fit-content;
+    }
+  }
 }

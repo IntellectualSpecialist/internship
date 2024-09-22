@@ -5,8 +5,9 @@
 .slider-scrollbar--no-js {
   .slider-scrollbar__wrapper {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     overflow: hidden;
+    gap: 30px;
   }
 
   .slider-scrollbar__slide {
@@ -22,4 +23,40 @@
   gap: 8px;
   width: 52px;
   transform: translateY(-34px);
+}
+
+.slider-scrollbar__scrollbar {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .slider-scrollbar {
+    padding-bottom: 56px;
+  }
+
+  .slider-scrollbar--no-js {
+    .slider-scrollbar__drag {
+      width: 326px;
+    }
+  }
+
+  .slider-scrollbar__navigation {
+    bottom: -32px;
+    right: 45px;
+  }
+
+  .slider-scrollbar__scrollbar {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    display: block;
+    width: 562px;
+    height: 2px;
+    background-color: rgba($secondary-color, 0.2);
+  }
+
+  .slider-scrollbar__drag {
+    height: 2px;
+    background-color: $secondary-color;
+  }
 }

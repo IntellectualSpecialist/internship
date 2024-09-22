@@ -33,3 +33,34 @@
     background-color: $dark-blue;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .social__link {
+    width: 36px;
+    height: 36px;
+
+    &--vk {
+      svg,
+      img {
+        width: 16px;
+        height: 8.73px;
+      }
+    }
+
+    &--ok {
+      svg,
+      img {
+        width: 9.45px;
+        height: 16px;
+      }
+    }
+
+    &--reddit {
+      svg,
+      img {
+        width: 14.55px;
+        height: 15.27px;
+      }
+    }
+  }
+}

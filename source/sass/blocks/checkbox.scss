@@ -129,3 +129,14 @@
   color: $base-white;
   cursor: pointer;
 }
+
+@media (min-width: $tablet-width) {
+  .checkbox__label {
+    width: 100%;
+    line-height: 12px;
+
+    br {
+      display: none;
+    }
+  }
+}

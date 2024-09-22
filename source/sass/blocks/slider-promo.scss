@@ -1,17 +1,13 @@
 .slider-promo--no-js {
   .slider-promo__wrapper {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     overflow: hidden;
   }
 
   .slider-promo__slide {
     flex-shrink: 0;
   }
-}
-
-.slider-promo__slide {
-  background-color: $card-bg;
 }
 
 .slider-promo__pagination {
@@ -102,6 +98,18 @@
     &::before {
       background-color: $bg-dark-blue;
       border-color: $bg-dark-blue;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider-promo__pagination-button {
+    width: 14px;
+    height: 14px;
+
+    &::before {
+      width: 12px;
+      height: 12px;
     }
   }
 }

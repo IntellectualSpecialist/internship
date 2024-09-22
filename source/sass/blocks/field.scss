@@ -222,3 +222,23 @@
     border-radius: 0 0 8px 8px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .field {
+    &--light {
+      .field__label {
+        margin-bottom: 12px;
+      }
+    }
+
+    &--textarea {
+      textarea {
+        height: 88px;
+      }
+    }
+  }
+
+  .field__label {
+    font-size: 14px;
+  }
+}

@@ -24,3 +24,22 @@
 .about__text-content {
   margin-bottom: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .about__columns {
+    margin-bottom: 60px;
+  }
+
+  .about__title {
+    margin-bottom: 30px;
+  }
+
+  .about__lead {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .about__text-content {
+    margin-bottom: 40px;
+  }
+}

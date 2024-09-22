@@ -13,3 +13,14 @@
     margin-bottom: 10px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .text-content {
+    h3 {
+      margin-top: 35px;
+      margin-bottom: 30px;
+      font-size: 28px;
+      line-height: 28px;
+    }
+  }
+}

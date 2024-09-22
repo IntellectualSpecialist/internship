@@ -1,5 +1,6 @@
 .review-card {
   width: 290px;
+  height: 100%;
   padding: 32px 17px;
   border: 2px solid $secondary-color;
   border-radius: 16px;
@@ -82,5 +83,57 @@
 .review-card__text-content {
   p {
     margin: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review-card {
+    width: 560px;
+    padding: 51px;
+  }
+
+  .review-card__header {
+    display: flex;
+    align-items: flex-start;
+    gap: 65px;
+    margin-bottom: 30px;
+  }
+
+  .review-card__autor {
+    margin: 0;
+    gap: 15px;
+  }
+
+  .review-card__avatar {
+    img {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  .review-card__name {
+    margin-top: 21px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .review-card__info {
+    margin-top: 23.5px;
+  }
+
+  .review-card__definition {
+    margin-bottom: 11px;
+  }
+
+  .review-card__value {
+    font-size: 14px;
+    line-height: 20px;
+    opacity: 1;
+  }
+
+  .review-card__lead {
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 24px;
   }
 }

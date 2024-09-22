@@ -143,3 +143,16 @@
     opacity: 1;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    &--dark {
+      justify-content: flex-start;
+      column-gap: 15px;
+
+      .site-list__link {
+        font-size: 16px;
+      }
+    }
+  }
+}

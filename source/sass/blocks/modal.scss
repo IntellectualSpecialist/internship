@@ -78,3 +78,20 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .modal__feedback {
+    width: 510px;
+  }
+
+  .modal__close-button {
+    top: 30px;
+    right: 30px;
+    width: 22px;
+    height: 22px;
+
+    &::before,
+    &::after {
+      width: 26.5px;
+    }
+  }
+}

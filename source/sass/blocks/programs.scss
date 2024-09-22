@@ -11,3 +11,26 @@
 .programs__slider {
   margin-bottom: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .programs__wrapper {
+    position: relative;
+  }
+
+  .programs__slider {
+    width: 723px;
+    margin-bottom: 0;
+  }
+
+  .programs__more {
+    position: absolute;
+    top: 50px;
+    right: 45px;
+    max-width: 235px;
+  }
+
+  .programs__title {
+    max-width: 390px;
+    margin-bottom: 40px;
+  }
+}

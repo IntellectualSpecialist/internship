@@ -48,3 +48,20 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .contacts-list {
+    display: flex;
+    gap: 20.5px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .contacts-list__item {
+    margin: 0;
+  }
+
+  .contacts-list__title {
+    margin-bottom: 24px;
+  }
+}

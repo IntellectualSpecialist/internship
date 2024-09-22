@@ -76,3 +76,22 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .news__title {
+    margin-bottom: 30px;
+  }
+
+  .news__tabs-list {
+    flex-wrap: wrap;
+    width: calc(100% + 4px);
+    margin-bottom: 30px;
+  }
+
+  .news__tabs-button {
+    padding: 14px 20px;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.28px;
+  }
+}
