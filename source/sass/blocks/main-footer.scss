@@ -3,16 +3,12 @@
   padding-bottom: 40px;
 }
 
-.main-footer__top-container {
+.main-footer__list {
   margin-bottom: 20px;
 }
 
 .main-footer__logo {
   margin: 0 auto 20px;
-}
-
-.main-footer__bottom-container {
-  text-align: center;
 }
 
 .main-footer__privacy-policy {
@@ -45,16 +41,16 @@
   margin-bottom: 15px;
   font-size: 12px;
   line-height: 14px;
+  text-align: center;
   opacity: 0.6;
 }
 
 @media (min-width: $tablet-width) {
-  .main-footer__top-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    justify-content: space-between;
-    margin-bottom: 25px;
+  .main-footer__wrapper {
+    display: grid;
+    grid-template-columns: 52px 449px 128px;
+    gap: 25px;
+    align-items: start;
   }
 
   .main-footer__logo {
@@ -62,34 +58,70 @@
   }
 
   .main-footer__list {
+    grid-column: 2 / 4;
+    justify-self: end;
     margin-top: 16px;
-    max-width: 606px;
-  }
-
-  .main-footer__bottom-container {
-    display: flex;
-    gap: 25px;
-    align-items: flex-start;
-    justify-content: space-between;
-    text-align: left;
   }
 
   .main-footer__inner-container {
-    max-width: 479px;
+    grid-column: 1 / 3;
   }
 
   .main-footer__privacy-policy {
     margin: 0;
     margin-bottom: 13px;
     line-height: 12px;
+    text-underline-offset: 3px;
   }
 
   .main-footer__copyright {
     margin: 0;
     line-height: 12px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__wrapper {
+    display: grid;
+    grid-template-columns: 52px 872px 212px;
+    grid-auto-flow: dense;
+    column-gap: 52px;
+    padding-top: 60px;
+  }
+
+  .main-footer__list {
+    grid-column: 2 / 3;
+    justify-self: start;
+    margin-top: 13px;
+    margin-bottom: 0;
   }
 
   .main-footer__social {
-    max-width: 174px;
+    grid-column: 3 / 4;
+    justify-self: end;
+    margin-top: 8px;
+  }
+
+  .main-footer__inner-container {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    gap: 52px;
+    align-items: flex-start;
+  }
+
+  .main-footer__privacy-policy {
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+    text-underline-offset: 6px;
+  }
+
+  .main-footer__copyright {
+    font-size: 14px;
+    line-height: 18px;
+    opacity: 1;
   }
 }

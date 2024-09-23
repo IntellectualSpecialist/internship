@@ -43,7 +43,25 @@
   }
 
   .main-header__nav {
-    right: 15px;
+    right: 45px;
     width: 286px;
+  }
+
+  .main-header__burger {
+    &--active {
+      right: 45px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__nav {
+    right: 100px;
+  }
+
+  .main-header__burger {
+    &--active {
+      right: 100px;
+    }
   }
 }

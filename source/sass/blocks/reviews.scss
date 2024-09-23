@@ -16,3 +16,19 @@
     width: 723px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .reviews__wrapper {
+    padding-top: 65px;
+    padding-bottom: 60px;
+  }
+
+  .reviews__title {
+    margin-bottom: 45px;
+    margin-left: 3px;
+  }
+
+  .reviews__slider {
+    width: 1240px;
+  }
+}

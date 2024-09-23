@@ -83,6 +83,7 @@
 
   select,
   .field__select-custom {
+    height: 52px;
     padding-right: 45px;
     cursor: pointer;
   }
@@ -135,6 +136,7 @@
   textarea,
   select,
   .field__select-custom {
+    height: 44px;
     color: $primary-color;
     border-color: rgba($primary-color, 0.3);
 
@@ -226,6 +228,13 @@
 @media (min-width: $tablet-width) {
   .field {
     &--light {
+      input,
+      textarea,
+      select,
+      .field__select-custom {
+        height: 50px;
+      }
+
       .field__label {
         margin-bottom: 12px;
       }
@@ -240,5 +249,20 @@
 
   .field__label {
     font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field {
+    &--textarea {
+      textarea {
+        height: 90px;
+      }
+    }
+  }
+
+  .field__label {
+    line-height: 18px;
   }
 }

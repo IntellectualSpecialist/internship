@@ -78,3 +78,35 @@
     line-height: 28px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .grant__wrapper {
+    display: flex;
+    gap: 138px;
+    align-items: flex-start;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .grant__left-column {
+    width: 498px;
+    margin-bottom: 0;
+  }
+
+  .grant__image {
+    img {
+      width: 498px;
+      height: 363px;
+    }
+  }
+
+  .grant__right-column {
+    width: 498px;
+  }
+
+  .grant__subtitle {
+    margin-bottom: 40px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+}

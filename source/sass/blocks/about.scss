@@ -11,8 +11,11 @@
   margin-bottom: 15px;
 }
 
-.about__lead {
+.about__header {
   margin-bottom: 40px;
+}
+
+.about__lead {
   font-size: 16px;
   line-height: 22px;
 
@@ -41,5 +44,37 @@
 
   .about__text-content {
     margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about__wrapper {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+
+  .about__columns {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .about__header {
+    width: 702px;
+    margin-bottom: 0;
+  }
+
+  .about__content {
+    width: 498px;
+  }
+
+  .about__lead {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .about__text-content {
+    margin-top: -45px;
+    margin-bottom: 50px;
   }
 }

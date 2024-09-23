@@ -12,3 +12,19 @@
     margin-bottom: 40px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .faq__wrapper {
+    padding-top: 71px;
+    padding-bottom: 60px;
+  }
+
+  .faq__title {
+    margin-bottom: 71px;
+  }
+
+  .faq__accordion {
+    width: 1028px;
+    margin: 0 auto;
+  }
+}

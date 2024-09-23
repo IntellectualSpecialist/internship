@@ -80,6 +80,7 @@
 
 @media (min-width: $tablet-width) {
   .modal__feedback {
+    margin-top: 204px;
     width: 510px;
   }
 
@@ -93,5 +94,11 @@
     &::after {
       width: 26.5px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal__feedback {
+    margin-top: 90px;
   }
 }

@@ -24,3 +24,14 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .text-content {
+    h3 {
+      margin-top: 45px;
+      margin-bottom: 40px;
+      font-size: 32px;
+      line-height: 36px;
+    }
+  }
+}

@@ -192,3 +192,41 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .internship-card {
+    width: 1440px;
+    min-height: 800px;
+  }
+
+  .internship-card__image {
+    img {
+      width: 1440px;
+      height: 800px;
+    }
+  }
+
+  .internship-card__content {
+    width: 968px;
+  }
+
+  .internship-card__pagination {
+    max-width: 875px;
+  }
+
+  .internship-card__title {
+    padding: 40px 50px 30px;
+    font-size: 54px;
+    line-height: 62px;
+  }
+
+  .internship-card__description {
+    max-width: 860px;
+    align-items: center;
+    padding: 0 50px 35px;
+  }
+
+  .internship-card__text-content {
+    width: 446px;
+  }
+}

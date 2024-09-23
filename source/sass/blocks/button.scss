@@ -203,3 +203,12 @@
     height: 46px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .button {
+    &--alternative {
+      padding: 5px;
+      padding-left: 30px;
+    }
+  }
+}

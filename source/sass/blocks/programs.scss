@@ -34,3 +34,24 @@
     margin-bottom: 40px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .programs__wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .programs__more {
+    top: 60px;
+    right: 100px;
+  }
+
+  .programs__title {
+    max-width: 935px;
+    margin-bottom: 40px;
+  }
+
+  .programs__slider {
+    width: 1240px;
+  }
+}

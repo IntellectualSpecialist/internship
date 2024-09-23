@@ -44,7 +44,9 @@
   position: relative;
   width: fit-content;
   max-width: 235px;
-  padding: 18px 35px 6px 18px;
+  min-width: 146px;
+  padding: 18px;
+  padding-bottom: 6px;
   border-radius: 12px 12px 0 0;
   background-color: $base-white;
 
@@ -98,12 +100,44 @@
   }
 
   .program-card__title {
-    padding-right: 38px;
+    min-width: 173px;
   }
 
   .program-card__text-content {
     width: 196px;
     font-size: 14px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-card {
+    width: 392px;
+    justify-content: flex-end;
+    padding: 17px 51px 17px 20px;
+  }
+
+  .program-card__image {
+    img {
+      width: 392px;
+      height: 420px;
+    }
+  }
+
+  .program-card__title {
+    max-width: 270px;
+    min-width: 194px;
+  }
+
+  .program-card__content {
+    min-height: 82px;
+    padding: 12.5px 18px 15.5px;
+    background-color: $base-white;
+    border-radius: 0 12px 12px;
+  }
+
+  .program-card__text-content {
+    width: 239px;
+    line-height: 18px;
   }
 }

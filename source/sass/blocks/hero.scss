@@ -16,3 +16,9 @@
     margin-top: -116px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .hero__slider {
+    width: 1440px;
+  }
+}

@@ -95,3 +95,26 @@
     letter-spacing: 0.28px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .news__wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .news__title {
+    margin-bottom: 40px;
+  }
+
+  .news__tabs-list {
+    width: fit-content;
+    margin: 0 auto 40px;
+    gap: 30px;
+  }
+
+  .news__tabs-button {
+    width: 120px;
+    padding-left: 0.5px;
+    padding-right: 0.5px;
+  }
+}

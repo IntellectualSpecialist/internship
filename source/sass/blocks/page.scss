@@ -39,3 +39,9 @@
     font-size: 16px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page__body {
+    line-height: 26px;
+  }
+}

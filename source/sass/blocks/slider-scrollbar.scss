@@ -43,6 +43,8 @@
   .slider-scrollbar__navigation {
     bottom: -32px;
     right: 45px;
+    gap: 10px;
+    width: 54px;
   }
 
   .slider-scrollbar__scrollbar {
@@ -58,5 +60,25 @@
   .slider-scrollbar__drag {
     height: 2px;
     background-color: $secondary-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider-scrollbar--no-js {
+    .slider-scrollbar__wrapper {
+      gap: 32px;
+    }
+
+    .slider-scrollbar__drag {
+      width: 394px;
+    }
+  }
+
+  .slider-scrollbar__navigation {
+    right: 0;
+  }
+
+  .slider-scrollbar__scrollbar {
+    width: 1136px;
   }
 }
