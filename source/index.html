@@ -273,16 +273,14 @@
       </article>
       <section class="programs" data-test="programs">
         <div class="programs__wrapper container">
-          <h2 class="programs__title title-middle">Программы</h2>
+          <header class="programs__header">
+            <h2 class="programs__title title-middle">Программы</h2>
+            <a class="programs__more button button--primary button--wide" href="#">
+              <span class="button__text">Все программы</span>
+              <span class="button__icon"></span>
+            </a>
+          </header>
           <div class="programs__slider slider-scrollbar slider-scrollbar--programs slider-scrollbar--no-js">
-            <div class="slider-scrollbar__navigation">
-              <button class="slider-button slider-button--prev swiper-button-prev" type="button" disabled>
-                <span class="visually-hidden">Предыдущий слайд</span>
-              </button>
-              <button class="slider-button slider-button--next swiper-button-next" type="button">
-                <span class="visually-hidden">Следующий слайд</span>
-              </button>
-            </div>
             <div class="slider-scrollbar__swiper swiper">
               <div class="slider-scrollbar__wrapper swiper-wrapper">
                 <div class="slider-scrollbar__slide swiper-slide">
@@ -365,11 +363,15 @@
             <div class="slider-scrollbar__scrollbar swiper-scrollbar">
               <div class="slider-scrollbar__drag swiper-scrollbar-drag"></div>
             </div>
+            <div class="slider-scrollbar__navigation">
+              <button class="slider-button slider-button--prev swiper-button-prev" type="button" disabled>
+                <span class="visually-hidden">Предыдущий слайд</span>
+              </button>
+              <button class="slider-button slider-button--next swiper-button-next" type="button">
+                <span class="visually-hidden">Следующий слайд</span>
+              </button>
+            </div>
           </div>
-          <a class="programs__more button button--primary button--wide" href="#">
-            <span class="button__text">Все программы</span>
-            <span class="button__icon"></span>
-          </a>
         </div>
       </section>
       <section class="grant" data-test="grant">
@@ -619,14 +621,6 @@
         <div class="reviews__wrapper container">
           <h2 class="reviews__title title-middle">Отзывы</h2>
           <div class="reviews__slider slider-scrollbar slider-scrollbar--reviews slider-scrollbar--no-js">
-            <div class="slider-scrollbar__navigation">
-              <button class="slider-button slider-button--prev swiper-button-prev" type="button" disabled>
-                <span class="visually-hidden">Предыдущий слайд</span>
-              </button>
-              <button class="slider-button slider-button--next swiper-button-next" type="button">
-                <span class="visually-hidden">Следующий слайд</span>
-              </button>
-            </div>
             <div class="slider-scrollbar__swiper swiper">
               <div class="slider-scrollbar__wrapper swiper-wrapper">
                 <div class="slider-scrollbar__slide swiper-slide">
@@ -707,6 +701,14 @@
             </div>
             <div class="slider-scrollbar__scrollbar swiper-scrollbar">
               <div class="slider-scrollbar__drag swiper-scrollbar-drag"></div>
+            </div>
+            <div class="slider-scrollbar__navigation">
+              <button class="slider-button slider-button--prev swiper-button-prev" type="button" disabled>
+                <span class="visually-hidden">Предыдущий слайд</span>
+              </button>
+              <button class="slider-button slider-button--next swiper-button-next" type="button">
+                <span class="visually-hidden">Следующий слайд</span>
+              </button>
             </div>
           </div>
         </div>
@@ -808,7 +810,6 @@
     </main>
     <footer class="main-footer" data-test="footer">
       <div class="main-footer__wrapper container">
-
         <div class="main-footer__logo logo">
           <img src="/__spritemap#sprite-logo-view" width="30" height="30" alt="Логотип «Стажировка».">
         </div>
@@ -832,10 +833,6 @@
             <a class="site-list__link" href="#contacts">Контакты</a>
           </li>
         </ul>
-        <div class="main-footer__inner-container">
-          <a class="main-footer__privacy-policy" href="#">Политика конфиденциальности</a>
-          <p class="main-footer__copyright">Стажировка &copy; 2023 Все права защищены</p>
-        </div>
         <ul class="main-footer__social social">
           <li class="social__item">
             <a class="social__link social__link--vk" href="#">
@@ -862,6 +859,10 @@
             </a>
           </li>
         </ul>
+        <div class="main-footer__inner-container">
+          <a class="main-footer__privacy-policy" href="#">Политика конфиденциальности</a>
+          <p class="main-footer__copyright">Стажировка &copy; 2023 Все права защищены</p>
+        </div>
       </div>
     </footer>
     <div class="modal modal--hidden">

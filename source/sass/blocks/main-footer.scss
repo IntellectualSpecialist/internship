@@ -1,14 +1,26 @@
 .main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
+.main-footer__logo {
+  order: 1;
+  margin: 0 auto 20px;
+}
+
 .main-footer__list {
+  order: 2;
   margin-bottom: 20px;
 }
 
-.main-footer__logo {
-  margin: 0 auto 20px;
+.main-footer__inner-container {
+  order: 3;
+}
+
+.main-footer__social {
+  order: 4;
 }
 
 .main-footer__privacy-policy {

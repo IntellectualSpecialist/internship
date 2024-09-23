@@ -7,6 +7,7 @@ $secondary-color: #316dc2;
 $beige: #f0efe9;
 $bg-primary: $beige;
 $base-white: #ffffff;
+$body-bg: linear-gradient(0deg, $beige, $beige), $base-white;
 $white-opacity: rgba(255, 255, 255, 0.2);
 $white-opacity-alt: rgba(255, 255, 255, 0.6);
 $disabled-color: #a9afb7;
