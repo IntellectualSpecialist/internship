@@ -1,6 +1,6 @@
 .programs__wrapper {
   position: relative;
-  padding-top: 50px;
+  padding-top: 55px;
   padding-bottom: 124px;
 }
 
@@ -22,6 +22,8 @@
 @media (min-width: $tablet-width) {
   .programs__wrapper {
     position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .programs__slider {
@@ -42,6 +44,7 @@
   }
 
   .programs__title {
+    margin-top: 3px;
     max-width: 390px;
   }
 }
@@ -52,8 +55,17 @@
     padding-bottom: 60px;
   }
 
+  .programs__header {
+    margin-bottom: 42px;
+  }
+
   .programs__title {
     max-width: 935px;
+    margin-top: 5px;
+  }
+
+  .programs__more {
+    margin-top: 2px;
   }
 
   .programs__slider {

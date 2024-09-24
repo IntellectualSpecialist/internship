@@ -5,7 +5,6 @@
   gap: 10px;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: center;
 }
 
 .social__link {
@@ -42,24 +41,24 @@
     &--vk {
       svg,
       img {
-        width: 16px;
-        height: 8.73px;
+        width: 19px;
+        height: 11.73px;
       }
     }
 
     &--ok {
       svg,
       img {
-        width: 9.45px;
-        height: 16px;
+        width: 11.45px;
+        height: 18px;
       }
     }
 
     &--reddit {
       svg,
       img {
-        width: 14.55px;
-        height: 15.27px;
+        width: 16.55px;
+        height: 17.27px;
       }
     }
   }

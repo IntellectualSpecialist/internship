@@ -21,6 +21,9 @@
 
 .main-footer__social {
   order: 4;
+  justify-self: end;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .main-footer__privacy-policy {
@@ -60,8 +63,8 @@
 @media (min-width: $tablet-width) {
   .main-footer__wrapper {
     display: grid;
-    grid-template-columns: 52px 449px 128px;
-    gap: 25px;
+    grid-template-columns: 52px 400px 174px;
+    gap: 26px;
     align-items: start;
   }
 
@@ -73,6 +76,11 @@
     grid-column: 2 / 4;
     justify-self: end;
     margin-top: 16px;
+    margin-bottom: 0;
+  }
+
+  .main-footer__social {
+    margin: 0;
   }
 
   .main-footer__inner-container {

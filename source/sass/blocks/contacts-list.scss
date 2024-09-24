@@ -74,4 +74,10 @@
   .contacts-list__item {
     max-width: 263px;
   }
+
+  .contacts-list__value {
+    &[href] {
+      line-height: 17px;
+    }
+  }
 }

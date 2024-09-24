@@ -1,5 +1,5 @@
 .reviews__wrapper {
-  padding-top: 50px;
+  padding-top: 55px;
   padding-bottom: 50px;
 }
 
@@ -8,6 +8,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .reviews__wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   .reviews__title {
     margin-bottom: 40px;
   }
