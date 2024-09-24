@@ -13,10 +13,14 @@
 .review-card__autor {
   display: flex;
   gap: 10px;
+  align-items: flex-start;
+  flex-shrink: 0;
   margin-bottom: 15px;
 }
 
 .review-card__avatar {
+  flex-shrink: 0;
+
   img {
     display: block;
     width: 60px;

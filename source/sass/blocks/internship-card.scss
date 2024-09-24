@@ -40,6 +40,7 @@
 .internship-card__pagination {
   position: relative;
   width: fit-content;
+  min-width: 80px;
   max-width: 260px;
   padding: 9px 17px;
   background-color: $base-white;
@@ -95,8 +96,9 @@
 
 .internship-card__button {
   position: relative;
-  max-width: 245px;
   width: fit-content;
+  max-width: 245px;
+  min-width: 184px;
   padding: 10px 15px;
   border-radius: 0 0 14px 14px;
   background-color: $base-white;
@@ -133,6 +135,7 @@
   }
 
   .internship-card__pagination {
+    min-width: 100px;
     max-width: 565px;
     padding: 14px 20px;
     border-radius: 20px 20px 0 0;

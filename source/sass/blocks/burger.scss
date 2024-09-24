@@ -3,7 +3,7 @@
   justify-content: space-between;
   gap: 20px;
   align-items: center;
-  width: 136px;
+  max-width: 220px;
   padding: 3px 4px 3px 20px;
   background-color: $base-white;
   border: 1px solid $secondary-color;
@@ -167,11 +167,18 @@
 
 @media (min-width: $tablet-width) {
   .burger {
+    max-width: 600px;
     padding-top: 4px;
     padding-bottom: 4px;
   }
 
   .burger--active {
     width: 286px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .burger {
+    max-width: 1100px;
   }
 }

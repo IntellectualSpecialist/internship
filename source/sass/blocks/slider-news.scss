@@ -23,23 +23,25 @@
 .slider-news__pagination {
   display: flex;
   gap: 16px;
-  max-width: 152px;
+  max-width: 206px;
+  overflow: hidden;
 }
 
 .slider-news__pagination-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 26px;
+  min-width: 26px;
+  max-width: 40px;
   height: 26px;
-  padding: 0;
+  padding: 3px;
   font-size: 14px;
   line-height: 14px;
   font-weight: 500;
   color: $secondary-color;
   background-color: transparent;
   border: 2px solid transparent;
-  border-radius: 50%;
+  border-radius: 13px;
   opacity: 0.5;
   cursor: pointer;
 
@@ -117,15 +119,17 @@
   }
 
   .slider-news__pagination {
-    max-width: 188px;
+    max-width: 252px;
     gap: 20px;
   }
 
   .slider-news__pagination-button {
-    width: 32px;
+    min-width: 32px;
+    max-width: 48px;
     height: 32px;
     font-size: 16px;
     line-height: 20px;
+    border-radius: 16px;
   }
 }
 
