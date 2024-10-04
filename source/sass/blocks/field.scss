@@ -62,11 +62,6 @@
       border-color: $base-white;
       opacity: 0.4;
     }
-
-    &:user-invalid {
-      background-color: $error-color-opacity;
-      border-color: $error-color;
-    }
   }
 }
 
@@ -119,11 +114,18 @@
     mask-image: url("../../__spritemap#sprite-select-arrow-view");
     background-color: $base-white;
     transform: translateY(-50%);
-    transition: 0.2s ease;
+    transition: 0.2s ease 0.1s;
   }
 
   .field__select-custom::before {
     right: 19px;
+  }
+}
+
+.field--select-hidden {
+  .field__wrapper {
+    opacity: 0;
+    pointer-events: none;
   }
 }
 
@@ -155,13 +157,10 @@
       background-color: $disabled-opacity;
       border-color: $disabled-opacity-alt;
     }
-
-    &:user-invalid {
-      border-color: $error-color;
-    }
   }
 
-  .field__wrapper::before {
+  .field__wrapper::before,
+  .field__select-custom::before {
     background-color: $primary-color;
   }
 }
@@ -173,6 +172,11 @@
   .field__select-custom {
     background-color: $error-color-opacity;
     border-color: $error-color;
+
+    &:focus-visible,
+    &:active {
+      border-color: $error-color;
+    }
   }
 }
 
@@ -186,15 +190,29 @@
   cursor: pointer;
 }
 
-.field__select-custom {
+.field .field__select-custom {
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 1;
-  display: none;
+
+  &:focus-visible,
+  &:active {
+    &::before {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
 
   &--hidden {
     display: none;
+  }
+
+  &--active::before {
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  &--active .field__select-custom-options {
+    display: block;
   }
 }
 
@@ -219,7 +237,9 @@
   color: $primary-color;
   background-color: $base-white;
 
-  &:hover {
+  &:hover,
+  &:focus-visible,
+  &:active {
     color: $base-white;
     background-color: $secondary-color;
   }
@@ -230,6 +250,11 @@
 
   &:last-child {
     border-radius: 0 0 8px 8px;
+  }
+
+  &--active {
+    color: $base-white;
+    background-color: $secondary-color;
   }
 }
 

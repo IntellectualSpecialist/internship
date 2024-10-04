@@ -26,7 +26,7 @@
             <div class="main-header__logo logo">
               <img src="/__spritemap#sprite-logo-view" width="30" height="30" alt="Логотип «Стажировка».">
             </div>
-            <button class="main-header__burger burger" type="button">
+            <button class="main-header__burger burger js-toggle-button" type="button">
               <span class="burger__text">Меню</span>
               <span class="burger__icon">
                 <span class="burger__icon-inner"></span>
@@ -35,10 +35,10 @@
             <nav class="main-header__nav main-header__nav--hidden main-nav">
               <ul class="main-nav__list site-list">
                 <li class="site-list__item">
-                  <a class="site-list__link" href="#about">О проекте</a>
+                  <a class="site-list__link" href="#">О проекте</a>
                 </li>
                 <li class="site-list__item site-list__item--has-children">
-                  <a class="site-list__link site-list__link--dropdown" href="#programs">Программы</a>
+                  <a class="site-list__link site-list__link--dropdown" href="#">Программы</a>
                   <div class="site-list__dropdown site-list__dropdown--hidden">
                     <ul class="site-list__sub-menu">
                       <li class="site-list__sub-menu-item">
@@ -57,13 +57,13 @@
                   </div>
                 </li>
                 <li class="site-list__item">
-                  <a class="site-list__link" href="#grant">Как поехать</a>
+                  <a class="site-list__link" href="#">Как поехать</a>
                 </li>
                 <li class="site-list__item">
-                  <a class="site-list__link" href="#reviews">Отзывы</a>
+                  <a class="site-list__link" href="#">Отзывы</a>
                 </li>
                 <li class="site-list__item site-list__item--has-children">
-                  <a class="site-list__link site-list__link--dropdown" href="#news">Новости</a>
+                  <a class="site-list__link site-list__link--dropdown" href="#">Новости</a>
                   <div class="site-list__dropdown site-list__dropdown--hidden">
                     <ul class="site-list__sub-menu">
                       <li class="site-list__sub-menu-item">
@@ -85,7 +85,7 @@
                   </div>
                 </li>
                 <li class="site-list__item">
-                  <a class="site-list__link" href="#contacts">Контакты</a>
+                  <a class="site-list__link" href="#">Контакты</a>
                 </li>
               </ul>
             </nav>
@@ -108,17 +108,23 @@
                     </picture>
                   </div>
                   <div class="internship-card__content">
-                    <div class="internship-card__pagination slider-promo__pagination swiper-pagination">
-                      <button class="slider-promo__pagination-button slider-promo__pagination-button--active" type="button">
-                        <span class="visually-hidden">Слайд 1</span>
-                      </button>
-                      <button class="slider-promo__pagination-button" type="button">
-                        <span class="visually-hidden">Слайд 2</span>
-                      </button>
-                      <button class="slider-promo__pagination-button" type="button">
-                        <span class="visually-hidden">Слайд 3</span>
-                      </button>
-                    </div>
+                    <ul class="internship-card__pagination slider-promo__pagination swiper-pagination">
+                      <li class="slider-promo__pagination-item">
+                        <button class="slider-promo__pagination-button slider-promo__pagination-button--active" type="button">
+                          <span class="visually-hidden">Слайд 1</span>
+                        </button>
+                      </li>
+                      <li class="slider-promo__pagination-item">
+                        <button class="slider-promo__pagination-button" type="button">
+                          <span class="visually-hidden">Слайд 2</span>
+                        </button>
+                      </li>
+                      <li class="slider-promo__pagination-item">
+                        <button class="slider-promo__pagination-button" type="button">
+                          <span class="visually-hidden">Слайд 3</span>
+                        </button>
+                      </li>
+                    </ul>
                     <h3 class="internship-card__title">Глобальный профессиональный опыт обучения за рубежом</h3>
                     <div class="internship-card__description">
                       <div class="internship-card__text-content">
@@ -149,17 +155,23 @@
                     </picture>
                   </div>
                   <div class="internship-card__content">
-                    <div class="internship-card__pagination slider-promo__pagination swiper-pagination">
-                      <button class="slider-promo__pagination-button" type="button">
-                        <span class="visually-hidden">Слайд 1</span>
-                      </button>
-                      <button class="slider-promo__pagination-button slider-promo__pagination-button--active" type="button">
-                        <span class="visually-hidden">Слайд 2</span>
-                      </button>
-                      <button class="slider-promo__pagination-button" type="button">
-                        <span class="visually-hidden">Слайд 3</span>
-                      </button>
-                    </div>
+                    <ul class="internship-card__pagination slider-promo__pagination swiper-pagination">
+                      <li class="slider-promo__pagination-item">
+                        <button class="slider-promo__pagination-button" type="button">
+                          <span class="visually-hidden">Слайд 1</span>
+                        </button>
+                      </li>
+                      <li class="slider-promo__pagination-item">
+                        <button class="slider-promo__pagination-button slider-promo__pagination-button--active" type="button">
+                          <span class="visually-hidden">Слайд 2</span>
+                        </button>
+                      </li>
+                      <li class="slider-promo__pagination-item">
+                        <button class="slider-promo__pagination-button" type="button">
+                          <span class="visually-hidden">Слайд 3</span>
+                        </button>
+                      </li>
+                    </ul>
                     <h3 class="internship-card__title">Волонтёрские программы — внесите свой вклад в общество</h3>
                     <div class="internship-card__description">
                       <div class="internship-card__text-content">
@@ -190,17 +202,23 @@
                     </picture>
                   </div>
                   <div class="internship-card__content">
-                    <div class="internship-card__pagination slider-promo__pagination swiper-pagination">
-                      <button class="slider-promo__pagination-button" type="button">
-                        <span class="visually-hidden">Слайд 1</span>
-                      </button>
-                      <button class="slider-promo__pagination-button" type="button">
-                        <span class="visually-hidden">Слайд 2</span>
-                      </button>
-                      <button class="slider-promo__pagination-button slider-promo__pagination-button--active" type="button">
-                        <span class="visually-hidden">Слайд 3</span>
-                      </button>
-                    </div>
+                    <ul class="internship-card__pagination slider-promo__pagination swiper-pagination">
+                      <li class="slider-promo__pagination-item">
+                        <button class="slider-promo__pagination-button" type="button">
+                          <span class="visually-hidden">Слайд 1</span>
+                        </button>
+                      </li>
+                      <li class="slider-promo__pagination-item">
+                        <button class="slider-promo__pagination-button" type="button">
+                          <span class="visually-hidden">Слайд 2</span>
+                        </button>
+                      </li>
+                      <li class="slider-promo__pagination-item">
+                        <button class="slider-promo__pagination-button slider-promo__pagination-button--active" type="button">
+                          <span class="visually-hidden">Слайд 3</span>
+                        </button>
+                      </li>
+                    </ul>
                     <h3 class="internship-card__title">Программы стажировок в крупнейших компаниях мира</h3>
                     <div class="internship-card__description">
                       <div class="internship-card__text-content">
@@ -220,7 +238,7 @@
           </div>
         </div>
       </section>
-      <article class="about" data-test="about">
+      <article class="about" id="about" data-test="about">
         <div class="about__wrapper container">
           <div class="about__columns">
             <header class="about__header">
@@ -234,7 +252,7 @@
                 <h3>Наша цель</h3>
                 <p>Наша деятельность направлена на повышение квалификации молодых специалистов на ранних и средних стадиях карьеры, предоставляя им инструменты для решения сложных проблем, с которыми сталкиваются в мире. Цель центра — наделить этих людей способностью инициировать значимые изменения.</p>
               </div>
-              <a class="about__button button button--primary" href="#">
+              <a class="about__button button button--primary js-modal-button" href="#">
                 <span class="button__text">Подробнее о проекте</span>
                 <span class="button__icon"></span>
               </a>
@@ -271,7 +289,7 @@
           </section>
         </div>
       </article>
-      <section class="programs" data-test="programs">
+      <section class="programs" id="programs" data-test="programs">
         <div class="programs__wrapper container">
           <header class="programs__header">
             <h2 class="programs__title title-middle">Программы</h2>
@@ -283,6 +301,81 @@
           <div class="programs__slider slider-scrollbar slider-scrollbar--programs slider-scrollbar--no-js">
             <div class="slider-scrollbar__swiper swiper">
               <div class="slider-scrollbar__wrapper swiper-wrapper">
+                <div class="slider-scrollbar__slide swiper-slide">
+                  <article class="program-card">
+                    <div class="program-card__image">
+                      <picture>
+                        <source width="392" height="420" type="image/webp" media="(min-width: 1440px)" srcset="img/program-1-desktop@1x.webp, img/program-1-desktop@2x.webp 2x">
+                        <source width="324" height="420" type="image/webp" media="(min-width: 768px)" srcset="img/program-1-tablet@1x.webp, img/program-1-tablet@2x.webp 2x">
+                        <source width="290" height="400" type="image/webp" srcset="img/program-1-mobile@1x.webp, img/program-1-mobile@2x.webp 2x">
+                        <source width="392" height="420" type="image/jpeg" media="(min-width: 1440px)" srcset="img/program-1-desktop@1x.jpg, img/program-1-desktop@2x.jpg 2x">
+                        <source width="324" height="420" type="image/jpeg" media="(min-width: 768px)" srcset="img/program-1-tablet@1x.jpg, img/program-1-tablet@2x.jpg 2x">
+                        <img src="img/program-1-mobile@1x.jpg" srcset="img/program-1-mobile@2x.jpg 2x" width="290" height="400" alt="Стажёрки.">
+                      </picture>
+                    </div>
+                    <div class="program-card__text">
+                      <h3 class="program-card__title title-small title-small--alternative">Стажировки</h3>
+                      <div class="program-card__content">
+                        <div class="program-card__text-content">
+                          <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
+                        </div>
+                        <a class="program-card__button button-small" href="#">
+                          <span class="visually-hidden">Подробнее</span>
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="slider-scrollbar__slide swiper-slide">
+                  <article class="program-card">
+                    <div class="program-card__image">
+                      <picture>
+                        <source width="392" height="420" type="image/webp" media="(min-width: 1440px)" srcset="img/program-2-desktop@1x.webp, img/program-2-desktop@2x.webp 2x">
+                        <source width="324" height="420" type="image/webp" media="(min-width: 768px)" srcset="img/program-2-tablet@1x.webp, img/program-2-tablet@2x.webp 2x">
+                        <source width="290" height="400" type="image/webp" srcset="img/program-2-mobile@1x.webp, img/program-2-mobile@2x.webp 2x">
+                        <source width="392" height="420" type="image/jpeg" media="(min-width: 1440px)" srcset="img/program-2-desktop@1x.jpg, img/program-2-desktop@2x.jpg 2x">
+                        <source width="324" height="420" type="image/jpeg" media="(min-width: 768px)" srcset="img/program-2-tablet@1x.jpg, img/program-2-tablet@2x.jpg 2x">
+                        <img src="img/program-2-mobile@1x.jpg" srcset="img/program-2-mobile@2x.jpg 2x" width="290" height="400" alt="Волонтёр.">
+                      </picture>
+                    </div>
+                    <div class="program-card__text">
+                      <h3 class="program-card__title title-small title-small--alternative">Волонтёрство</h3>
+                      <div class="program-card__content">
+                        <div class="program-card__text-content">
+                          <p>Помогайте другим и развивайте свои лидерские качества</p>
+                        </div>
+                        <a class="program-card__button button-small" href="#">
+                          <span class="visually-hidden">Подробнее</span>
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="slider-scrollbar__slide swiper-slide">
+                  <article class="program-card">
+                    <div class="program-card__image">
+                      <picture>
+                        <source width="392" height="420" type="image/webp" media="(min-width: 1440px)" srcset="img/program-3-desktop@1x.webp, img/program-3-desktop@2x.webp 2x">
+                        <source width="324" height="420" type="image/webp" media="(min-width: 768px)" srcset="img/program-3-tablet@1x.webp, img/program-3-tablet@2x.webp 2x">
+                        <source width="290" height="400" type="image/webp" srcset="img/program-3-mobile@1x.webp, img/program-3-mobile@2x.webp 2x">
+                        <source width="392" height="420" type="image/jpeg" media="(min-width: 1440px)" srcset="img/program-3-desktop@1x.jpg, img/program-3-desktop@2x.jpg 2x">
+                        <source width="324" height="420" type="image/jpeg" media="(min-width: 768px)" srcset="img/program-3-tablet@1x.jpg, img/program-3-tablet@2x.jpg 2x">
+                        <img src="img/program-3-mobile@1x.jpg" srcset="img/program-3-mobile@2x.jpg 2x" width="290" height="400" alt="Студент за учёбой.">
+                      </picture>
+                    </div>
+                    <div class="program-card__text">
+                      <h3 class="program-card__title title-small title-small--alternative">Учёба</h3>
+                      <div class="program-card__content">
+                        <div class="program-card__text-content">
+                          <p>Получите образование и измените своё будущее.</p>
+                        </div>
+                        <a class="program-card__button button-small" href="#">
+                          <span class="visually-hidden">Подробнее</span>
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
                 <div class="slider-scrollbar__slide swiper-slide">
                   <article class="program-card">
                     <div class="program-card__image">
@@ -374,7 +467,7 @@
           </div>
         </div>
       </section>
-      <section class="grant" data-test="grant">
+      <section class="grant" id="grant" data-test="grant">
         <div class="grant__wrapper container">
           <div class="grant__left-column">
             <h2 class="grant__title title-middle title-middle--light">Как поехать</h2>
@@ -403,32 +496,32 @@
           </div>
         </div>
       </section>
-      <section class="news" data-test="news">
+      <section class="news" id="news" data-test="news">
         <div class="news__wrapper container">
           <h2 class="news__title title-middle title-middle--centered">Новости и материалы</h2>
           <ul class="news__tabs-list">
             <li class="news__tabs-item">
-              <button class="news__tabs-button news__tabs-button--active" type="button">Общее</button>
+              <button class="news__tabs-button news__tabs-button--active" data-tab-id="0" type="button">Общее</button>
             </li>
             <li class="news__tabs-item">
-              <button class="news__tabs-button" type="button">Волонтёрство</button>
+              <button class="news__tabs-button" data-tab-id="1" type="button">Волонтёрство</button>
             </li>
             <li class="news__tabs-item">
-              <button class="news__tabs-button" type="button">Стажировки</button>
+              <button class="news__tabs-button" data-tab-id="2" type="button">Стажировки</button>
             </li>
             <li class="news__tabs-item">
-              <button class="news__tabs-button" type="button">Карьера</button>
+              <button class="news__tabs-button" data-tab-id="3" type="button">Карьера</button>
             </li>
             <li class="news__tabs-item">
-              <button class="news__tabs-button" type="button">Путешествия</button>
+              <button class="news__tabs-button" data-tab-id="4" type="button">Путешествия</button>
             </li>
           </ul>
           <div class="news__tabs-content">
             <div class="news__slider slider-news slider-news--no-js">
               <div class="slider-news__swiper swiper">
                 <div class="slider-news__wrapper swiper-wrapper">
-                  <div class="slider-news__slide swiper-slide">
-                    <article class="news-card news-card--big">
+                  <div class="slider-news__slide slider-news__slide--wide swiper-slide">
+                    <article class="news-card">
                       <div class="news-card__image">
                         <picture>
                           <source width="604" height="400" type="image/webp" media="(min-width: 1440px)" srcset="img/news-1-desktop@1x.webp, img/news-1-desktop@2x.webp 2x">
@@ -453,7 +546,207 @@
                       </div>
                     </article>
                   </div>
-                  <div class="slider-news__slide slider-news__slide--second swiper-slide">
+                  <div class="slider-news__slide slider-news__slide--second swiper-slide" id="second-slide-news">
+                    <article class="news-card">
+                      <div class="news-card__image">
+                        <picture>
+                          <source width="286" height="400" type="image/webp" media="(min-width: 1440px)" srcset="img/news-2-desktop@1x.webp, img/news-2-desktop@2x.webp 2x">
+                          <source width="324" height="350" type="image/webp" media="(min-width: 768px)" srcset="img/news-2-tablet@1x.webp, img/news-2-tablet@2x.webp 2x">
+                          <source width="290" height="240" type="image/webp" srcset="img/news-2-mobile@1x.webp, img/news-2-mobile@2x.webp 2x">
+                          <source width="286" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="img/news-2-desktop@1x.jpg, img/news-2-desktop@2x.jpg 2x">
+                          <source width="324" height="350" type="image/jpeg" media="(min-width: 768px)" srcset="img/news-2-tablet@1x.jpg, img/news-2-tablet@2x.jpg 2x">
+                          <img src="img/news-2-mobile@1x.jpg" srcset="img/news-2-mobile@2x.jpg 2x" width="290" height="240" alt="Город.">
+                        </picture>
+                      </div>
+                      <div class="news__text">
+                        <time class="news-card__date" datetime="2023-03-20">20/03/2023</time>
+                        <h3 class="news-card__title title-small">Путешествуем по миру</h3>
+                        <div class="news-card__content">
+                          <div class="news-card__text-content">
+                            <p>Какие места посещают наши студенты весной</p>
+                          </div>
+                          <a class="news-card__button button-small" href="#">
+                            <span class="visually-hidden">Подробнее</span>
+                          </a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="slider-news__slide swiper-slide" id="third-slide-news">
+                    <article class="news-card">
+                      <div class="news-card__image">
+                        <picture>
+                          <source width="286" height="400" type="image/webp" media="(min-width: 1440px)" srcset="img/news-3-desktop@1x.webp, img/news-3-desktop@2x.webp 2x">
+                          <source width="290" height="240" type="image/webp" srcset="img/news-3-tablet@1x.webp, img/news-3-tablet@2x.webp 2x">
+                          <source width="286" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="img/news-3-desktop@1x.jpg, img/news-3-desktop@2x.jpg 2x">
+                          <img src="img/news-3-tablet@1x.jpg" srcset="img/news-3-tablet@2x.jpg 2x" width="290" height="240" alt="Девушка со значком «VOLUNTEER».">
+                        </picture>
+                      </div>
+                      <div class="news__text">
+                        <time class="news-card__date" datetime="2023-03-17">17/03/2023</time>
+                        <h3 class="news-card__title title-small">Новая программа волонтёрства</h3>
+                        <div class="news-card__content">
+                          <div class="news-card__text-content">
+                            <p>Программа помощи детям длительностью 4 месяца</p>
+                          </div>
+                          <a class="news-card__button button-small" href="#">
+                            <span class="visually-hidden">Подробнее</span>
+                          </a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="slider-news__slide slider-news__slide--wide swiper-slide">
+                    <article class="news-card">
+                      <div class="news-card__image">
+                        <picture>
+                          <source width="286" height="400" type="image/webp" media="(min-width: 1440px)" srcset="img/news-4-desktop@1x.webp, img/news-4-desktop@2x.webp 2x">
+                          <source width="290" height="240" type="image/webp" srcset="img/news-4-tablet@1x.webp, img/news-4-tablet@2x.webp 2x">
+                          <source width="286" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="img/news-4-desktop@1x.jpg, img/news-4-desktop@2x.jpg 2x">
+                          <img src="img/news-4-tablet@1x.jpg" srcset="img/news-4-tablet@2x.jpg 2x" width="290" height="240" alt="Рабочий стол студентов на стажировке.">
+                        </picture>
+                      </div>
+                      <div class="news__text">
+                        <time class="news-card__date" datetime="2023-03-10">10/03/2023</time>
+                        <h3 class="news-card__title title-small">Построй свою карьеру</h3>
+                        <div class="news-card__content">
+                          <div class="news-card__text-content">
+                            <p>Ведущие компании готовы&nbsp;трудоустроить выпускников стажировки</p>
+                          </div>
+                          <a class="news-card__button button-small" href="#">
+                            <span class="visually-hidden">Подробнее</span>
+                          </a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="slider-news__slide swiper-slide">
+                    <article class="news-card">
+                      <div class="news-card__image">
+                        <picture>
+                          <source width="604" height="400" type="image/webp" media="(min-width: 1440px)" srcset="img/news-1-desktop@1x.webp, img/news-1-desktop@2x.webp 2x">
+                          <source width="324" height="350" type="image/webp" media="(min-width: 768px)" srcset="img/news-1-tablet@1x.webp, img/news-1-tablet@2x.webp 2x">
+                          <source width="290" height="330" type="image/webp" srcset="img/news-1-mobile@1x.webp, img/news-1-mobile@2x.webp 2x">
+                          <source width="604" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="img/news-1-desktop@1x.jpg, img/news-1-desktop@2x.jpg 2x">
+                          <source width="324" height="350" type="image/jpeg" media="(min-width: 768px)" srcset="img/news-1-tablet@1x.jpg, img/news-1-tablet@2x.jpg 2x">
+                          <img src="img/news-1-mobile@1x.jpg" srcset="img/news-1-mobile@2x.jpg 2x" width="290" height="330" alt="Участница стажировки и интервьюер.">
+                        </picture>
+                      </div>
+                      <div class="news__text">
+                        <time class="news-card__date" datetime="2023-03-23">23/03/2023</time>
+                        <h3 class="news-card__title title-small">Интервью с участницей программы стажировки</h3>
+                        <div class="news-card__content">
+                          <div class="news-card__text-content">
+                            <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
+                          </div>
+                          <a class="news-card__button button-small" href="#">
+                            <span class="visually-hidden">Подробнее</span>
+                          </a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="slider-news__slide swiper-slide">
+                    <article class="news-card">
+                      <div class="news-card__image">
+                        <picture>
+                          <source width="286" height="400" type="image/webp" media="(min-width: 1440px)" srcset="img/news-2-desktop@1x.webp, img/news-2-desktop@2x.webp 2x">
+                          <source width="324" height="350" type="image/webp" media="(min-width: 768px)" srcset="img/news-2-tablet@1x.webp, img/news-2-tablet@2x.webp 2x">
+                          <source width="290" height="240" type="image/webp" srcset="img/news-2-mobile@1x.webp, img/news-2-mobile@2x.webp 2x">
+                          <source width="286" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="img/news-2-desktop@1x.jpg, img/news-2-desktop@2x.jpg 2x">
+                          <source width="324" height="350" type="image/jpeg" media="(min-width: 768px)" srcset="img/news-2-tablet@1x.jpg, img/news-2-tablet@2x.jpg 2x">
+                          <img src="img/news-2-mobile@1x.jpg" srcset="img/news-2-mobile@2x.jpg 2x" width="290" height="240" alt="Город.">
+                        </picture>
+                      </div>
+                      <div class="news__text">
+                        <time class="news-card__date" datetime="2023-03-20">20/03/2023</time>
+                        <h3 class="news-card__title title-small">Путешествуем по миру</h3>
+                        <div class="news-card__content">
+                          <div class="news-card__text-content">
+                            <p>Какие места посещают наши студенты весной</p>
+                          </div>
+                          <a class="news-card__button button-small" href="#">
+                            <span class="visually-hidden">Подробнее</span>
+                          </a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="slider-news__slide slider-news__slide--wide swiper-slide">
+                    <article class="news-card">
+                      <div class="news-card__image">
+                        <picture>
+                          <source width="286" height="400" type="image/webp" media="(min-width: 1440px)" srcset="img/news-3-desktop@1x.webp, img/news-3-desktop@2x.webp 2x">
+                          <source width="290" height="240" type="image/webp" srcset="img/news-3-tablet@1x.webp, img/news-3-tablet@2x.webp 2x">
+                          <source width="286" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="img/news-3-desktop@1x.jpg, img/news-3-desktop@2x.jpg 2x">
+                          <img src="img/news-3-tablet@1x.jpg" srcset="img/news-3-tablet@2x.jpg 2x" width="290" height="240" alt="Девушка со значком «VOLUNTEER».">
+                        </picture>
+                      </div>
+                      <div class="news__text">
+                        <time class="news-card__date" datetime="2023-03-17">17/03/2023</time>
+                        <h3 class="news-card__title title-small">Новая программа волонтёрства</h3>
+                        <div class="news-card__content">
+                          <div class="news-card__text-content">
+                            <p>Программа помощи детям длительностью 4 месяца</p>
+                          </div>
+                          <a class="news-card__button button-small" href="#">
+                            <span class="visually-hidden">Подробнее</span>
+                          </a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="slider-news__slide swiper-slide">
+                    <article class="news-card">
+                      <div class="news-card__image">
+                        <picture>
+                          <source width="286" height="400" type="image/webp" media="(min-width: 1440px)" srcset="img/news-4-desktop@1x.webp, img/news-4-desktop@2x.webp 2x">
+                          <source width="290" height="240" type="image/webp" srcset="img/news-4-tablet@1x.webp, img/news-4-tablet@2x.webp 2x">
+                          <source width="286" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="img/news-4-desktop@1x.jpg, img/news-4-desktop@2x.jpg 2x">
+                          <img src="img/news-4-tablet@1x.jpg" srcset="img/news-4-tablet@2x.jpg 2x" width="290" height="240" alt="Рабочий стол студентов на стажировке.">
+                        </picture>
+                      </div>
+                      <div class="news__text">
+                        <time class="news-card__date" datetime="2023-03-10">10/03/2023</time>
+                        <h3 class="news-card__title title-small">Построй свою карьеру</h3>
+                        <div class="news-card__content">
+                          <div class="news-card__text-content">
+                            <p>Ведущие компании готовы&nbsp;трудоустроить выпускников стажировки</p>
+                          </div>
+                          <a class="news-card__button button-small" href="#">
+                            <span class="visually-hidden">Подробнее</span>
+                          </a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="slider-news__slide swiper-slide">
+                    <article class="news-card">
+                      <div class="news-card__image">
+                        <picture>
+                          <source width="604" height="400" type="image/webp" media="(min-width: 1440px)" srcset="img/news-1-desktop@1x.webp, img/news-1-desktop@2x.webp 2x">
+                          <source width="324" height="350" type="image/webp" media="(min-width: 768px)" srcset="img/news-1-tablet@1x.webp, img/news-1-tablet@2x.webp 2x">
+                          <source width="290" height="330" type="image/webp" srcset="img/news-1-mobile@1x.webp, img/news-1-mobile@2x.webp 2x">
+                          <source width="604" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="img/news-1-desktop@1x.jpg, img/news-1-desktop@2x.jpg 2x">
+                          <source width="324" height="350" type="image/jpeg" media="(min-width: 768px)" srcset="img/news-1-tablet@1x.jpg, img/news-1-tablet@2x.jpg 2x">
+                          <img src="img/news-1-mobile@1x.jpg" srcset="img/news-1-mobile@2x.jpg 2x" width="290" height="330" alt="Участница стажировки и интервьюер.">
+                        </picture>
+                      </div>
+                      <div class="news__text">
+                        <time class="news-card__date" datetime="2023-03-23">23/03/2023</time>
+                        <h3 class="news-card__title title-small">Интервью с участницей программы стажировки</h3>
+                        <div class="news-card__content">
+                          <div class="news-card__text-content">
+                            <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
+                          </div>
+                          <a class="news-card__button button-small" href="#">
+                            <span class="visually-hidden">Подробнее</span>
+                          </a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="slider-news__slide slider-news__slide--wide swiper-slide">
                     <article class="news-card">
                       <div class="news-card__image">
                         <picture>
@@ -527,6 +820,154 @@
                       </div>
                     </article>
                   </div>
+                  <div class="slider-news__slide slider-news__slide--wide swiper-slide">
+                    <article class="news-card">
+                      <div class="news-card__image">
+                        <picture>
+                          <source width="604" height="400" type="image/webp" media="(min-width: 1440px)" srcset="img/news-1-desktop@1x.webp, img/news-1-desktop@2x.webp 2x">
+                          <source width="324" height="350" type="image/webp" media="(min-width: 768px)" srcset="img/news-1-tablet@1x.webp, img/news-1-tablet@2x.webp 2x">
+                          <source width="290" height="330" type="image/webp" srcset="img/news-1-mobile@1x.webp, img/news-1-mobile@2x.webp 2x">
+                          <source width="604" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="img/news-1-desktop@1x.jpg, img/news-1-desktop@2x.jpg 2x">
+                          <source width="324" height="350" type="image/jpeg" media="(min-width: 768px)" srcset="img/news-1-tablet@1x.jpg, img/news-1-tablet@2x.jpg 2x">
+                          <img src="img/news-1-mobile@1x.jpg" srcset="img/news-1-mobile@2x.jpg 2x" width="290" height="330" alt="Участница стажировки и интервьюер.">
+                        </picture>
+                      </div>
+                      <div class="news__text">
+                        <time class="news-card__date" datetime="2023-03-23">23/03/2023</time>
+                        <h3 class="news-card__title title-small">Интервью с участницей программы стажировки</h3>
+                        <div class="news-card__content">
+                          <div class="news-card__text-content">
+                            <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
+                          </div>
+                          <a class="news-card__button button-small" href="#">
+                            <span class="visually-hidden">Подробнее</span>
+                          </a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="slider-news__slide swiper-slide">
+                    <article class="news-card">
+                      <div class="news-card__image">
+                        <picture>
+                          <source width="286" height="400" type="image/webp" media="(min-width: 1440px)" srcset="img/news-2-desktop@1x.webp, img/news-2-desktop@2x.webp 2x">
+                          <source width="324" height="350" type="image/webp" media="(min-width: 768px)" srcset="img/news-2-tablet@1x.webp, img/news-2-tablet@2x.webp 2x">
+                          <source width="290" height="240" type="image/webp" srcset="img/news-2-mobile@1x.webp, img/news-2-mobile@2x.webp 2x">
+                          <source width="286" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="img/news-2-desktop@1x.jpg, img/news-2-desktop@2x.jpg 2x">
+                          <source width="324" height="350" type="image/jpeg" media="(min-width: 768px)" srcset="img/news-2-tablet@1x.jpg, img/news-2-tablet@2x.jpg 2x">
+                          <img src="img/news-2-mobile@1x.jpg" srcset="img/news-2-mobile@2x.jpg 2x" width="290" height="240" alt="Город.">
+                        </picture>
+                      </div>
+                      <div class="news__text">
+                        <time class="news-card__date" datetime="2023-03-20">20/03/2023</time>
+                        <h3 class="news-card__title title-small">Путешествуем по миру</h3>
+                        <div class="news-card__content">
+                          <div class="news-card__text-content">
+                            <p>Какие места посещают наши студенты весной</p>
+                          </div>
+                          <a class="news-card__button button-small" href="#">
+                            <span class="visually-hidden">Подробнее</span>
+                          </a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="slider-news__slide swiper-slide">
+                    <article class="news-card">
+                      <div class="news-card__image">
+                        <picture>
+                          <source width="286" height="400" type="image/webp" media="(min-width: 1440px)" srcset="img/news-3-desktop@1x.webp, img/news-3-desktop@2x.webp 2x">
+                          <source width="290" height="240" type="image/webp" srcset="img/news-3-tablet@1x.webp, img/news-3-tablet@2x.webp 2x">
+                          <source width="286" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="img/news-3-desktop@1x.jpg, img/news-3-desktop@2x.jpg 2x">
+                          <img src="img/news-3-tablet@1x.jpg" srcset="img/news-3-tablet@2x.jpg 2x" width="290" height="240" alt="Девушка со значком «VOLUNTEER».">
+                        </picture>
+                      </div>
+                      <div class="news__text">
+                        <time class="news-card__date" datetime="2023-03-17">17/03/2023</time>
+                        <h3 class="news-card__title title-small">Новая программа волонтёрства</h3>
+                        <div class="news-card__content">
+                          <div class="news-card__text-content">
+                            <p>Программа помощи детям длительностью 4 месяца</p>
+                          </div>
+                          <a class="news-card__button button-small" href="#">
+                            <span class="visually-hidden">Подробнее</span>
+                          </a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="slider-news__slide slider-news__slide--wide swiper-slide">
+                    <article class="news-card">
+                      <div class="news-card__image">
+                        <picture>
+                          <source width="286" height="400" type="image/webp" media="(min-width: 1440px)" srcset="img/news-4-desktop@1x.webp, img/news-4-desktop@2x.webp 2x">
+                          <source width="290" height="240" type="image/webp" srcset="img/news-4-tablet@1x.webp, img/news-4-tablet@2x.webp 2x">
+                          <source width="286" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="img/news-4-desktop@1x.jpg, img/news-4-desktop@2x.jpg 2x">
+                          <img src="img/news-4-tablet@1x.jpg" srcset="img/news-4-tablet@2x.jpg 2x" width="290" height="240" alt="Рабочий стол студентов на стажировке.">
+                        </picture>
+                      </div>
+                      <div class="news__text">
+                        <time class="news-card__date" datetime="2023-03-10">10/03/2023</time>
+                        <h3 class="news-card__title title-small">Построй свою карьеру</h3>
+                        <div class="news-card__content">
+                          <div class="news-card__text-content">
+                            <p>Ведущие компании готовы&nbsp;трудоустроить выпускников стажировки</p>
+                          </div>
+                          <a class="news-card__button button-small" href="#">
+                            <span class="visually-hidden">Подробнее</span>
+                          </a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="slider-news__slide swiper-slide">
+                    <article class="news-card">
+                      <div class="news-card__image">
+                        <picture>
+                          <source width="286" height="400" type="image/webp" media="(min-width: 1440px)" srcset="img/news-4-desktop@1x.webp, img/news-4-desktop@2x.webp 2x">
+                          <source width="290" height="240" type="image/webp" srcset="img/news-4-tablet@1x.webp, img/news-4-tablet@2x.webp 2x">
+                          <source width="286" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="img/news-4-desktop@1x.jpg, img/news-4-desktop@2x.jpg 2x">
+                          <img src="img/news-4-tablet@1x.jpg" srcset="img/news-4-tablet@2x.jpg 2x" width="290" height="240" alt="Рабочий стол студентов на стажировке.">
+                        </picture>
+                      </div>
+                      <div class="news__text">
+                        <time class="news-card__date" datetime="2023-03-10">10/03/2023</time>
+                        <h3 class="news-card__title title-small">Построй свою карьеру</h3>
+                        <div class="news-card__content">
+                          <div class="news-card__text-content">
+                            <p>Ведущие компании готовы&nbsp;трудоустроить выпускников стажировки</p>
+                          </div>
+                          <a class="news-card__button button-small" href="#">
+                            <span class="visually-hidden">Подробнее</span>
+                          </a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="slider-news__slide swiper-slide">
+                    <article class="news-card">
+                      <div class="news-card__image">
+                        <picture>
+                          <source width="286" height="400" type="image/webp" media="(min-width: 1440px)" srcset="img/news-4-desktop@1x.webp, img/news-4-desktop@2x.webp 2x">
+                          <source width="290" height="240" type="image/webp" srcset="img/news-4-tablet@1x.webp, img/news-4-tablet@2x.webp 2x">
+                          <source width="286" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="img/news-4-desktop@1x.jpg, img/news-4-desktop@2x.jpg 2x">
+                          <img src="img/news-4-tablet@1x.jpg" srcset="img/news-4-tablet@2x.jpg 2x" width="290" height="240" alt="Рабочий стол студентов на стажировке.">
+                        </picture>
+                      </div>
+                      <div class="news__text">
+                        <time class="news-card__date" datetime="2023-03-10">10/03/2023</time>
+                        <h3 class="news-card__title title-small">Построй свою карьеру</h3>
+                        <div class="news-card__content">
+                          <div class="news-card__text-content">
+                            <p>Ведущие компании готовы&nbsp;трудоустроить выпускников стажировки</p>
+                          </div>
+                          <a class="news-card__button button-small" href="#">
+                            <span class="visually-hidden">Подробнее</span>
+                          </a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
                 </div>
               </div>
               <footer class="slider-news__footer">
@@ -547,7 +988,7 @@
           </div>
         </div>
       </section>
-      <section class="faq" data-test="FAQ">
+      <section class="faq" id="faq" data-test="FAQ">
         <div class="faq__wrapper container">
           <h2 class="faq__title title-middle title-middle--centered">Вопросы и ответы</h2>
           <ul class="faq__accordion accordion">
@@ -609,12 +1050,160 @@
           </ul>
         </div>
       </section>
-      <section class="reviews" data-test="reviews">
+      <section class="reviews" id="reviews" data-test="reviews">
         <div class="reviews__wrapper container">
           <h2 class="reviews__title title-middle">Отзывы</h2>
           <div class="reviews__slider slider-scrollbar slider-scrollbar--reviews slider-scrollbar--no-js">
             <div class="slider-scrollbar__swiper swiper">
               <div class="slider-scrollbar__wrapper swiper-wrapper">
+                <div class="slider-scrollbar__slide swiper-slide">
+                  <article class="review-card">
+                    <header class="review-card__header">
+                      <div class="review-card__autor">
+                        <div class="review-card__avatar">
+                          <picture>
+                            <source width="90" height="90" type="image/webp" media="(min-width: 768px)" srcset="img/client-1-tablet@1x.webp, img/client-1-tablet@2x.webp 2x">
+                            <source width="60" height="60" type="image/webp" srcset="img/client-1-mobile@1x.webp, img/client-1-mobile@2x.webp 2x">
+                            <source width="90" height="90" type="image/jpeg" media="(min-width: 768px)" srcset="img/client-1-tablet@1x.jpg, img/client-1-tablet@2x.jpg 2x">
+                            <img src="img/client-1-mobile@1x.jpg" srcset="img/client-1-mobile@2x.jpg 2x" width="60" height="60" alt="Фотография автора.">
+                          </picture>
+                        </div>
+                        <h3 class="review-card__name">
+                          <span>Лола</span>
+                          <span>Алекс</span>
+                        </h3>
+                      </div>
+                      <dl class="review-card__info">
+                        <div class="review-card__info-item">
+                          <dt class="review-card__value">Masa Art Challenge</dt>
+                          <dd class="review-card__definition">Программа</dd>
+                        </div>
+                        <div class="review-card__info-item">
+                          <dt class="review-card__value">Осень
+                            <time datetime="2022">2022</time>
+                          </dt>
+                          <dd class="review-card__definition">Дата</dd>
+                        </div>
+                      </dl>
+                    </header>
+                    <blockquote class="review-card__review-text">
+                      <p class="review-card__lead">Я могу с уверенностью сказать, что это был один из самых незабываемых опытов в жизни!</p>
+                      <div class="review-card__text-content">
+                        <p>Я рекомендую программу «Стажировка» всем студентам, желающим получить незабываемые впечатления. Сочетание путешествий, общения и значимой работы действительно отличает её от других программ, и я чувствую огромную благодарность за предоставленную мне возможность.</p>
+                      </div>
+                    </blockquote>
+                  </article>
+                </div>
+                <div class="slider-scrollbar__slide swiper-slide">
+                  <article class="review-card">
+                    <header class="review-card__header">
+                      <div class="review-card__autor">
+                        <div class="review-card__avatar">
+                          <picture>
+                            <source width="60" height="60" type="image/webp" srcset="img/client-2-tablet@1x.webp, img/client-2-tablet@2x.webp 2x">
+                            <img src="img/client-2-tablet@1x.jpg" srcset="img/client-2-tablet@2x.jpg 2x" width="60" height="60" alt="Фотография автора.">
+                          </picture>
+                        </div>
+                        <h3 class="review-card__name">
+                          <span>Давид</span>
+                          <span>Иванов</span>
+                        </h3>
+                      </div>
+                      <dl class="review-card__info">
+                        <div class="review-card__info-item">
+                          <dt class="review-card__value">Volunteer Chance</dt>
+                          <dd class="review-card__definition">Программа</dd>
+                        </div>
+                        <div class="review-card__info-item">
+                          <dt class="review-card__value">Лето
+                            <time datetime="2022">2022</time>
+                          </dt>
+                          <dd class="review-card__definition">Дата</dd>
+                        </div>
+                      </dl>
+                    </header>
+                    <blockquote class="review-card__review-text">
+                      <p class="review-card__lead">Благодаря опыту стажировки я узнал так много нового о себе и об окружающем мире.</p>
+                      <div class="review-card__text-content">
+                        <p>Каждый день был возможностью оказать ощутимое влияние на жизнь других людей. Я бы очень рекомендовал эту волонтёрскую программу всем, кто ищет значимый и незабываемый опыт. Организация была на высшем уровне. Для меня было честью быть частью такой удивительной инициативы.</p>
+                      </div>
+                    </blockquote>
+                  </article>
+                </div>
+                <div class="slider-scrollbar__slide swiper-slide">
+                  <article class="review-card">
+                    <header class="review-card__header">
+                      <div class="review-card__autor">
+                        <div class="review-card__avatar">
+                          <picture>
+                            <source width="90" height="90" type="image/webp" media="(min-width: 768px)" srcset="img/client-1-tablet@1x.webp, img/client-1-tablet@2x.webp 2x">
+                            <source width="60" height="60" type="image/webp" srcset="img/client-1-mobile@1x.webp, img/client-1-mobile@2x.webp 2x">
+                            <source width="90" height="90" type="image/jpeg" media="(min-width: 768px)" srcset="img/client-1-tablet@1x.jpg, img/client-1-tablet@2x.jpg 2x">
+                            <img src="img/client-1-mobile@1x.jpg" srcset="img/client-1-mobile@2x.jpg 2x" width="60" height="60" alt="Фотография автора.">
+                          </picture>
+                        </div>
+                        <h3 class="review-card__name">
+                          <span>Лола</span>
+                          <span>Алекс</span>
+                        </h3>
+                      </div>
+                      <dl class="review-card__info">
+                        <div class="review-card__info-item">
+                          <dt class="review-card__value">Masa Art Challenge</dt>
+                          <dd class="review-card__definition">Программа</dd>
+                        </div>
+                        <div class="review-card__info-item">
+                          <dt class="review-card__value">Осень
+                            <time datetime="2022">2022</time>
+                          </dt>
+                          <dd class="review-card__definition">Дата</dd>
+                        </div>
+                      </dl>
+                    </header>
+                    <blockquote class="review-card__review-text">
+                      <p class="review-card__lead">Я могу с уверенностью сказать, что это был один из самых незабываемых опытов в жизни!</p>
+                      <div class="review-card__text-content">
+                        <p>Я рекомендую программу «Стажировка» всем студентам, желающим получить незабываемые впечатления. Сочетание путешествий, общения и значимой работы действительно отличает её от других программ, и я чувствую огромную благодарность за предоставленную мне возможность.</p>
+                      </div>
+                    </blockquote>
+                  </article>
+                </div>
+                <div class="slider-scrollbar__slide swiper-slide">
+                  <article class="review-card">
+                    <header class="review-card__header">
+                      <div class="review-card__autor">
+                        <div class="review-card__avatar">
+                          <picture>
+                            <source width="60" height="60" type="image/webp" srcset="img/client-2-tablet@1x.webp, img/client-2-tablet@2x.webp 2x">
+                            <img src="img/client-2-tablet@1x.jpg" srcset="img/client-2-tablet@2x.jpg 2x" width="60" height="60" alt="Фотография автора.">
+                          </picture>
+                        </div>
+                        <h3 class="review-card__name">
+                          <span>Давид</span>
+                          <span>Иванов</span>
+                        </h3>
+                      </div>
+                      <dl class="review-card__info">
+                        <div class="review-card__info-item">
+                          <dt class="review-card__value">Volunteer Chance</dt>
+                          <dd class="review-card__definition">Программа</dd>
+                        </div>
+                        <div class="review-card__info-item">
+                          <dt class="review-card__value">Лето
+                            <time datetime="2022">2022</time>
+                          </dt>
+                          <dd class="review-card__definition">Дата</dd>
+                        </div>
+                      </dl>
+                    </header>
+                    <blockquote class="review-card__review-text">
+                      <p class="review-card__lead">Благодаря опыту стажировки я узнал так много нового о себе и об окружающем мире.</p>
+                      <div class="review-card__text-content">
+                        <p>Каждый день был возможностью оказать ощутимое влияние на жизнь других людей. Я бы очень рекомендовал эту волонтёрскую программу всем, кто ищет значимый и незабываемый опыт. Организация была на высшем уровне. Для меня было честью быть частью такой удивительной инициативы.</p>
+                      </div>
+                    </blockquote>
+                  </article>
+                </div>
                 <div class="slider-scrollbar__slide swiper-slide">
                   <article class="review-card">
                     <header class="review-card__header">
@@ -705,7 +1294,7 @@
           </div>
         </div>
       </section>
-      <section class="contacts" data-test="contacts">
+      <section class="contacts" id="contacts" data-test="contacts">
         <div class="contacts__wrapper container">
           <div class="contacts__columns">
             <h2 class="contacts__title title-middle title-middle--light">Контакты</h2>
@@ -739,7 +1328,7 @@
       <section class="feedback" data-test="form">
         <div class="feedback__wrapper container">
           <div class="feedback__form-wrapper">
-            <div class="feedback__form form">
+            <div class="feedback__form form form--no-js">
               <h2 class="form__title">Напишите нам</h2>
               <p class="form__description">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
               <form action="https://echo.htmlacademy.ru/" method="post">
@@ -747,13 +1336,13 @@
                   <li class="form__field">
                     <label class="field">
                       <span class="field__label">Имя</span>
-                      <input type="text" name="name" required>
+                      <input type="text" name="name" pattern="[a-zA-Zа-яёА-ЯЁ\s]{2,}" title="Допустимы только буквы и пробелы. Минимум 2 буквы" required>
                     </label>
                   </li>
                   <li class="form__field">
                     <label class="field">
                       <span class="field__label">Телефон</span>
-                      <input type="tel" name="tel" required>
+                      <input type="tel" name="tel" pattern="^\+7[1-9]{10}$" title="Допустимы только цифры. Номер начинается с +7. 11 цифр." required>
                     </label>
                   </li>
                   <li class="form__field field field--textarea">
@@ -762,23 +1351,23 @@
                   </li>
                   <li class="form__field form__field--custom">
                     <div class="field field--select">
-                      <label class="field__label" for="city-1">Выберите город</label>
+                      <label class="field__label" for="city-1" id="select-title">Выберите город</label>
                       <div class="field__wrapper">
                         <select name="city" id="city-1" required>
                           <option value="" label=" " hidden disabled selected></option>
-                          <option value="saint-petersburg">Санкт-Петербург</option>
-                          <option value="saint-petersburg">Санкт-Петербург</option>
-                          <option value="saint-petersburg">Санкт-Петербург</option>
-                          <option value="saint-petersburg">Санкт-Петербург</option>
+                          <option value="saint-petersburg-1">Санкт-Петербург</option>
+                          <option value="saint-petersburg-2">Санкт-Петербург</option>
+                          <option value="saint-petersburg-3">Санкт-Петербург</option>
+                          <option value="saint-petersburg-4">Санкт-Петербург</option>
                         </select>
                       </div>
-                      <div class="field__select-custom field__select-custom--hidden js-select-custom" tabindex="0">
-                        <div class="field__select-custom-trigger"></div>
-                        <ul class="field__select-custom-options">
-                          <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
-                          <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
-                          <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
-                          <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
+                      <div class="field__select-custom field__select-custom--hidden js-select-custom" tabindex="0" aria-hidden="true" aria-labelledby="select-title"  role="combobox" aria-expanded="false">
+                        <div class="field__select-custom-trigger" aria-haspopup="listbox"></div>
+                        <ul class="field__select-custom-options" role="listbox">
+                          <li class="field__select-custom-option" data-value="saint-petersburg-1" data-option-id="0" tabindex="0" role="option" aria-selected="false">Санкт-Петербург</li>
+                          <li class="field__select-custom-option" data-value="saint-petersburg-2" data-option-id="1" tabindex="0" role="option" aria-selected="false">Санкт-Петербург</li>
+                          <li class="field__select-custom-option" data-value="saint-petersburg-3" data-option-id="2" tabindex="0" role="option" aria-selected="false">Санкт-Петербург</li>
+                          <li class="field__select-custom-option" data-value="saint-petersburg-4" data-option-id="3" tabindex="0" role="option" aria-selected="false">Санкт-Петербург</li>
                         </ul>
                       </div>
                     </div>
@@ -827,7 +1416,7 @@
         </ul>
         <ul class="main-footer__social social">
           <li class="social__item">
-            <a class="social__link social__link--vk" href="#">
+            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noopener noreferrer">
               <span class="visually-hidden">Вконтакте</span>
               <svg width="12" height="8" viewBox="0 0 12 8" role="img" aria-hidden="true" focusable="false">
                 <use href="/__spritemap#sprite-vk-icon"></use>
@@ -835,7 +1424,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--ok" href="#">
+            <a class="social__link social__link--ok" href="https://t.me/htmlacademy" target="_blank" rel="noopener noreferrer">
               <span class="visually-hidden">Одноклассники</span>
               <svg width="8" height="12" viewBox="0 0 8 12" role="img" aria-hidden="true" focusable="false">
                 <use href="/__spritemap#sprite-ok-icon"></use>
@@ -843,7 +1432,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--reddit" href="#">
+            <a class="social__link social__link--reddit" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noopener noreferrer">
               <span class="visually-hidden">Реддит</span>
               <svg width="12" height="12" viewBox="0 0 12 12" role="img" aria-hidden="true" focusable="false">
                 <use href="/__spritemap#sprite-reddit-icon"></use>
@@ -859,48 +1448,47 @@
     </footer>
     <div class="modal modal--hidden">
       <div class="modal__feedback">
-        <button class="modal__close-button" type="button">
-          <span class="visually-hidden">Закрыть</span>
-        </button>
         <section class="modal__content">
-          <div class="modal__form form form--light">
+          <div class="modal__form form form--light form--no-js">
             <h2 class="form__title">Напишите нам</h2>
             <p class="form__description">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
             <form action="https://echo.htmlacademy.ru/" method="post">
+              <button class="modal__close-button form__reset" type="reset">
+                <span class="visually-hidden">Закрыть</span>
+              </button>
               <ul class="form__list">
                 <li class="form__field">
                   <label class="field field--light">
                     <span class="field__label">Имя</span>
-                    <input type="text" name="name" required>
+                    <input type="text" name="name" pattern="[a-zA-Zа-яёА-ЯЁ\s]{2,}" title="Допустимы только буквы и пробелы. Минимум 2 буквы" required>
                   </label>
                 </li>
                 <li class="form__field">
                   <label class="field field--light">
                     <span class="field__label">Телефон</span>
-                    <input type="tel" name="tel" required>
+                    <input type="tel" name="tel" pattern="^\+7[1-9]{10}$" title="Допустимы только цифры, пробелы и символы: +-(). Номер начинается с +7" required>
                   </label>
                 </li>
                 <li class="form__field">
                   <div class="field field--light field--select">
-                    <label class="field__label" for="city-2">Выберите город</label>
+                    <label class="field__label" for="city-2" id="select-title-2">Выберите город</label>
                     <div class="field__wrapper">
                       <select name="city" id="city-2" required>
                         <option value="" label=" " hidden disabled selected></option>
-                        <option value="saint-petersburg">Санкт-Петербург</option>
-                        <option value="saint-petersburg">Санкт-Петербург</option>
-                        <option value="saint-petersburg">Санкт-Петербург</option>
-                        <option value="saint-petersburg">Санкт-Петербург</option>
+                        <option value="saint-petersburg-1">Санкт-Петербург</option>
+                        <option value="saint-petersburg-2">Санкт-Петербург</option>
+                        <option value="saint-petersburg-3">Санкт-Петербург</option>
+                        <option value="saint-petersburg-4">Санкт-Петербург</option>
                       </select>
                     </div>
-                    <div class="field__select-custom field__select-custom--hidden js-select-custom" tabindex="0">
-                      <div class="field__select-custom-trigger">
-                        <ul class="field__select-custom-options">
-                          <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
-                          <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
-                          <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
-                          <li class="field__select-custom-option" data-value="saint-petersburg">Санкт-Петербург</li>
-                        </ul>
-                      </div>
+                    <div class="field__select-custom field__select-custom--hidden js-select-custom" tabindex="0" aria-hidden="true" aria-labelledby="select-title" role="combobox" aria-expanded="false">
+                      <div class="field__select-custom-trigger" aria-haspopup="listbox"></div>
+                      <ul class="field__select-custom-options" role="listbox">
+                        <li class="field__select-custom-option" data-value="saint-petersburg-1" data-option-id="0" tabindex="0" role="option" aria-selected="false">Санкт-Петербург</li>
+                        <li class="field__select-custom-option" data-value="saint-petersburg-2" data-option-id="1" tabindex="0" role="option" aria-selected="false">Санкт-Петербург</li>
+                        <li class="field__select-custom-option" data-value="saint-petersburg-3" data-option-id="2" tabindex="0" role="option" aria-selected="false">Санкт-Петербург</li>
+                        <li class="field__select-custom-option" data-value="saint-petersburg-4" data-option-id="3" tabindex="0" role="option" aria-selected="false">Санкт-Петербург</li>
+                      </ul>
                     </div>
                   </div>
                 </li>

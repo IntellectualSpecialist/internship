@@ -6,6 +6,23 @@
   border-radius: 16px;
 }
 
+.form--no-js {
+  input,
+  textarea,
+  select {
+    &:user-invalid {
+      background-color: $error-color-opacity;
+      border-color: $error-color;
+    }
+  }
+
+  [type="checkbox"] {
+    &:user-invalid {
+      opacity: 0.7;
+    }
+  }
+}
+
 .form__title {
   margin: 0;
   margin-bottom: 10px;

@@ -99,20 +99,21 @@
   }
 }
 
-.site-lite__dropdown {
+.site-list__dropdown {
+  height: 0;
   overflow: hidden;
-  transition: height 0.2s ease;
+  transition: height 0.3s ease;
 
   &--hidden {
-    height: 0;
+    display: none;
   }
 }
 
 .site-list__sub-menu {
   @include list-reset;
 
-  margin-left: 16px;
-  margin-top: 10px;
+  padding-left: 16px;
+  padding-top: 10px;
 }
 
 .site-list__sub-menu-item {

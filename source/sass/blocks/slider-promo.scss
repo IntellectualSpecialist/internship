@@ -11,6 +11,8 @@
 }
 
 .slider-promo__pagination {
+  list-style: none;
+  margin: 0;
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
