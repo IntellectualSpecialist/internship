@@ -1,6 +1,6 @@
 import { debounce } from './utils';
 
-const renderDelay = 300;
+const renderDelay = 200;
 
 let currentTab = 0;
 const tabsListElement = document.querySelector('.news__tabs-list');

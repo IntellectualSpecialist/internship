@@ -77,6 +77,12 @@ const initCustomSelect = (selectWrapperElement) => {
     updateOptions();
   };
 
+  const onNativeSelectClean = () => {
+    if (!nativeSelectElement.value) {
+      cleanSelect();
+    }
+  };
+
   const updateFocusedOption = () => {
     isFocusInsideSelect = true;
 
@@ -99,6 +105,7 @@ const initCustomSelect = (selectWrapperElement) => {
     if (isEscapeKey(evt)) {
       evt.preventDefault();
       closeSelect();
+      evt.stopPropagation();
     }
   };
 
@@ -151,7 +158,7 @@ const initCustomSelect = (selectWrapperElement) => {
     customSelectOptionsElement.addEventListener('click', onOptionClick);
     customSelectOptionsElement.addEventListener('keydown', onOptionKeydown);
     customSelectElement.addEventListener('keydown', onSelectKeydownArrows);
-    document.addEventListener('keydown', onDocumentKeydown);
+    bodyElement.addEventListener('keydown', onDocumentKeydown);
   }
 
   function closeSelect() {
@@ -160,16 +167,18 @@ const initCustomSelect = (selectWrapperElement) => {
     customSelectOptionsElement.removeEventListener('click', onOptionClick);
     customSelectOptionsElement.removeEventListener('keydown', onOptionKeydown);
     customSelectElement.removeEventListener('keydown', onSelectKeydownArrows);
-    document.removeEventListener('keydown', onDocumentKeydown);
+    bodyElement.removeEventListener('keydown', onDocumentKeydown);
   }
 
   const registerSelectEvents = () => {
+    nativeSelectElement.addEventListener('change', onNativeSelectClean);
     customSelectElement.addEventListener('click', onSelectClick);
     customSelectElement.addEventListener('keydown', onSelectKeydown);
     customSelectOptionsElement.addEventListener('focusout', onSelectFocusOut);
   };
 
   const removeSelectEvents = () => {
+    nativeSelectElement.removeEventListener('change', onNativeSelectClean);
     customSelectElement.removeEventListener('click', onSelectClick);
     customSelectElement.removeEventListener('keydown', onSelectKeydown);
     customSelectElement.removeEventListener('focusout', onSelectFocusOut);

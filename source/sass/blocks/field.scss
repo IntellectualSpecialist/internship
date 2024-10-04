@@ -163,6 +163,10 @@
   .field__select-custom::before {
     background-color: $primary-color;
   }
+
+  .field__select-custom-options {
+    background-color: $primary-color;
+  }
 }
 
 .field--error {

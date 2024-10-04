@@ -8,6 +8,7 @@ import { initAccordion } from './accordion';
 import { initSliderReviews } from './slider-reviews';
 import { initAllFormsValidate } from './form';
 import { initAllSelects } from './select';
+import { initSwap } from './swap-dom-elements';
 
 window.addEventListener('load', () => {
   initNavBurger();
@@ -20,4 +21,5 @@ window.addEventListener('load', () => {
   initSliderReviews();
   initAllFormsValidate();
   initAllSelects();
+  initSwap();
 });

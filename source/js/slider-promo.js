@@ -1,11 +1,12 @@
 import Swiper from 'swiper';
+import { A11y } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/a11y';
 import { desktopWidth, mobileWidthOnlyMediaQuery, tabletWidthOnlyMediaQuery, tabletWidthMediaQuery, desktopWidthMediaQuery } from './const';
-import { setFocusOnVisibleSlides, setFocusOnSlideChange} from './utils';
+
 
 const slidesPerViewCount = 1;
 const promoSliderElement = document.querySelector('.slider-promo');
-let sliderButtonsElements;
 let promoSlider;
 
 const desktopSettings = {
@@ -19,6 +20,7 @@ const desktopSettings = {
 const createSlider = (settings) => {
   promoSlider = new Swiper(promoSliderElement, {
     ...settings,
+    modules: [ A11y ],
     slidesPerView: slidesPerViewCount,
     loop: true,
     init: false,
@@ -106,7 +108,6 @@ const updatePagination = () => {
 const registerSlideChangeEvents = () => {
   promoSlider.on('slideChange', () => {
     updatePagination();
-    setFocusOnSlideChange(promoSlider, sliderButtonsElements, slidesPerViewCount);
   });
 };
 
@@ -114,8 +115,6 @@ const initSlider = (settings) => {
   createSlider(settings);
   initPagination();
   registerPaginationClickEvents();
-  sliderButtonsElements = promoSliderElement.querySelectorAll('a[href], button');
-  setFocusOnVisibleSlides(promoSlider, sliderButtonsElements, slidesPerViewCount, promoSlider.realIndex);
   registerSlideChangeEvents();
 };
 

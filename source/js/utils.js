@@ -7,29 +7,29 @@ const debounce = (callback, timeoutDelay) => {
   };
 };
 
-const removeFocusOnButtons = (sliderLinks) => {
-  sliderLinks.forEach((link) => {
-    link.setAttribute('tabindex', '-1');
-  });
-};
+// const removeFocusOnButtons = (sliderLinks) => {
+//   sliderLinks.forEach((link) => {
+//     link.setAttribute('tabindex', '-1');
+//   });
+// };
 
-const setFocusOnVisibleSlides = (slider, sliderLinks, slidesPerView, startSlide) => {
-  removeFocusOnButtons(sliderLinks);
+// const setFocusOnVisibleSlides = (slider, sliderLinks, slidesPerView, startSlide) => {
+//   removeFocusOnButtons(sliderLinks);
 
-  for (let i = 0; i < slidesPerView; i++) {
-    const slideLinks = slider.slides[startSlide + i].querySelectorAll('a[href], button');
+//   for (let i = 0; i < slidesPerView; i++) {
+//     const slideLinks = slider.slides[startSlide + i].querySelectorAll('a[href], button');
 
-    slideLinks.forEach((link) => {
-      link.setAttribute('tabindex', '0');
-    });
-  }
-};
+//     slideLinks.forEach((link) => {
+//       link.setAttribute('tabindex', '0');
+//     });
+//   }
+// };
 
-const setFocusOnSlideChange = (slider, sliderLinks, slidesPerView) => {
-  const activeSlideIndex = slider.realIndex;
+// const setFocusOnSlideChange = (slider, sliderLinks, slidesPerView) => {
+//   const activeSlideIndex = slider.realIndex * slidesPerView;
 
-  setFocusOnVisibleSlides(slider, sliderLinks, slidesPerView, activeSlideIndex);
-};
+//   setFocusOnVisibleSlides(slider, sliderLinks, slidesPerView, activeSlideIndex);
+// };
 
 const isEscapeKey = (evt) => evt.key === 'Escape';
 
@@ -51,4 +51,4 @@ const cleanFields = (formElement) => {
   formElement.reset();
 };
 
-export { debounce, setFocusOnVisibleSlides, setFocusOnSlideChange, isEscapeKey, cleanFields, isSpaceKey, isEnterKey, isArrowUpKey, isArrowDownKey };
+export { debounce, isEscapeKey, cleanFields, isSpaceKey, isEnterKey, isArrowUpKey, isArrowDownKey };
