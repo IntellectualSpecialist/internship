@@ -34,6 +34,7 @@
 .modal__feedback {
   position: relative;
   width: 290px;
+  height: fit-content;
   margin: 23px auto 0;
   animation: bounce 0.3s;
 }

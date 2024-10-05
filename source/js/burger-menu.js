@@ -24,12 +24,12 @@ const openMenu = () => {
 const closeMenu = () => {
   mainNavElement.style.height = 0;
   navBurgerElement.classList.remove('burger--active');
-  navBurgerElement.classList.remove('main-header__burger--active');
   headerElement.classList.remove('main-header--menu-open');
   siteListElement.removeEventListener('click', onNavLinkClick);
   bodyElement.removeEventListener('click', onBodyClick);
 
   setTimeout(() => {
+    navBurgerElement.classList.remove('main-header__burger--active');
     mainNavElement.classList.add('main-header__nav--hidden');
   }, removeNavDelay);
 };

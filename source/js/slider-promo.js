@@ -4,7 +4,6 @@ import 'swiper/css';
 import 'swiper/css/a11y';
 import { desktopWidth, mobileWidthOnlyMediaQuery, tabletWidthOnlyMediaQuery, tabletWidthMediaQuery, desktopWidthMediaQuery } from './const';
 
-
 const slidesPerViewCount = 1;
 const promoSliderElement = document.querySelector('.slider-promo');
 let promoSlider;

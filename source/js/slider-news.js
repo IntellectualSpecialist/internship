@@ -42,9 +42,9 @@ const prevPaginationButtonsCount = 2;
 const nextPaginationButtonsCount = 1;
 
 const newsSliderElement = document.querySelector('.slider-news');
-const secondSlideElement = newsSliderElement.querySelector('#second-slide-news');
-const thirdSlideElement = newsSliderElement.querySelector('#third-slide-news');
-const news = newsSliderElement.querySelectorAll('.news-card');
+let secondSlideElement;
+let thirdSlideElement;
+let news;
 let newsSlider;
 let newsSwiperElement;
 let newsProgramsNavigationPrevElement;
@@ -52,6 +52,9 @@ let newsProgramsNavigationNextElement;
 let newsSliderPaginatonElement;
 
 if (newsSliderElement) {
+  secondSlideElement = newsSliderElement.querySelector('#second-slide-news');
+  thirdSlideElement = newsSliderElement.querySelector('#third-slide-news');
+  news = newsSliderElement.querySelectorAll('.news-card');
   newsSwiperElement = newsSliderElement.querySelector('.swiper');
   newsProgramsNavigationPrevElement = newsSliderElement.querySelector('.swiper-button-prev');
   newsProgramsNavigationNextElement = newsSliderElement.querySelector('.swiper-button-next');
@@ -232,9 +235,11 @@ const registerResizeWindowEvents = () => {
 };
 
 const initNewsSlider = () => {
-  newsSliderElement.classList.remove('slider-news--no-js');
-  updateSlider();
-  registerResizeWindowEvents();
+  if (newsSliderElement) {
+    newsSliderElement.classList.remove('slider-news--no-js');
+    updateSlider();
+    registerResizeWindowEvents();
+  }
 };
 
 export { initNewsSlider };

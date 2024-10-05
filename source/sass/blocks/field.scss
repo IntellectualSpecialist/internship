@@ -140,6 +140,8 @@
   textarea,
   select,
   .field__select-custom {
+    padding-top: 15px;
+    padding-bottom: 15px;
     height: 44px;
     color: $primary-color;
     border-color: rgba($primary-color, 0.3);
@@ -162,6 +164,10 @@
   .field__wrapper::before,
   .field__select-custom::before {
     background-color: $primary-color;
+  }
+
+  .field__select-custom--active {
+    border-color: $primary-color;
   }
 
   .field__select-custom-options {
@@ -194,12 +200,26 @@
   cursor: pointer;
 }
 
-.field .field__select-custom {
+.field__select-custom {
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 1;
 
+  &--hidden {
+    display: none;
+  }
+
+  &--active {
+    border-color: $base-white;
+  }
+
+  &--active .field__select-custom-options {
+    display: block;
+  }
+}
+
+.field .field__select-custom {
   &:focus-visible,
   &:active {
     &::before {
@@ -207,16 +227,8 @@
     }
   }
 
-  &--hidden {
-    display: none;
-  }
-
   &--active::before {
     transform: translateY(-50%) rotate(180deg);
-  }
-
-  &--active .field__select-custom-options {
-    display: block;
   }
 }
 
@@ -269,6 +281,8 @@
       textarea,
       select,
       .field__select-custom {
+        padding-top: 17px;
+        padding-bottom: 17px;
         height: 50px;
       }
 

@@ -8,7 +8,7 @@ const slidesPerViewCount = {
   desktop: 3,
 };
 const spaceBetween = {
-  mobile: 0,
+  mobile: 10,
   tablet: 30,
   desktop: 32,
 };

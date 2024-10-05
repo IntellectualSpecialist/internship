@@ -198,12 +198,15 @@ const initAllSelects = () => {
     selectWrapperElements.forEach((selectWrapperElement) => {
       const nativeSelectElement = selectWrapperElement.querySelector('select');
       const customSelectElement = selectWrapperElement.querySelector('.js-select-custom');
+      const customSelectOptionsElement = selectWrapperElement.querySelector('.field__select-custom-options');
 
       selectWrapperElement.classList.add('field--select-hidden');
       nativeSelectElement.setAttribute('tabindex', '-1');
       nativeSelectElement.setAttribute('aria-hidden', true);
+      nativeSelectElement.setAttribute('focusable', false);
       customSelectElement.classList.remove('field__select-custom--hidden');
-      customSelectElement.setAttribute('aria-hidden', false);
+      customSelectElement.setAttribute('role', 'combobox');
+      customSelectOptionsElement.setAttribute('role', 'listbox');
 
       if (!selectWrapperElement.closest('.modal--hidden')) {
         initCustomSelect(selectWrapperElement);
