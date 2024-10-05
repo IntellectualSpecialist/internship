@@ -454,7 +454,9 @@
               </div>
             </div>
             <div class="slider-scrollbar__scrollbar swiper-scrollbar">
-              <div class="slider-scrollbar__drag swiper-scrollbar-drag"></div>
+              <button class="slider-scrollbar__drag swiper-scrollbar-drag" type="button">
+                <span class="visually-hidden">Ползунок слайдера/перелистнуть слайд</span>
+              </button>
             </div>
             <div class="slider-scrollbar__navigation">
               <button class="slider-button slider-button--prev swiper-button-prev" type="button" disabled>
@@ -1281,7 +1283,9 @@
               </div>
             </div>
             <div class="slider-scrollbar__scrollbar swiper-scrollbar">
-              <div class="slider-scrollbar__drag swiper-scrollbar-drag"></div>
+              <button class="slider-scrollbar__drag swiper-scrollbar-drag" type="button">
+                <span class="visually-hidden">Ползунок слайдера/перелистнуть слайд</span>
+              </button>
             </div>
             <div class="slider-scrollbar__navigation">
               <button class="slider-button slider-button--prev swiper-button-prev" type="button" disabled>
@@ -1361,13 +1365,23 @@
                           <option value="saint-petersburg-4">Санкт-Петербург</option>
                         </select>
                       </div>
-                      <div class="field__select-custom field__select-custom--hidden js-select-custom" tabindex="0" aria-labelledby="select-title" aria-expanded="false">
-                        <div class="field__select-custom-trigger" aria-haspopup="listbox"></div>
-                        <ul class="field__select-custom-options">
-                          <li class="field__select-custom-option" data-value="saint-petersburg-1" data-option-id="0" tabindex="0" role="option" aria-selected="false">Санкт-Петербург</li>
-                          <li class="field__select-custom-option" data-value="saint-petersburg-2" data-option-id="1" tabindex="0" role="option" aria-selected="false">Санкт-Петербург</li>
-                          <li class="field__select-custom-option" data-value="saint-petersburg-3" data-option-id="2" tabindex="0" role="option" aria-selected="false">Санкт-Петербург</li>
-                          <li class="field__select-custom-option" data-value="saint-petersburg-4" data-option-id="3" tabindex="0" role="option" aria-selected="false">Санкт-Петербург</li>
+                      <div class="field__select-custom field__select-custom--hidden js-select-custom" aria-labelledby="select-title" role="combobox" aria-expanded="false">
+                        <button class="field__select-custom-trigger" aria-haspopup="listbox" type="button">
+                          <span class="visually-hidden">Выберите город</span>
+                        </button>
+                        <ul class="field__select-custom-options" role="listbox">
+                          <li class="field__select-custom-item">
+                            <button class="field__select-custom-option" data-value="saint-petersburg-1" data-option-id="0" role="option" aria-selected="false" type="button">Санкт-Петербург</button>
+                          </li>
+                          <li class="field__select-custom-item">
+                            <button class="field__select-custom-option" data-value="saint-petersburg-2" data-option-id="1" role="option" aria-selected="false" type="button">Санкт-Петербург</button>
+                          </li>
+                          <li class="field__select-custom-item">
+                            <button class="field__select-custom-option" data-value="saint-petersburg-3" data-option-id="2" role="option" aria-selected="false" type="button">Санкт-Петербург</button>
+                          </li>
+                          <li class="field__select-custom-item">
+                            <button class="field__select-custom-option" data-value="saint-petersburg-4" data-option-id="3" role="option" aria-selected="false" type="button">Санкт-Петербург</button>
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -1481,13 +1495,23 @@
                         <option value="saint-petersburg-4">Санкт-Петербург</option>
                       </select>
                     </div>
-                    <div class="field__select-custom field__select-custom--hidden js-select-custom" tabindex="0" aria-labelledby="select-title-2" aria-expanded="false">
-                      <div class="field__select-custom-trigger" aria-haspopup="listbox"></div>
-                      <ul class="field__select-custom-options">
-                        <li class="field__select-custom-option" data-value="saint-petersburg-1" data-option-id="0" tabindex="0" role="option" aria-selected="false">Санкт-Петербург</li>
-                        <li class="field__select-custom-option" data-value="saint-petersburg-2" data-option-id="1" tabindex="0" role="option" aria-selected="false">Санкт-Петербург</li>
-                        <li class="field__select-custom-option" data-value="saint-petersburg-3" data-option-id="2" tabindex="0" role="option" aria-selected="false">Санкт-Петербург</li>
-                        <li class="field__select-custom-option" data-value="saint-petersburg-4" data-option-id="3" tabindex="0" role="option" aria-selected="false">Санкт-Петербург</li>
+                    <div class="field__select-custom field__select-custom--hidden js-select-custom" aria-labelledby="select-title-2" role="combobox" aria-expanded="false">
+                      <button class="field__select-custom-trigger" aria-haspopup="listbox" type="button">
+                        <span class="visually-hidden">Выберите город</span>
+                      </button>
+                      <ul class="field__select-custom-options" role="listbox">
+                        <li class="field__select-custom-item">
+                          <button class="field__select-custom-option" data-value="saint-petersburg-1" data-option-id="0" role="option" aria-selected="false" type="button">Санкт-Петербург</button>
+                        </li>
+                        <li class="field__select-custom-item">
+                          <button class="field__select-custom-option" data-value="saint-petersburg-2" data-option-id="1" role="option" aria-selected="false" type="button">Санкт-Петербург</button>
+                        </li>
+                        <li class="field__select-custom-item">
+                          <button class="field__select-custom-option" data-value="saint-petersburg-3" data-option-id="2" role="option" aria-selected="false" type="button">Санкт-Петербург</button>
+                        </li>
+                        <li class="field__select-custom-item">
+                          <button class="field__select-custom-option" data-value="saint-petersburg-4" data-option-id="3" role="option" aria-selected="false" type="button">Санкт-Петербург</button>
+                        </li>
                       </ul>
                     </div>
                   </div>

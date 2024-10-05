@@ -73,9 +73,11 @@
   }
 
   .slider-scrollbar__drag {
-    position: relative;
+    position: absolute;
+    padding: 0;
     height: 2px;
     background-color: $secondary-color;
+    border: none;
     cursor: pointer;
 
     &::before {
@@ -85,6 +87,16 @@
       left: 0;
       height: 22px;
       width: 100%;
+    }
+
+    &:hover,
+    &:focus-visible {
+      opacity: 0.7;
+    }
+
+    &:active,
+    &:disabled {
+      opacity: 0.5;
     }
   }
 }

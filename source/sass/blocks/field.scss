@@ -34,7 +34,7 @@
   input,
   textarea,
   select,
-  .field__select-custom {
+  .field__select-custom-trigger {
     padding: 17px 20px;
     width: 100%;
     height: 50px;
@@ -78,7 +78,7 @@
   position: relative;
 
   select,
-  .field__select-custom {
+  .field__select-custom-trigger {
     height: 52px;
     padding-right: 45px;
     cursor: pointer;
@@ -139,7 +139,7 @@
   input,
   textarea,
   select,
-  .field__select-custom {
+  .field__select-custom-trigger {
     padding-top: 15px;
     padding-bottom: 15px;
     height: 44px;
@@ -166,12 +166,12 @@
     background-color: $primary-color;
   }
 
-  .field__select-custom--active {
+  .field__select-custom--active .field__select-custom-trigger {
     border-color: $primary-color;
   }
 
   .field__select-custom-options {
-    background-color: $primary-color;
+    border: 1px solid $primary-color;
   }
 }
 
@@ -179,7 +179,7 @@
   input,
   textarea,
   select,
-  .field__select-custom {
+  .field__select-custom-trigger {
     background-color: $error-color-opacity;
     border-color: $error-color;
 
@@ -205,12 +205,13 @@
   bottom: 0;
   left: 0;
   z-index: 1;
+  width: 100%;
 
   &--hidden {
     display: none;
   }
 
-  &--active {
+  &--active .field__select-custom-trigger {
     border-color: $base-white;
   }
 
@@ -232,6 +233,11 @@
   }
 }
 
+.field__select-custom-trigger {
+  text-align: left;
+  cursor: pointer;
+}
+
 .field__select-custom-options {
   @include list-reset;
 
@@ -240,32 +246,45 @@
   left: 0;
   display: none;
   width: 100%;
-  padding: 1px;
-  background-color: $base-white;
+  max-height: 194px;
+  border: 1px solid $base-white;
   border-radius: 8px;
+  background-color: $base-white;
   transform: translateY(4px);
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.field__select-custom-item {
+  &:first-of-type {
+    .field__select-custom-option {
+      border-radius: 8px 8px 0 0;
+    }
+  }
+
+  &:last-of-type {
+    .field__select-custom-option {
+      border-radius: 0 0 8px 8px;
+    }
+  }
 }
 
 .field__select-custom-option {
+  width: 100%;
   padding: 17px 20px;
   font-size: 14px;
   line-height: 14px;
   color: $primary-color;
   background-color: $base-white;
+  border: none;
+  text-align: left;
+  cursor: pointer;
 
   &:hover,
   &:focus-visible,
   &:active {
     color: $base-white;
     background-color: $secondary-color;
-  }
-
-  &:first-child {
-    border-radius: 8px 8px 0 0;
-  }
-
-  &:last-child {
-    border-radius: 0 0 8px 8px;
   }
 
   &--active {
@@ -280,7 +299,7 @@
       input,
       textarea,
       select,
-      .field__select-custom {
+      .field__select-custom-trigger {
         padding-top: 17px;
         padding-bottom: 17px;
         height: 50px;

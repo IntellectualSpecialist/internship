@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, Grid, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Grid } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/grid';
 import 'swiper/css/a11y';
@@ -63,7 +63,7 @@ if (newsSliderElement) {
 
 const createSlider = () => {
   newsSlider = new Swiper(newsSwiperElement, {
-    modules: [ Navigation, Pagination, Grid, A11y ],
+    modules: [ Navigation, Pagination, Grid ],
     init: false,
     spaceBetween: spaceBetween.mobile,
     navigation: {

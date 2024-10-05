@@ -99,6 +99,7 @@ const initCustomSelect = (selectWrapperElement) => {
 
   const onOptionClick = (evt) => {
     updateCurrentSelectValue(evt);
+    closeSelect();
   };
 
   const onDocumentKeydown = (evt) => {
@@ -141,6 +142,7 @@ const initCustomSelect = (selectWrapperElement) => {
     if (isEnterKey(evt)) {
       evt.preventDefault();
       updateCurrentSelectValue(evt);
+      closeSelect();
     }
   };
 
@@ -172,15 +174,15 @@ const initCustomSelect = (selectWrapperElement) => {
 
   const registerSelectEvents = () => {
     nativeSelectElement.addEventListener('change', onNativeSelectClean);
-    customSelectElement.addEventListener('click', onSelectClick);
-    customSelectElement.addEventListener('keydown', onSelectKeydown);
-    customSelectOptionsElement.addEventListener('focusout', onSelectFocusOut);
+    customSelectBoxElement.addEventListener('click', onSelectClick);
+    customSelectBoxElement.addEventListener('keydown', onSelectKeydown);
+    customSelectElement.addEventListener('focusout', onSelectFocusOut);
   };
 
   const removeSelectEvents = () => {
     nativeSelectElement.removeEventListener('change', onNativeSelectClean);
-    customSelectElement.removeEventListener('click', onSelectClick);
-    customSelectElement.removeEventListener('keydown', onSelectKeydown);
+    customSelectBoxElement.removeEventListener('click', onSelectClick);
+    customSelectBoxElement.removeEventListener('keydown', onSelectKeydown);
     customSelectElement.removeEventListener('focusout', onSelectFocusOut);
   };
 
@@ -198,15 +200,12 @@ const initAllSelects = () => {
     selectWrapperElements.forEach((selectWrapperElement) => {
       const nativeSelectElement = selectWrapperElement.querySelector('select');
       const customSelectElement = selectWrapperElement.querySelector('.js-select-custom');
-      const customSelectOptionsElement = selectWrapperElement.querySelector('.field__select-custom-options');
 
       selectWrapperElement.classList.add('field--select-hidden');
       nativeSelectElement.setAttribute('tabindex', '-1');
       nativeSelectElement.setAttribute('aria-hidden', true);
       nativeSelectElement.setAttribute('focusable', false);
       customSelectElement.classList.remove('field__select-custom--hidden');
-      customSelectElement.setAttribute('role', 'combobox');
-      customSelectOptionsElement.setAttribute('role', 'listbox');
 
       if (!selectWrapperElement.closest('.modal--hidden')) {
         initCustomSelect(selectWrapperElement);

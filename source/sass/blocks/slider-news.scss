@@ -67,7 +67,7 @@
     opacity: 1;
   }
 
-  &:focus-visible {
+  &:not(.slider-news__pagination-button--active):focus-visible {
     background-color: $base-white;
     border-color: $secondary-color;
     opacity: 1;
@@ -100,7 +100,6 @@
       background-color: $secondary-color;
       border: 2px solid $secondary-color;
       opacity: 1;
-      outline: auto;
     }
   }
 
