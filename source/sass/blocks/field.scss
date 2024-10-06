@@ -245,6 +245,10 @@
 }
 
 .field__select-custom-trigger {
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  scrollbar-width: none;
   text-align: left;
   cursor: pointer;
 }
