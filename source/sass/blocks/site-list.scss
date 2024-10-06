@@ -58,6 +58,7 @@
   text-transform: uppercase;
   text-decoration: none;
   opacity: 0.7;
+  transition: 0.2s ease;
 
   &:hover,
   &:focus-visible,
@@ -130,6 +131,7 @@
   color: $base-white;
   opacity: 0.6;
   text-decoration: none;
+  transition: 0.2s ease;
 
   &:hover,
   &:focus-visible {

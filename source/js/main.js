@@ -10,7 +10,7 @@ import { initAllFormsValidate } from './form';
 import { initAllSelects } from './select';
 import { initSwap } from './swap-dom-elements';
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
   initNavBurger();
   initPromoSlider();
   initModalFeedback();

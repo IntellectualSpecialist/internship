@@ -4,7 +4,7 @@
 }
 
 .hero__slider {
-  width: 320px;
+  width: 100%;
   margin-top: -94px;
   margin-left: auto;
   margin-right: auto;
@@ -12,13 +12,6 @@
 
 @media (min-width: $tablet-width) {
   .hero__slider {
-    width: 768px;
     margin-top: -116px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .hero__slider {
-    width: 1440px;
   }
 }

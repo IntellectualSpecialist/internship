@@ -15,16 +15,6 @@
   }
 }
 
-.slider-scrollbar--reviews {
-  .slider-scrollbar__swiper {
-    border-radius: 16px;
-  }
-}
-
-.slider-scrollbar__swiper {
-  border-radius: 12px;
-}
-
 .slider-scrollbar .slider-scrollbar__slide {
   width: auto;
   height: auto;
@@ -97,6 +87,10 @@
     &:active,
     &:disabled {
       opacity: 0.5;
+    }
+
+    &:disabled {
+      pointer-events: none;
     }
   }
 }

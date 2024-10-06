@@ -3,6 +3,12 @@
   align-items: center;
   gap: 10px;
 
+  &:has(input:disabled) {
+    .checkbox__label {
+      pointer-events: none;
+    }
+  }
+
   input {
     flex-shrink: 0;
     display: flex;

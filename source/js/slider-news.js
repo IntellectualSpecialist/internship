@@ -11,6 +11,7 @@ import {
   tabletWidthMediaQuery,
   desktopWidthMediaQuery
 } from './const';
+import { setTabIndexForSlideButtons } from './utils';
 
 const spaceBetween = {
   mobile: 20,
@@ -193,43 +194,45 @@ const setBigSlideOnDifferentScreen = () => {
   }
 };
 
-const registerSlideChangeEvents = () => {
+const registerSlideChangeEvents = (visibleSlides, isGrid) => {
   newsSlider.on('slideChange', () => {
     updatePagination();
+    setTabIndexForSlideButtons(newsSlider, visibleSlides, newsSlider.realIndex, isGrid);
   });
 };
 
-const updateSlider = () => {
+const updateSlider = (visibleSlides, isGrid) => {
   destroySlider();
   setBigSlideOnDifferentScreen();
   swapSlidesOnDifferentScreen();
   createSlider();
   updatePagination();
-  registerSlideChangeEvents();
+  registerSlideChangeEvents(visibleSlides, isGrid);
+  setTabIndexForSlideButtons(newsSlider, visibleSlides, newsSlider.realIndex, isGrid);
 };
 
 const registerResizeWindowEvents = () => {
   mobileWidthOnlyMediaQuery.addEventListener('change', (evt) => {
     if (evt.matches) {
-      updateSlider();
+      updateSlider(realVisibleSlides.mobile, true);
     }
   });
 
   tabletWidthOnlyMediaQuery.addEventListener('change', (evt) => {
     if (evt.matches) {
-      updateSlider();
+      updateSlider(realVisibleSlides.tablet, true);
     }
   });
 
   tabletWidthMediaQuery.addEventListener('change', (evt) => {
     if (evt.matches) {
-      updateSlider();
+      updateSlider(realVisibleSlides.tablet, true);
     }
   });
 
   desktopWidthMediaQuery.addEventListener('change', (evt) => {
     if (evt.matches) {
-      updateSlider();
+      updateSlider(realVisibleSlides.desktop, false);
     }
   });
 };
@@ -237,7 +240,19 @@ const registerResizeWindowEvents = () => {
 const initNewsSlider = () => {
   if (newsSliderElement) {
     newsSliderElement.classList.remove('slider-news--no-js');
-    updateSlider();
+
+    if (window.innerWidth < tabletWidth) {
+      updateSlider(realVisibleSlides.mobile, true);
+    }
+
+    if (window.innerWidth >= tabletWidth && window.innerWidth < desktopWidth) {
+      updateSlider(realVisibleSlides.tablet, true);
+    }
+
+    if (window.innerWidth >= desktopWidth) {
+      updateSlider(realVisibleSlides.desktop, false);
+    }
+
     registerResizeWindowEvents();
   }
 };

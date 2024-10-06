@@ -62,8 +62,8 @@ const debounceOpenSubMenu = debounce(openSubMenu, renderDelay);
 const debounceCloseSubMenu = debounce(closeSubMenu, renderDelay);
 
 function onNavLinkClick(evt) {
-
   if (evt.target.matches('.site-list__link--dropdown')) {
+    evt.preventDefault();
     const currentLinkElement = evt.target;
     const currentListItemElement = evt.target.closest('.site-list__item');
     const currentSubMenuElement = currentListItemElement.querySelector('.site-list__dropdown');

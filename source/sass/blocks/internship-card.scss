@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 320px;
+  width: 100%;
   min-height: 568px;
   height: 100%;
   padding-top: 94px;
@@ -15,6 +15,7 @@
   position: absolute;
   left: 0;
   top: 0;
+  width: 100%;
 
   &::before {
     content: "";
@@ -28,7 +29,8 @@
 
   img {
     display: block;
-    width: 320px;
+    width: 100%;
+    object-fit: cover;
     height: 568px;
   }
 }
@@ -117,7 +119,6 @@
 
 @media (min-width: $tablet-width) {
   .internship-card {
-    width: 768px;
     min-height: 1024px;
     padding-top: 116px;
     padding-bottom: 60px;
@@ -125,7 +126,6 @@
 
   .internship-card__image {
     img {
-      width: 768px;
       height: 1024px;
     }
   }
@@ -202,13 +202,11 @@
 
 @media (min-width: $desktop-width) {
   .internship-card {
-    width: 1440px;
     min-height: 800px;
   }
 
   .internship-card__image {
     img {
-      width: 1440px;
       height: 800px;
     }
   }

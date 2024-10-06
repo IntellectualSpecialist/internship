@@ -20,6 +20,7 @@
   &:has(select:disabled) {
     .field__label {
       opacity: 0.6;
+      pointer-events: none;
     }
   }
 
@@ -140,8 +141,8 @@
   textarea,
   select,
   .field__select-custom-trigger {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 14px;
+    padding-bottom: 14px;
     height: 44px;
     color: $primary-color;
     border-color: rgba($primary-color, 0.3);
@@ -156,8 +157,18 @@
     }
 
     &:disabled {
+      opacity: 1;
       background-color: $disabled-opacity;
       border-color: $disabled-opacity-alt;
+      pointer-events: none;
+    }
+  }
+
+  &:has(input:disabled),
+  &:has(textarea:disabled),
+  &:has(select:disabled) {
+    .field__label {
+      color: $disabled-color;
     }
   }
 
@@ -221,8 +232,8 @@
 }
 
 .field .field__select-custom {
-  &:focus-visible,
-  &:active {
+  &:has(.field__select-custom-trigger:focus-visible),
+  &:has(.field__select-custom-trigger:active) {
     &::before {
       transform: translateY(-50%) rotate(180deg);
     }
@@ -280,7 +291,10 @@
   text-align: left;
   cursor: pointer;
 
-  &:hover,
+  &:not(.field__select-custom-option--active):not(:focus-visible):not(:active):hover {
+    color: $secondary-color;
+  }
+
   &:focus-visible,
   &:active {
     color: $base-white;

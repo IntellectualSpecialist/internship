@@ -12,6 +12,7 @@ let programsMoreButton;
 let programsSlider;
 let sliderSwiper;
 let sliderNavigation;
+let sliderScrollbar;
 
 const programsWrapper = document.querySelector('.programs__wrapper');
 const footerSocial = document.querySelector('.main-footer__social');
@@ -23,6 +24,7 @@ if (programsWrapper) {
   programsSlider = programsWrapper.querySelector('.programs__slider');
   sliderSwiper = programsSlider.querySelector('.slider-scrollbar__swiper');
   sliderNavigation = programsSlider.querySelector('.slider-scrollbar__navigation');
+  sliderScrollbar = programsSlider.querySelector('.slider-scrollbar__scrollbar');
 }
 
 const swapSliderElements = () => {
@@ -49,7 +51,8 @@ const registerResizeWIndowEventsForSlider = () => {
   tabletWidthMediaQuery.addEventListener('change', (evt) => {
     if (evt.matches) {
       programsHeader.append(programsMoreButton);
-      sliderSwiper.after(sliderNavigation);
+      sliderSwiper.after(sliderScrollbar);
+      sliderScrollbar.after(sliderNavigation);
     }
   });
 };

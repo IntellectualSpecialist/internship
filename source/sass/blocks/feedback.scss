@@ -1,4 +1,9 @@
+.feedback {
+  overflow-x: hidden;
+}
+
 .feedback__wrapper {
+  position: relative;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -28,6 +33,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .feedback {
+    overflow: visible;
+  }
+
   .feedback__wrapper {
     padding-top: 50px;
     padding-bottom: 50px;

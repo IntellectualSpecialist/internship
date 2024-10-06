@@ -1,6 +1,15 @@
 import Swiper from 'swiper';
-import { Navigation, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Scrollbar } from 'swiper/modules';
 import 'swiper/css';
+import { setTabIndexForSlideButtons } from './utils';
+import {
+  desktopWidth,
+  tabletWidth,
+  mobileWidthOnlyMediaQuery,
+  tabletWidthOnlyMediaQuery,
+  tabletWidthMediaQuery,
+  desktopWidthMediaQuery
+} from './const';
 
 const slidesPerViewCount = {
   mobile: 1,
@@ -27,7 +36,7 @@ if (sliderProgramsElement) {
 }
 
 const sliderPrograms = new Swiper(swiperProgramsElement, {
-  modules: [Navigation, Scrollbar, A11y],
+  modules: [ Navigation, Scrollbar ],
   slidesPerView: slidesPerViewCount.mobile,
   init: false,
   spaceBetween: spaceBetween.mobile,
@@ -62,10 +71,61 @@ const removeNoJsClass = () => {
   sliderProgramsElement.classList.remove('slider-scrollbar--no-js');
 };
 
+const registerSlideChangeEvents = (visibleSlides) => {
+  sliderPrograms.on('slideChange', () => {
+    setTabIndexForSlideButtons(sliderPrograms, visibleSlides, sliderPrograms.realIndex);
+  });
+};
+
+const initSlider = (visibleSlides) => {
+  sliderPrograms.init();
+  registerSlideChangeEvents(visibleSlides);
+  setTabIndexForSlideButtons(sliderPrograms, visibleSlides, sliderPrograms.realIndex);
+};
+
+const registerResizeWindowEvents = () => {
+  mobileWidthOnlyMediaQuery.addEventListener('change', (evt) => {
+    if (evt.matches) {
+      initSlider(slidesPerViewCount.mobile);
+    }
+  });
+
+  tabletWidthOnlyMediaQuery.addEventListener('change', (evt) => {
+    if (evt.matches) {
+      initSlider(slidesPerViewCount.tablet);
+    }
+  });
+
+  tabletWidthMediaQuery.addEventListener('change', (evt) => {
+    if (evt.matches) {
+      initSlider(slidesPerViewCount.tablet);
+    }
+  });
+
+  desktopWidthMediaQuery.addEventListener('change', (evt) => {
+    if (evt.matches) {
+      initSlider(slidesPerViewCount.desktop);
+    }
+  });
+};
+
 const initSliderPrograms = () => {
   if (sliderProgramsElement) {
     removeNoJsClass();
-    sliderPrograms.init();
+
+    if (window.innerWidth < tabletWidth) {
+      initSlider(slidesPerViewCount.mobile);
+    }
+
+    if (window.innerWidth >= tabletWidth && window.innerWidth < desktopWidth) {
+      initSlider(slidesPerViewCount.tablet);
+    }
+
+    if (window.innerWidth >= desktopWidth) {
+      initSlider(slidesPerViewCount.desktop);
+    }
+
+    registerResizeWindowEvents();
   }
 };
 

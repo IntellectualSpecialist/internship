@@ -1,8 +1,7 @@
 import Swiper from 'swiper';
-import { A11y } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/a11y';
 import { desktopWidth, mobileWidthOnlyMediaQuery, tabletWidthOnlyMediaQuery, tabletWidthMediaQuery, desktopWidthMediaQuery } from './const';
+import { setTabIndexForLoopSlideButtons } from './utils';
 
 const slidesPerViewCount = 1;
 const promoSliderElement = document.querySelector('.slider-promo');
@@ -19,7 +18,6 @@ const desktopSettings = {
 const createSlider = (settings) => {
   promoSlider = new Swiper(promoSliderElement, {
     ...settings,
-    modules: [ A11y ],
     slidesPerView: slidesPerViewCount,
     loop: true,
     init: false,
@@ -105,8 +103,9 @@ const updatePagination = () => {
 };
 
 const registerSlideChangeEvents = () => {
-  promoSlider.on('slideChange', () => {
+  promoSlider.on('slideChangeTransitionEnd', () => {
     updatePagination();
+    setTabIndexForLoopSlideButtons(promoSlider);
   });
 };
 
@@ -115,6 +114,7 @@ const initSlider = (settings) => {
   initPagination();
   registerPaginationClickEvents();
   registerSlideChangeEvents();
+  setTabIndexForLoopSlideButtons(promoSlider);
 };
 
 const registerResizeWindowEvents = () => {
