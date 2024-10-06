@@ -78,7 +78,7 @@ const initCustomSelect = (selectWrapperElement) => {
   };
 
   const onNativeSelectClean = () => {
-    if (!nativeSelectElement.value) {
+    if (nativeSelectElement.value === '') {
       cleanSelect();
     }
   };
@@ -203,7 +203,6 @@ const initAllSelects = () => {
 
       selectWrapperElement.classList.add('field--select-hidden');
       nativeSelectElement.setAttribute('tabindex', '-1');
-      nativeSelectElement.setAttribute('aria-hidden', true);
       nativeSelectElement.setAttribute('focusable', false);
       customSelectElement.classList.remove('field__select-custom--hidden');
 
