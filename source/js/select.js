@@ -5,6 +5,7 @@ const bodyElement = document.querySelector('.page__body');
 const selectWrapperElements = bodyElement.querySelectorAll('.field--select');
 
 const initCustomSelect = (selectWrapperElement) => {
+  const formElement = selectWrapperElement.closest('form');
   const nativeSelectElement = selectWrapperElement.querySelector('select');
   const customSelectElement = selectWrapperElement.querySelector('.js-select-custom');
   const customSelectBoxElement = customSelectElement.querySelector('.field__select-custom-trigger');
@@ -77,10 +78,8 @@ const initCustomSelect = (selectWrapperElement) => {
     updateOptions();
   };
 
-  const onNativeSelectClean = () => {
-    if (nativeSelectElement.value === '') {
-      cleanSelect();
-    }
+  const onFormReset = () => {
+    cleanSelect();
   };
 
   const updateFocusedOption = () => {
@@ -173,14 +172,14 @@ const initCustomSelect = (selectWrapperElement) => {
   }
 
   const registerSelectEvents = () => {
-    nativeSelectElement.addEventListener('change', onNativeSelectClean);
+    formElement.addEventListener('reset', onFormReset);
     customSelectBoxElement.addEventListener('click', onSelectClick);
     customSelectBoxElement.addEventListener('keydown', onSelectKeydown);
     customSelectElement.addEventListener('focusout', onSelectFocusOut);
   };
 
   const removeSelectEvents = () => {
-    nativeSelectElement.removeEventListener('change', onNativeSelectClean);
+    formElement.removeEventListener('reset', onFormReset);
     customSelectBoxElement.removeEventListener('click', onSelectClick);
     customSelectBoxElement.removeEventListener('keydown', onSelectKeydown);
     customSelectElement.removeEventListener('focusout', onSelectFocusOut);
