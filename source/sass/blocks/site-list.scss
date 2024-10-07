@@ -50,6 +50,9 @@
 }
 
 .site-list__link {
+  position: relative;
+  display: block;
+  width: fit-content;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
@@ -57,8 +60,18 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   text-decoration: none;
+  overflow-wrap: anywhere;
   opacity: 0.7;
   transition: 0.2s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+  }
 
   &:hover,
   &:focus-visible,

@@ -85,7 +85,6 @@ function closeModal() {
   cleanFields(formElement);
   removeFormEvents();
   modalSelectHandler.removeSelectEvents();
-  modalSelectHandler.cleanSelect();
 }
 
 const initModalFeedback = () => {

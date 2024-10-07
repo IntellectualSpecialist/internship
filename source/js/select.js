@@ -190,7 +190,6 @@ const initCustomSelect = (selectWrapperElement) => {
   return {
     registerSelectEvents,
     removeSelectEvents,
-    cleanSelect
   };
 };
 
