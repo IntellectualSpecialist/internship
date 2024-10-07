@@ -42,7 +42,7 @@
 }
 
 .site-list__item {
-  margin-bottom: 18px;
+  margin-bottom: 28px;
 
   &:last-child {
     margin-bottom: 0;
@@ -127,7 +127,7 @@
   @include list-reset;
 
   padding-left: 16px;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .site-list__sub-menu-item {
