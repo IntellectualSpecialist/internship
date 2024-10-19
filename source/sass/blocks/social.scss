@@ -18,8 +18,9 @@
   background-color: $secondary-color;
   border-radius: 50%;
 
-  &:hover {
-    svg {
+  &:hover:not(:active) {
+    svg,
+    img {
       opacity: 0.7;
     }
   }

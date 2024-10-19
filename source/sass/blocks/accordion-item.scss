@@ -126,6 +126,7 @@
 }
 
 .accordion-item__button {
+  position: relative;
   display: flex;
   gap: 20px;
   justify-content: space-between;
@@ -137,6 +138,15 @@
   border-radius: 0;
   background-color: transparent;
   cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -15px;
+    width: calc(100% + 30px);
+    height: calc(100% + 40px);
+  }
 }
 
 .accordion-item__title {
@@ -203,10 +213,25 @@
   .accordion-item {
     padding: 30px;
     border-radius: 16px;
+
+    &--active {
+      .accordion-item__button {
+        &::before {
+          height: calc(100% + 50px);
+        }
+      }
+    }
   }
 
   .accordion-item__button {
     gap: 10px;
+
+    &::before {
+      top: -30px;
+      left: -30px;
+      width: calc(100% + 60px);
+      height: calc(100% + 60px);
+    }
   }
 
   .accordion-item__title {
@@ -227,6 +252,14 @@
 @media (min-width: $desktop-width) {
   .accordion-item {
     padding: 40px;
+
+    &--active {
+      .accordion-item__button {
+        &::before {
+          height: calc(100% + 60px);
+        }
+      }
+    }
   }
 
   .accordion-item__title {
@@ -236,6 +269,15 @@
 
     br {
       display: none;
+    }
+  }
+
+  .accordion-item__button {
+    &::before {
+      top: -40px;
+      left: -40px;
+      width: calc(100% + 80px);
+      height: calc(100% + 80px);
     }
   }
 }

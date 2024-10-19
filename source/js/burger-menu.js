@@ -19,6 +19,7 @@ const openMenu = () => {
   mainNavElement.style.height = `${siteListHeight}px`;
 
   bodyElement.addEventListener('click', onBodyClick);
+  bodyElement.classList.add('page__body--menu-open');
 };
 
 const closeMenu = () => {
@@ -27,6 +28,7 @@ const closeMenu = () => {
   headerElement.classList.remove('main-header--menu-open');
   siteListElement.removeEventListener('click', onNavLinkClick);
   bodyElement.removeEventListener('click', onBodyClick);
+  bodyElement.classList.remove('page__body--menu-open');
 
   setTimeout(() => {
     navBurgerElement.classList.remove('main-header__burger--active');

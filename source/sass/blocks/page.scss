@@ -17,6 +17,11 @@
   color: $primary-color;
   background: $body-bg;
 
+  &--menu-open {
+    height: 100vh;
+    overflow: hidden;
+  }
+
   main {
     flex-grow: 1;
   }

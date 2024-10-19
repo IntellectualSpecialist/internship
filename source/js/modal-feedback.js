@@ -2,12 +2,25 @@ import { isEscapeKey, cleanFields } from './utils';
 import { onFieldInput, onFieldChange, onFormSubmit, onPhoneBlur, onPhoneInput } from './form';
 import { initCustomSelect } from './select';
 
+const mainElement = document.querySelector('main');
+const footerElement = document.querySelector('.main-footer');
 const openButtonElement = document.querySelector('.js-modal-button');
 const modalElement = document.querySelector('.modal');
 const closeButtonElement = modalElement.querySelector('.modal__close-button');
 const formElement = modalElement.querySelector('form');
+const nameInputElement = formElement.querySelector('[name="name"]');
 const phoneInputElement = formElement.querySelector('[name="tel"]');
 const selectWrapperElement = formElement.querySelector('.field--select');
+
+const loopFocusOnModal = () => {
+  mainElement.setAttribute('inert', true);
+  footerElement.setAttribute('inert', true);
+};
+
+const removeLoopFocusOnModal = () => {
+  mainElement.removeAttribute('inert');
+  footerElement.removeAttribute('inert');
+};
 
 const onButtonClick = (evt) => {
   evt.preventDefault();
@@ -75,6 +88,8 @@ function openModal() {
   document.addEventListener('keydown', onDocumentKeydown);
   registerFormEvents();
   modalSelectHandler.registerSelectEvents();
+  nameInputElement.focus();
+  loopFocusOnModal();
 }
 
 function closeModal() {
@@ -85,6 +100,7 @@ function closeModal() {
   cleanFields(formElement);
   removeFormEvents();
   modalSelectHandler.removeSelectEvents();
+  removeLoopFocusOnModal();
 }
 
 const initModalFeedback = () => {
