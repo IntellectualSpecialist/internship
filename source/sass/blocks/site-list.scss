@@ -2,6 +2,12 @@
   @include list-reset;
 
   padding: 35px 25px;
+
+  &:not(.site-list--dark) {
+    max-height: calc(100vh - 70px);
+    overflow: scroll;
+    scrollbar-width: none;
+  }
 }
 
 .site-list--dark {
@@ -172,6 +178,10 @@
 
 @media (min-width: $tablet-width) {
   .site-list {
+    &:not(.site-list--dark) {
+      max-height: calc(100vh - 80px);
+    }
+
     &--dark {
       justify-content: flex-start;
       column-gap: 15.6px;
